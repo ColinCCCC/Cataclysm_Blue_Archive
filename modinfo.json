@@ -1,0 +1,11 @@
+[
+  {
+    "type":"MOD_INFO",
+    "category":"content",
+    "ident":"blue_archive",
+    "name":"Cataclysm: Blue archive",
+    "authors":["Colin.C.C.C.C", "卜！" ],
+    "description":"啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊！",
+    "dependencies":["dda"]
+  }
+]
