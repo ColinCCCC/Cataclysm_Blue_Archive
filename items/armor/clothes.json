@@ -27,7 +27,7 @@
                 "flag_restriction": ["SHEATH_KNIFE"],
                 "moves": 1,
                 "max_contains_volume": "800 ml",
-                "max_contains_weight": "1.5 kg",
+                "max_contains_weight": "2 kg",
                 "max_item_length": "50 cm"
             }
         ],
