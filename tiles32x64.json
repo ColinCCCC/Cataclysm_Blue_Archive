@@ -1,0 +1,18 @@
+[
+    {
+      "type": "mod_tileset",
+      "compatibility": ["UNDEAD_PEOPLE_BASE", "UNDEAD_PEOPLE", "MshockXottoplus", "UNDEAD_PEOPLE_LIGHT", "MSX++DEAD_PEOPLE" ],
+      "tiles-new": [
+        {
+          "file": "plot_mod_32x32.png",
+          "sprite_width":32,
+          "sprite_height":64,
+          "sprite_offset_x":0,
+          "sprite_offset_y":0,      
+          "tiles": [
+            { "id": "overlay_mutation_DEBUG_SILENT", "fg": 5 }
+          ]
+        }
+      ]
+    }
+  ]
