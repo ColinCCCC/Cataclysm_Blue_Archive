@@ -1,0 +1,53 @@
+[
+    {
+        "id": "Armor_Izuna",
+        "type": "ARMOR",
+        "name": {"str": "伊树莱的装束"},
+        "description": "伊树莱的装束",
+        "weight": "140 g",
+        "volume": "500 ml",
+        "price": 50000,
+        "price_postapoc": 1500,
+        "material": ["cotton", "kevlar_layered"],
+        "symbol": "♀",
+        "color": "red",
+        "material_thickness": 5,
+        "pocket_data": [
+            {
+                "ammo_restriction": {
+                    "40x46mm": 6,
+                    "40x53mm": 6
+                },
+                "moves": 20,
+                "volume_encumber_modifier": 0.3
+            },
+            {
+                "magazine_well": "200 ml",
+                "holster": true,
+                "flag_restriction": ["SHEATH_KNIFE"],
+                "moves": 1,
+                "max_contains_volume": "800 ml",
+                "max_contains_weight": "1.5 kg",
+                "max_item_length": "50 cm"
+            }
+        ],
+        "flags": ["STURDY", "WATER_FRIENDLY", "OVERSIZE" ],
+        "armor": [
+            {
+                "covers": ["torso"],
+                "coverage": 100,  
+                "encumbrance": [4, 5]
+            },
+            {
+                "covers": ["arm_l", "arm_r"],
+                "coverage": 100,
+                "encumbrance": [1, 1]
+            },
+            {
+                "covers": ["leg_l", "leg_r"],
+                "coverage": 100,
+                "encumbrance": [2, 3]
+            }
+        ]
+    }
+]
