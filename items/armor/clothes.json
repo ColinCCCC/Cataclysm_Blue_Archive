@@ -11,7 +11,7 @@
         "material": ["cotton", "kevlar_layered"],
         "symbol": "♀",
         "color": "red",
-        "material_thickness": 5,
+        "material_thickness": 8,
         "pocket_data": [
             {
                 "ammo_restriction": {
@@ -29,6 +29,90 @@
                 "max_contains_volume": "800 ml",
                 "max_contains_weight": "2 kg",
                 "max_item_length": "50 cm"
+            }
+        ],
+        "flags": ["STURDY", "WATER_FRIENDLY", "OVERSIZE" ],
+        "armor": [
+            {
+                "covers": ["torso"],
+                "coverage": 100,  
+                "encumbrance": [4, 5]
+            },
+            {
+                "covers": ["arm_l", "arm_r"],
+                "coverage": 100,
+                "encumbrance": [1, 1]
+            },
+            {
+                "covers": ["leg_l", "leg_r"],
+                "coverage": 100,
+                "encumbrance": [2, 3]
+            }
+        ]
+    },
+    {
+        "id": "Armor_Sora",
+        "type": "ARMOR",
+        "name": {"str": "空的装束"},
+        "description": "空的装束",
+        "weight": "140 g",
+        "volume": "500 ml",
+        "price": 50000,
+        "price_postapoc": 1500,
+        "material": ["cotton", "kevlar_layered"],
+        "symbol": "♀",
+        "color": "green",
+        "material_thickness": 8,
+        "pocket_data": [
+            {
+                "ammo_restriction": {
+                    "40x46mm": 6,
+                    "40x53mm": 6
+                },
+                "moves": 20,
+                "volume_encumber_modifier": 0.3
+            }
+        ],
+        "flags": ["STURDY", "WATER_FRIENDLY", "OVERSIZE" ],
+        "armor": [
+            {
+                "covers": ["torso"],
+                "coverage": 100,  
+                "encumbrance": [4, 5]
+            },
+            {
+                "covers": ["arm_l", "arm_r"],
+                "coverage": 100,
+                "encumbrance": [1, 1]
+            },
+            {
+                "covers": ["leg_l", "leg_r"],
+                "coverage": 100,
+                "encumbrance": [2, 3]
+            }
+        ]
+    },
+    {
+        "id": "Armor_Midori",
+        "type": "ARMOR",
+        "name": {"str": "绿的装束"},
+        "description": "绿的装束",
+        "weight": "140 g",
+        "volume": "500 ml",
+        "price": 50000,
+        "price_postapoc": 1500,
+        "material": ["cotton", "kevlar_layered"],
+        "symbol": "♀",
+        "color": "green",
+        "material_thickness": 8,
+        "pocket_data": [
+            {
+                "ammo_restriction": {
+                    "40x46mm": 6,
+                    "40x53mm": 6
+                },
+                "moves": 20,
+                "volume_encumber_modifier": 0.3
             }
         ],
         "flags": ["STURDY", "WATER_FRIENDLY", "OVERSIZE" ],

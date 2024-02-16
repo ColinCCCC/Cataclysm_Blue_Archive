@@ -1,10 +1,18 @@
 [
     {
         "type": "mutation",
-        "id": "Head_Izuna",
-        "name": {"str": "头部-伊树莱"},
+        "id": "Mutation_Izuna",
+        "name": {"str": "变异-伊树莱"},
         "points": 0,
-        "description": "头部-伊树莱",
+        "description": "变异-伊树莱",
+        "starting_trait": true
+    },
+    {
+        "type": "mutation",
+        "id": "Mutation_Midori",
+        "name": {"str": "变异-绿"},
+        "points": 0,
+        "description": "变异-绿",
         "starting_trait": true
     }
 ]
