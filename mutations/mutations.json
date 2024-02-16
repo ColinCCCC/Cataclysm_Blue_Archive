@@ -1,0 +1,10 @@
+[
+    {
+        "type": "mutation",
+        "id": "Head_Izuna",
+        "name": {"str": "头部-伊树莱"},
+        "points": 0,
+        "description": "头部-伊树莱",
+        "starting_trait": true
+    }
+]

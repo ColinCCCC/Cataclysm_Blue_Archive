@@ -10,7 +10,7 @@
           "sprite_offset_x":0,
           "sprite_offset_y":-32,      
           "tiles": [
-            { "id": "overlay_mutation_DEBUG_SILENT", "fg": 1 }
+            { "id": "overlay_mutation_Head_Izuna", "fg": 1 }
           ]
         }
       ]
