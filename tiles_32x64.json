@@ -14,8 +14,12 @@
           { "id": "overlay_worn_Armor_Izuna", "fg": 2 },
           { "id": "overlay_mutation_Mutation_Sora", "fg": 9 },
           { "id": "overlay_worn_Armor_Sora", "fg": 10 },
+          { "id": "overlay_mutation_Mutation_Hifumi", "fg": 12 },
+          { "id": "overlay_worn_Armor_Hifumi", "fg": 13 },
           { "id": "overlay_mutation_Mutation_Midori", "fg": 17 },
-          { "id": "overlay_worn_Armor_Midori", "fg": 18 }
+          { "id": "overlay_worn_Armor_Midori", "fg": 18 },
+          { "id": "overlay_mutation_Mutation_Shiroko", "fg": 25 },
+          { "id": "overlay_worn_Armor_Shiroko", "fg": 26 }
         ]
       }
     ]

@@ -12,7 +12,15 @@
         "id": "Mutation_Sora",
         "name": {"str": "变异-空"},
         "points": 0,
-        "description": "变异-伊树莱",
+        "description": "变异-空",
+        "starting_trait": true
+    },
+    {
+        "type": "mutation",
+        "id": "Mutation_Hifumi",
+        "name": {"str": "变异-日富美"},
+        "points": 0,
+        "description": "变异-日富美",
         "starting_trait": true
     },
     {
@@ -21,6 +29,14 @@
         "name": {"str": "变异-绿"},
         "points": 0,
         "description": "变异-绿",
+        "starting_trait": true
+    },
+    {
+        "type": "mutation",
+        "id": "Mutation_Shiroko",
+        "name": {"str": "变异-白子"},
+        "points": 0,
+        "description": "变异-白子",
         "starting_trait": true
     }
 ]
