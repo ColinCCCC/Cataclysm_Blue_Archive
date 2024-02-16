@@ -33,6 +33,14 @@
     },
     {
         "type": "mutation",
+        "id": "Mutation_Hina",
+        "name": {"str": "变异-日奈"},
+        "points": 0,
+        "description": "变异-日奈",
+        "starting_trait": true
+    },
+    {
+        "type": "mutation",
         "id": "Mutation_Shiroko",
         "name": {"str": "变异-白子"},
         "points": 0,

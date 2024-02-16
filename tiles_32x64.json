@@ -18,6 +18,8 @@
           { "id": "overlay_worn_Armor_Hifumi", "fg": 13 },
           { "id": "overlay_mutation_Mutation_Midori", "fg": 17 },
           { "id": "overlay_worn_Armor_Midori", "fg": 18 },
+          { "id": "overlay_mutation_Mutation_Hina", "fg": 20 },
+          { "id": "overlay_worn_Armor_Hina", "fg": 21 },
           { "id": "overlay_mutation_Mutation_Shiroko", "fg": 25 },
           { "id": "overlay_worn_Armor_Shiroko", "fg": 26 }
         ]
