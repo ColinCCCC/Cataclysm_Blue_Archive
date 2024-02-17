@@ -62,5 +62,13 @@
         "points": 0,
         "description": "变异-淳子",
         "starting_trait": true
+    },
+    {
+        "type": "mutation",
+        "id": "Mutation_Yuuka",
+        "name": {"str": "变异-优香"},
+        "points": 0,
+        "description": "变异-优香",
+        "starting_trait": true
     }
 ]
