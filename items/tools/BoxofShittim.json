@@ -2,7 +2,7 @@
     {
         "id": "BoxoffShittim",
         "type": "TOOL",
-        "name": {"str": "<color_cyan>什亭之匣</color>"},
+        "name": {"str": "什亭之匣"},
         "description": "什亭之匣",
         "chat_topics": [ "TALK_Arona" ],
         "weight": "250 g",
