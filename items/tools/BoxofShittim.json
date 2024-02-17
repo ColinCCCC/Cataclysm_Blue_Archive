@@ -23,10 +23,6 @@
                 "type": "effect_on_conditions",
                 "description": "与阿罗娜对话",
                 "effect_on_conditions": [ { "id": "EOC_TALK_Arona", "effect": [ "open_dialogue" ] } ]
-            },
-            {
-                "type": "link_up",
-                "cable_length": 4
             }
         ],
         "flags": [
