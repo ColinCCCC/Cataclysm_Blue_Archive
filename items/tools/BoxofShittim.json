@@ -43,9 +43,9 @@
     {
         "type": "talk_topic",
         "id": "TALK_Arona",
-        "dynamic_line": "老师，等您很久了！\n有什么能帮到你？",
+        "dynamic_line": "老师，等您很久了！\n有什么能帮到您？",
         "responses": [
-            { "text": "没有了，再见。", "topic": "TALK_DONE" }
+            { "text": "没有了，再见。ᕕ(◠ڼ◠)ᕗ", "topic": "TALK_DONE" }
         ]
     }
 ]
