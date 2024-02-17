@@ -1,0 +1,66 @@
+[
+    {
+        "id": "eink_tablet_pc",
+        "type": "TOOL",
+        "name": {"str": "e-ink tablet PC"},
+        "description": "",
+        "weight": "250 g",
+        "volume": "250 ml",
+        "longest_side": "25 cm",
+        "price": 20000,
+        "price_postapoc": 100,
+        "to_hit": -1,
+        "material": [
+            "plastic"
+        ],
+        "symbol": ";",
+        "color": "blue",
+        "ammo": [
+            "battery"
+        ],
+        "charges_per_use": 1,
+        "use_action": [
+            "EINKTABLETPC",
+            "ELECTRICSTORAGE",
+            "EBOOKSAVE",
+            "EBOOKREAD",
+            {
+                "type": "transform",
+                "menu_text": "Turn on the screen",
+                "msg": "You power up the screen.",
+                "target": "eink_tablet_pc_on",
+                "active": true,
+                "need_charges": 1,
+                "need_charges_msg": "The tablet batteries are dead."
+            },
+            {
+                "type": "link_up",
+                "cable_length": 4,
+                "charge_rate": "10 W"
+            }
+        ],
+        "flags": [
+            "WATCH",
+            "WATER_BREAK",
+            "ELECTRONIC"
+        ],
+        "pocket_data": [
+            {
+                "pocket_type": "MAGAZINE_WELL",
+                "rigid": true,
+                "flag_restriction": [
+                    "BATTERY_LIGHT",
+                    "BATTERY_ULTRA_LIGHT"
+                ],
+                "default_magazine": "light_plus_battery_cell"
+            },
+            {
+                "pocket_type": "EBOOK",
+                "rigid": true,
+                "max_contains_volume": "1 ml",
+                "max_contains_weight": "1 g",
+                "weight_multiplier": 0
+            }
+        ]
+    }
+]
