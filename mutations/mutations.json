@@ -9,6 +9,14 @@
     },
     {
         "type": "mutation",
+        "id": "Mutation_Izuna",
+        "name": {"str": "变异-桃井"},
+        "points": 0,
+        "description": "变异-桃井",
+        "starting_trait": true
+    },
+    {
+        "type": "mutation",
         "id": "Mutation_Sora",
         "name": {"str": "变异-空"},
         "points": 0,
