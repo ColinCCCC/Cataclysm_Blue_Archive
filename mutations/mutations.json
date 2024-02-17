@@ -54,5 +54,13 @@
         "points": 0,
         "description": "变异-白子",
         "starting_trait": true
+    },
+    {
+        "type": "mutation",
+        "id": "Mutation_Junko",
+        "name": {"str": "变异-淳子"},
+        "points": 0,
+        "description": "变异-淳子",
+        "starting_trait": true
     }
 ]
