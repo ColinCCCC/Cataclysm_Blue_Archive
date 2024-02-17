@@ -1,0 +1,54 @@
+[
+    {
+        "id": "BoxoffShittim",
+        "type": "TOOL",
+        "name": {"str": "什亭之匣"},
+        "description": "什亭之匣",
+        "weight": "250 g",
+        "volume": "250 ml",
+        "longest_side": "28 cm",
+        "price": 2000000,
+        "price_postapoc": 2000000,
+        "looks_like": "eink_tablet_pc",
+        "to_hit": -1,
+        "material": ["plastic"],
+        "symbol": ";",
+        "color": "blue",
+        "use_action": [
+            "EINKTABLETPC",
+            "ELECTRICSTORAGE",
+            "EBOOKSAVE",
+            "EBOOKREAD",
+            {
+                "type": "effect_on_conditions",
+                "description": "与阿罗娜对话",
+                "effect_on_conditions": [ { "id": "EOC_TALK_Arona", "effect": [ "open_dialogue" ] } ]
+            },
+            {
+                "type": "link_up",
+                "cable_length": 4
+            }
+        ],
+        "flags": [
+            "WATCH",
+            "ELECTRONIC"
+        ],
+        "pocket_data": [
+            {
+                "pocket_type": "EBOOK",
+                "rigid": true,
+                "max_contains_volume": "1 ml",
+                "max_contains_weight": "1 g",
+                "weight_multiplier": 0
+            }
+        ]
+    },
+    {
+        "type": "talk_topic",
+        "id": "TALK_GRIMOIRE_VOID",
+        "dynamic_line": "老师，等您很久了！\n有什么能帮到你？",
+        "responses": [
+            { "text": "没有了，再见。", "topic": "TALK_DONE" }
+        ]
+    }
+]
