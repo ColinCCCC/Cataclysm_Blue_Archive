@@ -351,5 +351,48 @@
                 "encumbrance": [2, 3]
             }
         ]
+    },
+    {
+        "id": "Armor_Yuuka",
+        "type": "ARMOR",
+        "name": {"str": "优香的装束"},
+        "description": "优香的装束",
+        "weight": "140 g",
+        "volume": "500 ml",
+        "price": 50000,
+        "price_postapoc": 1500,
+        "material": ["cotton", "kevlar_layered"],
+        "symbol": "♀",
+        "color": "blue",
+        "material_thickness": 8,
+        "environmental_protection": 30,
+        "pocket_data": [
+            {
+                "ammo_restriction": {
+                    "40x46mm": 6,
+                    "40x53mm": 6
+                },
+                "moves": 20,
+                "volume_encumber_modifier": 0.3
+            }
+        ],
+        "flags": ["VARSIZE", "WATERPROOF", "RAINPROOF", "GAS_PROOF", "RAD_PROOF", "ELECTRIC_IMMUNE", "STURDY", "OVERSIZE" ],
+        "armor": [
+            {
+                "covers": ["torso", "head"],
+                "coverage": 100,  
+                "encumbrance": [4, 5]
+            },
+            {
+                "covers": ["arm_l", "arm_r", "hand_l", "hand_r", "eyes", "mouth"],
+                "coverage": 100,
+                "encumbrance": [1, 1]
+            },
+            {
+                "covers": ["leg_l", "leg_r", "foot_l", "foot_r"],
+                "coverage": 100,
+                "encumbrance": [2, 3]
+            }
+        ]
     }
 ]
