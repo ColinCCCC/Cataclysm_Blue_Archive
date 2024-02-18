@@ -20,7 +20,7 @@
         "color": "light_gray",
         "name": {"str": "学生档案"},
         "description": "学生档案",
-        "countdown_action": {
+        "drop_action": {
             "type": "cast_spell",
             "spell_id": "spell_recruit_students",
             "no_fail": true,
@@ -37,6 +37,7 @@
         "valid_targets": ["self"],
         "shape": "blast",
         "effect": "recover_energy",
+        "base_casting_time": 0, 
         "effect_str": "STAMINA",
         "min_damage": 1,
         "max_damage": 1,
