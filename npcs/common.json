@@ -19,8 +19,9 @@
         "points":0,
         "purifiable": false,
         "flags": [ "HEAT_IMMUNE" ],
-        "healing_awake": 3000.0,
-        "healing_resting": 3000.0,
+        "healing_awake": 100,
+        "healing_multiplier": 600,
+        "mending_modifier": 600,
         "armor": [ { "part_types": [ "ALL" ], "cut": 800, "bash": 800, "bullet":800 } ],
         "hp_modifier": 600,
         "enchantments": [ "enchantment_kivotos" ]
