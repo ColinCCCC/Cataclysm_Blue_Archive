@@ -15,6 +15,13 @@
         "environmental_protection": 30,
         "pocket_data": [
             {
+                "pocket_type": "CONTAINER",
+                "max_contains_volume": "25 L",
+                "max_contains_weight": "30 kg",
+                "max_item_length": "40 cm",
+                "moves": 300
+            },
+            {
                 "ammo_restriction": {
                     "40x46mm": 6,
                     "40x53mm": 6
@@ -67,6 +74,13 @@
         "environmental_protection": 30,
         "pocket_data": [
             {
+                "pocket_type": "CONTAINER",
+                "max_contains_volume": "25 L",
+                "max_contains_weight": "30 kg",
+                "max_item_length": "40 cm",
+                "moves": 300
+            },
+            {
                 "ammo_restriction": {
                     "40x46mm": 6,
                     "40x53mm": 6
@@ -109,6 +123,13 @@
         "material_thickness": 8,
         "environmental_protection": 30,
         "pocket_data": [
+            {
+                "pocket_type": "CONTAINER",
+                "max_contains_volume": "25 L",
+                "max_contains_weight": "30 kg",
+                "max_item_length": "40 cm",
+                "moves": 300
+            },
             {
                 "ammo_restriction": {
                     "40x46mm": 6,
@@ -153,6 +174,13 @@
         "environmental_protection": 30,
         "pocket_data": [
             {
+                "pocket_type": "CONTAINER",
+                "max_contains_volume": "25 L",
+                "max_contains_weight": "30 kg",
+                "max_item_length": "40 cm",
+                "moves": 300
+            },
+            {
                 "ammo_restriction": {
                     "40x46mm": 6,
                     "40x53mm": 6
@@ -195,6 +223,13 @@
         "material_thickness": 8,
         "environmental_protection": 30,
         "pocket_data": [
+            {
+                "pocket_type": "CONTAINER",
+                "max_contains_volume": "25 L",
+                "max_contains_weight": "30 kg",
+                "max_item_length": "40 cm",
+                "moves": 300
+            },
             {
                 "ammo_restriction": {
                     "40x46mm": 6,
@@ -239,6 +274,13 @@
         "environmental_protection": 30,
         "pocket_data": [
             {
+                "pocket_type": "CONTAINER",
+                "max_contains_volume": "25 L",
+                "max_contains_weight": "30 kg",
+                "max_item_length": "40 cm",
+                "moves": 300
+            },
+            {
                 "ammo_restriction": {
                     "40x46mm": 6,
                     "40x53mm": 6
@@ -281,6 +323,13 @@
         "material_thickness": 8,
         "environmental_protection": 30,
         "pocket_data": [
+            {
+                "pocket_type": "CONTAINER",
+                "max_contains_volume": "25 L",
+                "max_contains_weight": "30 kg",
+                "max_item_length": "40 cm",
+                "moves": 300
+            },
             {
                 "ammo_restriction": {
                     "40x46mm": 6,
@@ -325,6 +374,13 @@
         "environmental_protection": 30,
         "pocket_data": [
             {
+                "pocket_type": "CONTAINER",
+                "max_contains_volume": "25 L",
+                "max_contains_weight": "30 kg",
+                "max_item_length": "40 cm",
+                "moves": 300
+            },
+            {
                 "ammo_restriction": {
                     "40x46mm": 6,
                     "40x53mm": 6
@@ -367,6 +423,13 @@
         "material_thickness": 8,
         "environmental_protection": 30,
         "pocket_data": [
+            {
+                "pocket_type": "CONTAINER",
+                "max_contains_volume": "25 L",
+                "max_contains_weight": "30 kg",
+                "max_item_length": "40 cm",
+                "moves": 300
+            },
             {
                 "ammo_restriction": {
                     "40x46mm": 6,

@@ -8,7 +8,7 @@
         "class": "NC_MAGIC_PROFESSOR",
         "attitude": 0,
         "mission": 7,
-        "chat": "TALK_student",
+        "chat": "TALK_Izuna",
         "faction": "kivotos_students"
     },
     {
@@ -44,5 +44,44 @@
             [ "Mutation_Izuna", 100 ],
             [ "SKIN_LIGHT", 100 ]
         ]
+    },
+    {
+        "id": "NC_Izuna_worn",
+        "type": "item_group",
+        "subtype": "collection",
+        "entries": [
+            { "item": "panties" },
+            { "item": "bra" },
+            { "item": "Armor_Izuna" }
+        ]
+    },
+    {
+        "id": "NC_Izuna_weapon",
+        "type": "item_group",
+        "subtype": "collection",
+        "entries": [ { "item": "pointy_stick" } ]
+    },
+    {
+        "id": "NC_Izuna_carry",
+        "type": "item_group",
+        "subtype": "collection",
+        "entries": [
+            { "item": "bandages", "count": 5 }
+        ]
+    },
+    {
+        "id": "TALK_Izuna",
+        "type": "talk_topic",
+        "dynamic_line": "<color_blue>忍忍！</color>",
+        "responses": [
+            {
+                "text": "ᕕ(◠ڼ◠)ᕗ",
+                "effect": [
+                    "follow"
+                ],
+                "topic": "TALK_DONE"
+            }
+        ]
     }
 ]
+  
