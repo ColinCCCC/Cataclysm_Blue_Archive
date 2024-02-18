@@ -12,6 +12,73 @@
         "description":""
     },
     {
+        "type": "mutation",
+        "id": "Mutation_Kivotos_Halo",
+        "name": { "str": "学生的光环" },
+        "description": "学生的光环",
+        "points":0,
+        "purifiable": false,
+        "flags": [ "HEAT_IMMUNE" ],
+        "healing_awake": 3000.0,
+        "healing_resting": 3000.0,
+        "armor": [ { "part_types": [ "ALL" ], "cut": 800, "bash": 800, "bullet":800 } ],
+        "hp_modifier": 600,
+        "enchantments": [ "enchantment_kivotos" ]
+    },
+    {
+        "type": "enchantment",
+        "id": "enchantment_kivotos",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+            {
+                "id": "kivotos_pure_damage",
+                "message": "你的攻击造成大量伤害。",
+                "npc_message": "%1$s 的攻击造成大量伤害。"
+            }
+        ],
+        "hit_me_effect": [
+            {
+                "id": "kivotos_healing",
+                "message": "你的光环保障了生存。",
+                "npc_message": "%1$s 的光环保障了生存。"
+            }
+        ]
+    },
+    {
+        "id": "kivotos_healing",
+        "type": "SPELL",
+        "name": "学生的治疗术",
+        "description": "让学生急速自愈的治疗术",
+        "valid_targets": [ "self" ],
+        "flags": [ "CONCENTRATE", "SOMATIC", "SILENT", "NO_PROJECTILE" ],
+        "effect": "attack",
+        "shape": "blast",
+        "effect_str": "cureall",
+        "min_duration": 1000000,
+        "max_duration": 1000000,
+        "min_damage": -200,
+        "max_damage": -200
+    },
+    {
+        "id": "kivotos_pure_damage",
+        "type": "SPELL",
+        "name": "学生的伤害加成",
+        "description": "让学生造成穿透伤的攻击法术",
+        "valid_targets": [ "hostile", "ally" ],
+        "flags": [ "VERBAL", "SOMATIC", "NO_LEGS", "SILENT", "NO_PROJECTILE" ],
+        "min_damage": 20,
+        "max_damage": 20,
+        "damage_type": "pure",
+        "effect_str": "onfire",
+        "min_duration": 500,
+        "max_duration": 500,
+        "min_range": 1,
+        "max_range": 1,
+        "max_level": 0,
+        "shape": "blast",
+        "effect": "attack"
+    },
+    {
         "id": "Generator_Students",
         "type": "AMMO",
         "symbol": ";",
@@ -19,8 +86,8 @@
         "ammo_type": "NULL",
         "color": "light_gray",
         "name": {"str": "学生档案"},
-        "description": "学生档案",
-        "drop_action": {
+        "description": "学生档案，激活招募随机学生",
+        "use_action": {
             "type": "cast_spell",
             "spell_id": "spell_recruit_students",
             "no_fail": true,

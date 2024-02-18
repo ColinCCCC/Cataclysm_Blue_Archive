@@ -48,6 +48,7 @@
         "weapon_override": "NC_Momori_weapon",
         "traits": [
             [ "Mutation_Momori", 100 ],
+            [ "Mutation_Kivotos_Halo", 100 ],
             [ "NIGHTVISION", 100 ],
             [ "GOODHEARING", 100 ],
             [ "SKIN_LIGHT", 100 ]

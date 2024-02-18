@@ -48,6 +48,7 @@
         "weapon_override": "NC_Hifumi_weapon",
         "traits": [
             [ "Mutation_Hifumi", 100 ],
+            [ "Mutation_Kivotos_Halo", 100 ],
             [ "NIGHTVISION", 100 ],
             [ "GOODHEARING", 100 ],
             [ "SKIN_LIGHT", 100 ]
