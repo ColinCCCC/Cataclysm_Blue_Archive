@@ -1,0 +1,48 @@
+[
+    {
+        "type": "npc",
+        "id": "npc_Izuna",
+        "name_unique": "伊树莱",
+        "name_suffix": "",
+        "gender": "female",
+        "class": "NC_MAGIC_PROFESSOR",
+        "attitude": 0,
+        "mission": 7,
+        "chat": "TALK_student",
+        "faction": "kivotos_students"
+    },
+    {
+        "type": "npc_class",
+        "id": "NC_Izuna",
+        "name": "伊树莱",
+        "job_description": "伊树莱",
+        "common": false,
+        "bonus_str": { "rng": [ 6, 6 ] },
+        "bonus_dex": { "rng": [ 7, 7 ] },
+        "bonus_int": { "rng": [ 1, 1 ] },
+        "bonus_per": { "rng": [ 12, 12 ] },
+        "skills": [
+            { "skill": "computer", "level": { "rng": [ 2, 2 ] } },
+            { "skill": "driving", "level": { "rng": [ 2, 2 ] } },
+            { "skill": "fabrication", "level": { "rng": [ 11, 11 ] } },
+            { "skill": "firstaid", "level": { "rng": [ 7, 7 ] } },
+            { "skill": "survival", "level": { "rng": [ 2, 2 ] } },
+            { "skill": "swimming", "level": { "rng": [ 2, 2 ] } },
+            { "skill": "archery", "level": { "rng": [ 5, 5 ] } },
+            { "skill": "bashing", "level": { "rng": [ 5, 5 ] } },
+            { "skill": "cutting", "level": { "rng": [ 8, 8 ] } },
+            { "skill": "dodge", "level": { "rng": [ 7, 7 ] } },
+            { "skill": "melee", "level": { "rng": [ 7, 7 ] } },
+            { "skill": "stabbing", "level": { "rng": [ 7, 7 ] } },
+            { "skill": "throw", "level": { "rng": [ 2, 2 ] } },
+            { "skill": "unarmed", "level": { "rng": [ 7, 7 ] } }
+        ],
+        "worn_override": "NC_Izuna_worn",
+        "carry_override": "NC_Izuna_carry",
+        "weapon_override": "NC_Izuna_weapon",
+        "traits": [
+            [ "Mutation_Izuna", 100 ],
+            [ "SKIN_LIGHT", 100 ]
+        ]
+    }
+]
