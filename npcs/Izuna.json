@@ -34,7 +34,13 @@
             { "skill": "dodge", "level": { "rng": [ 7, 7 ] } },
             { "skill": "melee", "level": { "rng": [ 7, 7 ] } },
             { "skill": "stabbing", "level": { "rng": [ 7, 7 ] } },
-            { "skill": "throw", "level": { "rng": [ 2, 2 ] } },
+            { "skill": "throw", "level": { "rng": [ 7, 7 ] } },
+            { "skill": "rifle", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "pistol", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "gun", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "launcher", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "shotgun", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "smg", "bonus": { "rng": [ 8, 8 ] } },
             { "skill": "unarmed", "level": { "rng": [ 7, 7 ] } }
         ],
         "worn_override": "NC_Izuna_worn",
@@ -42,6 +48,8 @@
         "weapon_override": "NC_Izuna_weapon",
         "traits": [
             [ "Mutation_Izuna", 100 ],
+            [ "NIGHTVISION", 100 ],
+            [ "GOODHEARING", 100 ],
             [ "SKIN_LIGHT", 100 ]
         ]
     },
@@ -87,6 +95,17 @@
         },
         "weight": "1 g",
         "volume": "1 ml"
+    },
+    {
+        "type": "SPELL",
+        "name": "招募学生",
+        "id": "spell_recruit_Izuna",
+        "description": "招募伊树莱",
+        "valid_targets": ["self"],
+        "shape": "blast",
+        "effect": "spawn_item",
+        "effect_str": "Generator_Izuna",
+        "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"]
     },
     {
         "id": "TALK_Izuna",

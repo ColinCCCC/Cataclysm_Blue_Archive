@@ -10,5 +10,40 @@
         "power": 100,
         "wealth": 1000,
         "description":""
+    },
+    {
+        "id": "Generator_Students",
+        "type": "AMMO",
+        "symbol": ";",
+        "phase": "liquid",
+        "ammo_type": "NULL",
+        "color": "light_gray",
+        "name": {"str": "学生档案"},
+        "description": "学生档案",
+        "countdown_action": {
+            "type": "cast_spell",
+            "spell_id": "spell_recruit_students",
+            "no_fail": true,
+            "level": 0
+        },
+        "weight": "1 g",
+        "volume": "1 ml"
+    },
+    {
+        "type": "SPELL",
+        "name": "招募学生",
+        "id": "spell_recruit_students",
+        "description": "招募学生",
+        "valid_targets": ["self"],
+        "shape": "blast",
+        "effect": "recover_energy",
+        "effect_str": "STAMINA",
+        "min_damage": 1,
+        "max_damage": 1,
+        "extra_effects": [
+            { "id": "spell_recruit_Izuna" },
+            { "id": "spell_recruit_Izuna" }
+        ],
+        "flags": [ "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "WONDER", "SILENT"]
     }
 ]
