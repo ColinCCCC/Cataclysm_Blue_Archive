@@ -70,6 +70,25 @@
         ]
     },
     {
+        "id": "Generator_Izuna",
+        "type": "AMMO",
+        "symbol": ";",
+        "phase": "liquid",
+        "ammo_type": "NULL",
+        "color": "light_gray",
+        "name": {"str": "学生档案-伊树莱"},
+        "description": "学生档案-伊树莱",
+        "drop_action": {
+           "type": "place_npc",
+           "npc_class_id": "npc_Izuna",
+           "summon_msg": "伊树莱被招募了！",
+           "place_randomly": true,
+           "moves": 1
+        },
+        "weight": "1 g",
+        "volume": "1 ml"
+    },
+    {
         "id": "TALK_Izuna",
         "type": "talk_topic",
         "dynamic_line": "<color_blue>忍忍！</color>",
