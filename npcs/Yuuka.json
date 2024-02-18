@@ -1,21 +1,21 @@
 [
     {
         "type": "npc",
-        "id": "npc_Izuna",
-        "name_unique": "伊树莱",
+        "id": "npc_Yuuka",
+        "name_unique": "优香",
         "name_suffix": "",
         "gender": "female",
-        "class": "NC_Izuna",
+        "class": "NC_Yuuka",
         "attitude": 0,
         "mission": 7,
-        "chat": "TALK_Izuna",
+        "chat": "TALK_Yuuka",
         "faction": "kivotos_students"
     },
     {
         "type": "npc_class",
-        "id": "NC_Izuna",
-        "name": "伊树莱",
-        "job_description": "伊树莱",
+        "id": "NC_Yuuka",
+        "name": "优香",
+        "job_description": "优香",
         "common": false,
         "bonus_str": { "rng": [ 6, 6 ] },
         "bonus_dex": { "rng": [ 7, 7 ] },
@@ -43,34 +43,34 @@
             { "skill": "smg", "bonus": { "rng": [ 8, 8 ] } },
             { "skill": "unarmed", "level": { "rng": [ 7, 7 ] } }
         ],
-        "worn_override": "NC_Izuna_worn",
-        "carry_override": "NC_Izuna_carry",
-        "weapon_override": "NC_Izuna_weapon",
+        "worn_override": "NC_Yuuka_worn",
+        "carry_override": "NC_Yuuka_carry",
+        "weapon_override": "NC_Yuuka_weapon",
         "traits": [
-            [ "Mutation_Izuna", 100 ],
+            [ "Mutation_Yuuka", 100 ],
             [ "NIGHTVISION", 100 ],
             [ "GOODHEARING", 100 ],
             [ "SKIN_LIGHT", 100 ]
         ]
     },
     {
-        "id": "NC_Izuna_worn",
+        "id": "NC_Yuuka_worn",
         "type": "item_group",
         "subtype": "collection",
         "entries": [
             { "item": "panties" },
             { "item": "bra" },
-            { "item": "Armor_Izuna" }
+            { "item": "Armor_Yuuka" }
         ]
     },
     {
-        "id": "NC_Izuna_weapon",
+        "id": "NC_Yuuka_weapon",
         "type": "item_group",
         "subtype": "collection",
         "entries": [ { "item": "pointy_stick" } ]
     },
     {
-        "id": "NC_Izuna_carry",
+        "id": "NC_Yuuka_carry",
         "type": "item_group",
         "subtype": "collection",
         "entries": [
@@ -78,18 +78,18 @@
         ]
     },
     {
-        "id": "Generator_Izuna",
+        "id": "Generator_Yuuka",
         "type": "AMMO",
         "symbol": ";",
         "phase": "liquid",
         "ammo_type": "NULL",
         "color": "light_gray",
-        "name": {"str": "学生档案-伊树莱"},
-        "description": "学生档案-伊树莱",
+        "name": {"str": "学生档案-优香"},
+        "description": "学生档案-优香",
         "drop_action": {
            "type": "place_npc",
-           "npc_class_id": "npc_Izuna",
-           "summon_msg": "伊树莱被招募了！",
+           "npc_class_id": "npc_Yuuka",
+           "summon_msg": "优香被招募了！",
            "place_randomly": true,
            "moves": 1
         },
@@ -99,18 +99,18 @@
     {
         "type": "SPELL",
         "name": "招募学生",
-        "id": "spell_recruit_Izuna",
-        "description": "招募伊树莱",
+        "id": "spell_recruit_Yuuka",
+        "description": "招募优香",
         "valid_targets": ["self"],
         "shape": "blast",
         "effect": "spawn_item",
-        "effect_str": "Generator_Izuna",
+        "effect_str": "Generator_Yuuka",
         "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"]
     },
     {
-        "id": "TALK_Izuna",
+        "id": "TALK_Yuuka",
         "type": "talk_topic",
-        "dynamic_line": "忍忍！",
+        "dynamic_line": "老师，今天我也会尽全力配合您的。",
         "responses": [
             {
                 "text": "ᕕ(◠ڼ◠)ᕗ",
