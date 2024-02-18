@@ -1,0 +1,125 @@
+[
+    {
+        "type": "npc",
+        "id": "npc_Izuna",
+        "name_unique": "伊树莱",
+        "name_suffix": "",
+        "gender": "female",
+        "class": "NC_Izuna",
+        "attitude": 0,
+        "mission": 7,
+        "chat": "TALK_Izuna",
+        "faction": "kivotos_students"
+    },
+    {
+        "type": "npc_class",
+        "id": "NC_Izuna",
+        "name": "伊树莱",
+        "job_description": "伊树莱",
+        "common": false,
+        "bonus_str": { "rng": [ 6, 6 ] },
+        "bonus_dex": { "rng": [ 7, 7 ] },
+        "bonus_int": { "rng": [ 1, 1 ] },
+        "bonus_per": { "rng": [ 12, 12 ] },
+        "skills": [
+            { "skill": "computer", "level": { "rng": [ 2, 2 ] } },
+            { "skill": "driving", "level": { "rng": [ 2, 2 ] } },
+            { "skill": "fabrication", "level": { "rng": [ 11, 11 ] } },
+            { "skill": "firstaid", "level": { "rng": [ 7, 7 ] } },
+            { "skill": "survival", "level": { "rng": [ 2, 2 ] } },
+            { "skill": "swimming", "level": { "rng": [ 2, 2 ] } },
+            { "skill": "archery", "level": { "rng": [ 5, 5 ] } },
+            { "skill": "bashing", "level": { "rng": [ 5, 5 ] } },
+            { "skill": "cutting", "level": { "rng": [ 8, 8 ] } },
+            { "skill": "dodge", "level": { "rng": [ 7, 7 ] } },
+            { "skill": "melee", "level": { "rng": [ 7, 7 ] } },
+            { "skill": "stabbing", "level": { "rng": [ 7, 7 ] } },
+            { "skill": "throw", "level": { "rng": [ 7, 7 ] } },
+            { "skill": "rifle", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "pistol", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "gun", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "launcher", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "shotgun", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "smg", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "unarmed", "level": { "rng": [ 7, 7 ] } }
+        ],
+        "worn_override": "NC_Izuna_worn",
+        "carry_override": "NC_Izuna_carry",
+        "weapon_override": "NC_Izuna_weapon",
+        "traits": [
+            [ "Mutation_Izuna", 100 ],
+            [ "NIGHTVISION", 100 ],
+            [ "GOODHEARING", 100 ],
+            [ "SKIN_LIGHT", 100 ]
+        ]
+    },
+    {
+        "id": "NC_Izuna_worn",
+        "type": "item_group",
+        "subtype": "collection",
+        "entries": [
+            { "item": "panties" },
+            { "item": "bra" },
+            { "item": "Armor_Izuna" }
+        ]
+    },
+    {
+        "id": "NC_Izuna_weapon",
+        "type": "item_group",
+        "subtype": "collection",
+        "entries": [ { "item": "pointy_stick" } ]
+    },
+    {
+        "id": "NC_Izuna_carry",
+        "type": "item_group",
+        "subtype": "collection",
+        "entries": [
+            { "item": "bandages", "count": 5 }
+        ]
+    },
+    {
+        "id": "Generator_Izuna",
+        "type": "AMMO",
+        "symbol": ";",
+        "phase": "liquid",
+        "ammo_type": "NULL",
+        "color": "light_gray",
+        "name": {"str": "学生档案-伊树莱"},
+        "description": "学生档案-伊树莱",
+        "drop_action": {
+           "type": "place_npc",
+           "npc_class_id": "npc_Izuna",
+           "summon_msg": "伊树莱被招募了！",
+           "place_randomly": true,
+           "moves": 1
+        },
+        "weight": "1 g",
+        "volume": "1 ml"
+    },
+    {
+        "type": "SPELL",
+        "name": "招募学生",
+        "id": "spell_recruit_Izuna",
+        "description": "招募伊树莱",
+        "valid_targets": ["self"],
+        "shape": "blast",
+        "effect": "spawn_item",
+        "effect_str": "Generator_Izuna",
+        "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"]
+    },
+    {
+        "id": "TALK_Izuna",
+        "type": "talk_topic",
+        "dynamic_line": "忍忍！",
+        "responses": [
+            {
+                "text": "ᕕ(◠ڼ◠)ᕗ",
+                "effect": [
+                    "follow"
+                ],
+                "topic": "TALK_DONE"
+            }
+        ]
+    }
+]
+  
