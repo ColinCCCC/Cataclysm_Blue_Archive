@@ -5,7 +5,7 @@
         "name_unique": "伊树莱",
         "name_suffix": "",
         "gender": "female",
-        "class": "NC_MAGIC_PROFESSOR",
+        "class": "NC_Izuna",
         "attitude": 0,
         "mission": 7,
         "chat": "TALK_Izuna",
@@ -91,7 +91,7 @@
     {
         "id": "TALK_Izuna",
         "type": "talk_topic",
-        "dynamic_line": "<color_blue>忍忍！</color>",
+        "dynamic_line": "忍忍！",
         "responses": [
             {
                 "text": "ᕕ(◠ڼ◠)ᕗ",
