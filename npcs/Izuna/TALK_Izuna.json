@@ -1,0 +1,14 @@
+[
+    {
+        "id": "TALK_Izuna_recruit",
+        "type": "talk_topic",
+        "dynamic_line": "忍忍！",
+        "responses": [
+            {
+                "text": "ᕕ(◠ڼ◠)ᕗ",
+                "effect": [ "follow" ],
+                "topic": "TALK_DONE"
+            }
+        ]
+    }
+]

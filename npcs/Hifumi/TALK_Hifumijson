@@ -1,0 +1,14 @@
+[
+    {
+        "id": "TALK_Hifumi_recruit",
+        "type": "talk_topic",
+        "dynamic_line": "啊哈哈……",
+        "responses": [
+            {
+                "text": "ᕕ(◠ڼ◠)ᕗ",
+                "effect": [ "follow" ],
+                "topic": "TALK_DONE"
+            }
+        ]
+    }
+]

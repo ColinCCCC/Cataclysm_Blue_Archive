@@ -1,0 +1,14 @@
+[
+    {
+        "id": "TALK_Momori_recruit",
+        "type": "talk_topic",
+        "dynamic_line": "准备好啦！我们走吧，老师！赶紧把下一关给通了！",
+        "responses": [
+            {
+                "text": "ᕕ(◠ڼ◠)ᕗ",
+                "effect": [ "follow" ],
+                "topic": "TALK_DONE"
+            }
+        ]
+    }
+]

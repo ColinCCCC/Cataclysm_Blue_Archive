@@ -17,11 +17,11 @@
         "dynamic_line": "有什么需要帮忙吗？",
         "responses": [
             {
-                "text": "[4 Cost] 使用力场护盾！",
-                "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "4" ] } },
+                "text": "[3 Cost] 使用力场护盾！",
+                "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "3" ] } },
                 "success": {
                     "topic": "TALK_DONE",
-                    "effect": { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "4" ] }
+                    "effect": { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "3" ] }
                 },
                 "failure": { "topic": "TALK_NOEnoughCost" }
             }
