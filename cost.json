@@ -19,6 +19,25 @@
         "disease_excess": [ [1,1], [2,2], [3,3], [4,4], [5,5], [6,6], [7,7], [8,8], [9,9], [10,10] ]
     },
     {
+        "id": "pill_ba_cost",
+        "type": "COMESTIBLE",
+        "comestible_type": "MED",
+        "category": "other",
+        "symbol": "S",
+        "color": "white",
+        "name": {"str": "Cost回复药"},
+        "description": "调试用回Cost用具",
+        "price": "1000 USD",
+        "material": [ "drug_filler" ],
+        "weight": "1 g",
+        "volume": "1 ml",
+        "use_action": {
+            "type": "consume_drug",
+            "activation_message": "你服用了 %s。",
+            "vitamins": [ [ "vitamin_ba_cost", 10, 10 ] ]
+        }
+    },
+    {
         "id": "widget_ba_cost",
         "type": "widget",
         "style": "text",
