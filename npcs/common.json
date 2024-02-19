@@ -98,6 +98,12 @@
         "volume": "1 ml"
     },
     {
+        "type": "enchantment",
+        "id": "enchantment_Arona_recruiting",
+        "condition": "ALWAYS",
+        "intermittent_activation": { "effects": [ { "frequency": "2 s", "spell_effects": [ { "id": "spell_recruit_students" } ] } ] }
+    },
+    {
         "type": "SPELL",
         "name": "招募学生",
         "id": "spell_recruit_students",
