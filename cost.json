@@ -1,0 +1,41 @@
+[
+    {
+        "type": "effect_type",
+        "id": "effect_ba_cost",
+        "name": [ "cost0", "cost1", "cost2", "cost3", "cost4", "cost5", "cost6", "cost7", "cost8", "cost9", "cost10" ],
+        "desc": [ "cost0", "cost1", "cost2", "cost3", "cost4", "cost5", "cost6", "cost7", "cost8", "cost9", "cost10" ],
+        "max_intensity": 11,
+        "rating": "good"
+    },
+    {
+        "id": "vitamin_ba_cost",
+        "type": "vitamin",
+        "vit_type": "counter",
+        "name": { "str": "ba_cost" },
+        "excess": "effect_ba_cost",
+        "min": 0,
+        "max": 10,
+        "rate": "15 m",
+        "disease_excess": [ [0,0], [1,1], [2,2], [3,3], [4,4], [5,5], [6,6], [7,7], [8,8], [9,9], [10,10] ]
+    },
+    {
+        "id": "observ_widget",
+        "type": "widget",
+        "style": "text",
+        "label": "Observation",
+        "clauses": [
+            { "text": "Cost:0", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 1 }},
+            { "text": "Cost:1", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 2 }},
+            { "text": "Cost:2", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 3 }},
+            { "text": "Cost:3", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 4 }},
+            { "text": "Cost:4", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 5 }},
+            { "text": "Cost:5", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 6 }},
+            { "text": "Cost:6", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 7 }},
+            { "text": "Cost:7", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 8 }},
+            { "text": "Cost:8", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 9 }},
+            { "text": "Cost:9", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 10 }},
+            { "text": "Cost:10", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 11 }}
+        ],
+        "default_clause": { "text": "Cost:0", "color": "lignt_cyan" }
+    }
+]
