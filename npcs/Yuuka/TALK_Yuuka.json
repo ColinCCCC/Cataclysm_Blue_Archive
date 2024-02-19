@@ -12,7 +12,7 @@
         ]
     },
     {
-        "id": "TALK_Yuuka_recruit",
+        "id": "TALK_Yuuka",
         "type": "talk_topic",
         "dynamic_line": "有什么需要帮忙吗？",
         "responses": [
