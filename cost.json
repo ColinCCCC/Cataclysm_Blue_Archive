@@ -24,18 +24,53 @@
         "style": "text",
         "label": "Observation",
         "clauses": [
-            { "text": "Cost:0", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 1 }},
-            { "text": "Cost:1", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 2 }},
-            { "text": "Cost:2", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 3 }},
-            { "text": "Cost:3", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 4 }},
-            { "text": "Cost:4", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 5 }},
-            { "text": "Cost:5", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 6 }},
-            { "text": "Cost:6", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 7 }},
-            { "text": "Cost:7", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 8 }},
-            { "text": "Cost:8", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 9 }},
-            { "text": "Cost:9", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 10 }},
-            { "text": "Cost:10", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 11 }}
+            { "text": "Cost:0  [          ]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 1 }},
+            { "text": "Cost:1  [■         ]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 2 }},
+            { "text": "Cost:2  [■■        ]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 3 }},
+            { "text": "Cost:3  [■■■       ]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 4 }},
+            { "text": "Cost:4  [■■■■      ]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 5 }},
+            { "text": "Cost:5  [■■■■■     ]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 6 }},
+            { "text": "Cost:6  [■■■■■■    ]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 7 }},
+            { "text": "Cost:7  [■■■■■■■   ]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 8 }},
+            { "text": "Cost:8  [■■■■■■■■  ]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 9 }},
+            { "text": "Cost:9  [■■■■■■■■■ ]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 10 }},
+            { "text": "Cost:10 [■■■■■■■■■■]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 11 }}
         ],
-        "default_clause": { "text": "Cost:0", "color": "lignt_cyan" }
-    }
+        "default_clause": { "text": "Cost:0  [          ]", "color": "lignt_cyan" }
+    },
+    {
+        "id": "ba_sidebar",
+        "type": "widget",
+        "style": "sidebar",
+        "label": { "str": "vampire", "ctxt": "UI sidebar" },
+        "width": 36,
+        "separator": ": ",
+        "padding": 2,
+        "widgets": [
+          "hitpoints_all_narrow_graphs_layout",
+          "hitpoints_all_narrow_nums_layout",
+          "stats_narrow_layout",
+          "movement_layout",
+          "stamina_activity_weary_layout",
+          "vampire_needs_desc_layout_label",
+          "needs_desc_sa_layout_label",
+          "safe_sound_layout",
+          "power_desc",
+          "observ_widget",
+          "rad_badge_desc",
+          "compass_all_layout",
+          "compass_all_layout_alt",
+          "weapon_style_layout",
+          "place_date_time_layout",
+          "overmap_full_width",
+          "overmap_location_desc",
+          "light_moon_wind_temp_layout",
+          "vehicle_acf_label_layout",
+          "vital_numbers_layout",
+          "bodypart_armor_outer_layout",
+          "bodypart_status_layout",
+          "bodypart_status_sym_layout",
+          "bodygraph_hp_layout"
+        ]
+      }
 ]
