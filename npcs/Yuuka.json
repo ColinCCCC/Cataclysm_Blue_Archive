@@ -128,9 +128,7 @@
         "responses": [
             {
                 "text": "ᕕ(◠ڼ◠)ᕗ",
-                "effect": [
-                    "follow"
-                ],
+                "effect": [ "follow" ],
                 "topic": "TALK_DONE"
             }
         ]
