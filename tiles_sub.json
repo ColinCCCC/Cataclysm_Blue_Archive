@@ -1,0 +1,20 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": ["UNDEAD_PEOPLE_BASE", "UNDEAD_PEOPLE", "MshockXottoplus", "UNDEAD_PEOPLE_LIGHT", "MSX++DEAD_PEOPLE" ],
+    "tiles-new": [
+      {
+        "file": "tiles_sub.png",
+        "sprite_width":32,
+        "sprite_height":64,
+        "sprite_offset_x":0,
+        "sprite_offset_y":-32,      
+        "tiles": [
+          { "id": "mon_Mika", "fg": 0 },
+          { "id": "overlay_mutation_Mutation_Mika", "fg": 1 },
+          { "id": "overlay_worn_Armor_TeaParty", "fg": 2 }
+        ]
+      }
+    ]
+  }
+]
