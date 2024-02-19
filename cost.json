@@ -22,21 +22,21 @@
         "id": "widget_ba_cost",
         "type": "widget",
         "style": "text",
-        "label": "Observation",
+        "label": "Cost",
         "clauses": [
-            { "text": "Cost:0  [          ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 1 }},
-            { "text": "Cost:1  [■         ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 2 }},
-            { "text": "Cost:2  [■■        ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 3 }},
-            { "text": "Cost:3  [■■■       ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 4 }},
-            { "text": "Cost:4  [■■■■      ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 5 }},
-            { "text": "Cost:5  [■■■■■     ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 6 }},
-            { "text": "Cost:6  [■■■■■■    ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 7 }},
-            { "text": "Cost:7  [■■■■■■■   ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 8 }},
-            { "text": "Cost:8  [■■■■■■■■  ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 9 }},
-            { "text": "Cost:9  [■■■■■■■■■ ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 10 }},
-            { "text": "Cost:10 [■■■■■■■■■■]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 11 }}
+            { "text": "0  [          ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 1 }},
+            { "text": "1  [■         ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 2 }},
+            { "text": "2  [■■        ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 3 }},
+            { "text": "3  [■■■       ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 4 }},
+            { "text": "4  [■■■■      ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 5 }},
+            { "text": "5  [■■■■■     ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 6 }},
+            { "text": "6  [■■■■■■    ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 7 }},
+            { "text": "7  [■■■■■■■   ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 8 }},
+            { "text": "8  [■■■■■■■■  ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 9 }},
+            { "text": "9  [■■■■■■■■■ ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 10 }},
+            { "text": "10 [■■■■■■■■■■]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 11 }}
         ],
-        "default_clause": { "text": "Cost:0  [          ]", "color": "cyan" }
+        "default_clause": { "text": "0  [          ]", "color": "cyan" }
     },
     {
         "copy-from": "custom_sidebar",
