@@ -24,17 +24,17 @@
         "style": "text",
         "label": "Observation",
         "clauses": [
-            { "text": "Cost:0  [          ]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 1 }},
-            { "text": "Cost:1  [■         ]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 2 }},
-            { "text": "Cost:2  [■■        ]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 3 }},
-            { "text": "Cost:3  [■■■       ]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 4 }},
-            { "text": "Cost:4  [■■■■      ]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 5 }},
-            { "text": "Cost:5  [■■■■■     ]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 6 }},
-            { "text": "Cost:6  [■■■■■■    ]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 7 }},
-            { "text": "Cost:7  [■■■■■■■   ]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 8 }},
-            { "text": "Cost:8  [■■■■■■■■  ]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 9 }},
-            { "text": "Cost:9  [■■■■■■■■■ ]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 10 }},
-            { "text": "Cost:10 [■■■■■■■■■■]", "color": "light_cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 11 }}
+            { "text": "Cost:0  [          ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 1 }},
+            { "text": "Cost:1  [■         ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 2 }},
+            { "text": "Cost:2  [■■        ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 3 }},
+            { "text": "Cost:3  [■■■       ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 4 }},
+            { "text": "Cost:4  [■■■■      ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 5 }},
+            { "text": "Cost:5  [■■■■■     ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 6 }},
+            { "text": "Cost:6  [■■■■■■    ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 7 }},
+            { "text": "Cost:7  [■■■■■■■   ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 8 }},
+            { "text": "Cost:8  [■■■■■■■■  ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 9 }},
+            { "text": "Cost:9  [■■■■■■■■■ ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 10 }},
+            { "text": "Cost:10 [■■■■■■■■■■]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 11 }}
         ],
         "default_clause": { "text": "Cost:0  [          ]", "color": "lignt_cyan" }
     },
