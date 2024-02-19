@@ -129,7 +129,8 @@
             {
                 "text": "ᕕ(◠ڼ◠)ᕗ",
                 "effect": [
-                    "follow"
+                    "follow",
+                    { "npc_first_topic": "TALK_Hifumi" }
                 ],
                 "topic": "TALK_DONE"
             }

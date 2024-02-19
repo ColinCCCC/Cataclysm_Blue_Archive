@@ -72,7 +72,7 @@
                             { "weight": 10, "sprite":	55	 },
                             { "weight": 10, "sprite":	56	 },
                             { "weight": 10, "sprite":	57	 },
-                            { "weight": 10000, "sprite":	58	 }
+                            { "weight": 100, "sprite":	58	 }
                         ]
                     }
                 ]
