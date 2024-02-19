@@ -36,7 +36,7 @@
             { "text": "Cost:9  [■■■■■■■■■ ]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 10 }},
             { "text": "Cost:10 [■■■■■■■■■■]", "color": "cyan", "condition": { "u_has_effect": "effect_ba_cost", "intensity": 11 }}
         ],
-        "default_clause": { "text": "Cost:0  [          ]", "color": "lignt_cyan" }
+        "default_clause": { "text": "Cost:0  [          ]", "color": "cyan" }
     },
     {
         "id": "ba_sidebar",
