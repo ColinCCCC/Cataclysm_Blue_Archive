@@ -1,9 +1,0 @@
-[
-    {
-        "id": [ "TALK_FRIEND" ],
-        "type": "talk_topic",
-        "responses": [
-            { "text": "优香，我有些事情需要你做……", "condition": { "npc_has_trait": "Mutation_Yuuka" }, "topic": "TALK_DONE" }
-        ]
-    }
-]

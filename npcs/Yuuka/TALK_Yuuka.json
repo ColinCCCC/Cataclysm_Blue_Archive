@@ -18,7 +18,12 @@
         "responses": [
             {
                 "text": "[4 Cost] 使用力场护盾！",
-                "effect": [ "follow" ],
+                "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "4" ] } },
+                "success": {
+                    "topic": "TALK_DONE",
+                    "effect": { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "4" ] }
+                },
+                "failure": { "topic": "TALK_NOEnoughCost" },
                 "topic": "TALK_DONE"
             }
         ]

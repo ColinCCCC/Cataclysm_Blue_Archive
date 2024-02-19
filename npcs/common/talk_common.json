@@ -1,0 +1,20 @@
+[
+    {
+        "id": [ "TALK_FRIEND" ],
+        "type": "talk_topic",
+        "responses": [
+            { "text": "优香，我有些事情需要你做……", "condition": { "npc_has_trait": "Mutation_Yuuka" }, "topic": "TALK_DONE" }
+        ]
+    },
+    {
+        "id": "TALK_NOEnoughCost",
+        "type": "talk_topic",
+        "dynamic_line": "(Cost不足，无法释放)",
+        "responses": [
+            {
+                "text": "……",
+                "topic": "TALK_DONE"
+            }
+        ]
+    }
+]
