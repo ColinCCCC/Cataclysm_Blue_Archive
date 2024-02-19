@@ -104,9 +104,22 @@
         "description": "招募日富美",
         "valid_targets": ["self"],
         "shape": "blast",
-        "effect": "spawn_item",
-        "effect_str": "Generator_Hifumi",
+        "effect": "effect_on_condition",
+        "effect_str": "filter_Hifumi",
         "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"]
+    },
+    {
+        "id": "filter_Hifumi",
+        "type": "effect_on_condition",
+        "condition": {
+            "not": {
+                "u_has_var": "Hifumi_get", "type": "general", "context": "You've got Hifumi", "value": "yes"
+            }
+        },
+        "effect": [
+        {"u_spawn_item": "Generator_Hifumi","count": 1 },
+        {"u_add_var": "Hifumi_get", "type": "general", "context": "You've got Hifumi", "value": "yes" }
+        ]
     },
     {
         "id": "TALK_Hifumi",

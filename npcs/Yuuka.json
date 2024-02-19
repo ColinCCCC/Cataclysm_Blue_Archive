@@ -104,9 +104,22 @@
         "description": "招募优香",
         "valid_targets": ["self"],
         "shape": "blast",
-        "effect": "spawn_item",
-        "effect_str": "Generator_Yuuka",
+        "effect": "effect_on_condition",
+        "effect_str": "filter_Yuuka",
         "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"]
+    },
+    {
+        "id": "filter_Yuuka",
+        "type": "effect_on_condition",
+        "condition": {
+            "not": {
+                "u_has_var": "Yuuka_get", "type": "general", "context": "You've got Yuuka", "value": "yes"
+            }
+        },
+        "effect": [
+        {"u_spawn_item": "Generator_Yuuka","count": 1 },
+        {"u_add_var": "Yuuka_get", "type": "general", "context": "You've got Yuuka", "value": "yes" }
+        ]
     },
     {
         "id": "TALK_Yuuka",
