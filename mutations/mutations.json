@@ -5,7 +5,7 @@
         "name": {"str": "变异-伊树莱"},
         "points": 0,
         "description": "变异-伊树莱",
-        "starting_trait": true
+        "starting_trait": false
     },
     {
         "type": "mutation",
@@ -13,7 +13,7 @@
         "name": {"str": "变异-桃井"},
         "points": 0,
         "description": "变异-桃井",
-        "starting_trait": true
+        "starting_trait": false
     },
     {
         "type": "mutation",
@@ -21,7 +21,7 @@
         "name": {"str": "变异-空"},
         "points": 0,
         "description": "变异-空",
-        "starting_trait": true
+        "starting_trait": false
     },
     {
         "type": "mutation",
@@ -29,7 +29,7 @@
         "name": {"str": "变异-日富美"},
         "points": 0,
         "description": "变异-日富美",
-        "starting_trait": true
+        "starting_trait": false
     },
     {
         "type": "mutation",
@@ -37,7 +37,7 @@
         "name": {"str": "变异-绿"},
         "points": 0,
         "description": "变异-绿",
-        "starting_trait": true
+        "starting_trait": false
     },
     {
         "type": "mutation",
@@ -45,7 +45,7 @@
         "name": {"str": "变异-日奈"},
         "points": 0,
         "description": "变异-日奈",
-        "starting_trait": true
+        "starting_trait": false
     },
     {
         "type": "mutation",
@@ -53,7 +53,7 @@
         "name": {"str": "变异-白子"},
         "points": 0,
         "description": "变异-白子",
-        "starting_trait": true
+        "starting_trait": false
     },
     {
         "type": "mutation",
@@ -61,7 +61,7 @@
         "name": {"str": "变异-淳子"},
         "points": 0,
         "description": "变异-淳子",
-        "starting_trait": true
+        "starting_trait": false
     },
     {
         "type": "mutation",
@@ -69,6 +69,6 @@
         "name": {"str": "变异-优香"},
         "points": 0,
         "description": "变异-优香",
-        "starting_trait": true
+        "starting_trait": false
     }
 ]
