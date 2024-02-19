@@ -69,12 +69,6 @@
         "extend": { "widgets": [ "widget_ba_cost"] }
     },
     {
-        "copy-from": "spacebar",
-        "type": "widget",
-        "id": "spacebar",
-        "extend": { "widgets": [ "widget_ba_cost"] }
-    },
-    {
         "copy-from": "my_labels_sidebar",
         "type": "widget",
         "id": "my_labels_sidebar",
