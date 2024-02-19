@@ -23,8 +23,7 @@
                     "topic": "TALK_DONE",
                     "effect": { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "4" ] }
                 },
-                "failure": { "topic": "TALK_NOEnoughCost" },
-                "topic": "TALK_DONE"
+                "failure": { "topic": "TALK_NOEnoughCost" }
             }
         ]
     }
