@@ -1,0 +1,26 @@
+[
+    {
+        "id": "TALK_Yuuka_recruit",
+        "type": "talk_topic",
+        "dynamic_line": "老师，今天我也会尽全力配合您的。",
+        "responses": [
+            {
+                "text": "ᕕ(◠ڼ◠)ᕗ",
+                "effect": [ "follow" ],
+                "topic": "TALK_DONE"
+            }
+        ]
+    },
+    {
+        "id": "TALK_Yuuka_recruit",
+        "type": "talk_topic",
+        "dynamic_line": "有什么需要帮忙吗？",
+        "responses": [
+            {
+                "text": "[4 Cost] 使用力场护盾！",
+                "effect": [ "follow" ],
+                "topic": "TALK_DONE"
+            }
+        ]
+    }
+]

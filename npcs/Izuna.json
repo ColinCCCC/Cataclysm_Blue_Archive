@@ -8,7 +8,7 @@
         "class": "NC_Izuna",
         "attitude": 0,
         "mission": 7,
-        "chat": "TALK_Izuna",
+        "chat": "TALK_Izuna_recruit",
         "faction": "kivotos_students"
     },
     {
@@ -122,7 +122,7 @@
         ]
     },
     {
-        "id": "TALK_Izuna",
+        "id": "TALK_Izuna_recruit",
         "type": "talk_topic",
         "dynamic_line": "忍忍！",
         "responses": [

@@ -8,7 +8,7 @@
         "class": "NC_Yuuka",
         "attitude": 0,
         "mission": 7,
-        "chat": "TALK_Yuuka",
+        "chat": "TALK_Yuuka_recruit",
         "faction": "kivotos_students"
     },
     {
@@ -119,18 +119,6 @@
         "effect": [
         {"u_spawn_item": "Generator_Yuuka","count": 1 },
         {"u_add_var": "Yuuka_get", "type": "general", "context": "You've got Yuuka", "value": "yes" }
-        ]
-    },
-    {
-        "id": "TALK_Yuuka",
-        "type": "talk_topic",
-        "dynamic_line": "老师，今天我也会尽全力配合您的。",
-        "responses": [
-            {
-                "text": "ᕕ(◠ڼ◠)ᕗ",
-                "effect": [ "follow" ],
-                "topic": "TALK_DONE"
-            }
         ]
     }
 ]
