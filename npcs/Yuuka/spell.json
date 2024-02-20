@@ -1,5 +1,18 @@
 [
     {
+        "type": "effect_on_condition",
+        "id": "EOC_Yuuka_shield",
+        "condition": { "u_has_effect": "effect_Yuuka_shield" },
+        "run_for_npcs": true,
+        "global": true,
+        "effect": [
+            {
+                "u_spawn_item": "aura_Yuuka_shield",
+                "force_equip": true
+            }
+        ]
+    },
+    {
         "type": "effect_type",
         "id": "effect_Yuuka_shield",
         "name": [ "优香的护盾" ],
@@ -62,12 +75,10 @@
         "description": "优香的力场护盾",
         "valid_targets": [ "self", "ally" ],
         "flags": [ "SILENT", "SOMATIC", "NO_PROJECTILE" ],
-        "effect": "spawn_item",
-        "effect_str": "aura_Yuuka_shield",
+        "effect": "attack",
+        "effect_str": "effect_Yuuka_shield",
         "shape": "blast",
         "max_level": 3,
-        "min_damage": 1,
-        "max_damage": 1,
         "min_duration": 6000,
         "max_duration": 12000,
         "duration_increment": 2000
