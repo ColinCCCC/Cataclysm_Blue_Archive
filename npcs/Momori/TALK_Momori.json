@@ -2,7 +2,7 @@
     {
         "id": "TALK_Momori_recruit",
         "type": "talk_topic",
-        "dynamic_line": "准备好啦！我们走吧，老师！赶紧把下一关给通了！",
+        "dynamic_line": "有趣的事现在开始！(これから、すっごく面白い物語が始まるよ！)",
         "responses": [
             {
                 "text": "ᕕ(◠ڼ◠)ᕗ",
@@ -17,7 +17,7 @@
         "dynamic_line": "有什么需要帮忙吗？",
         "responses": [
             {
-                "text": "[3 Cost] 使用aoe扫射！",
+                "text": "[3 Cost] 创作的痛苦(进行带有范围伤害的扫射)",
                 "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "3" ] } },
                 "success": {
                     "topic": "TALK_DONE",
