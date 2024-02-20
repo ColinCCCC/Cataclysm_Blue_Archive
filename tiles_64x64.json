@@ -10,7 +10,8 @@
         "sprite_offset_x":-16,
         "sprite_offset_y":-32,      
         "tiles": [
-          { "id": "overlay_worn_aura_Yuuka_shield", "fg": 0 }
+          { "id": "overlay_worn_aura_Yuuka_shield", "fg": 0 },
+          { "id": "mon_Pello", "fg": 1 }
         ]
       }
     ]

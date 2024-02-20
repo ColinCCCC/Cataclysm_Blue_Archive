@@ -1,0 +1,29 @@
+[
+    {
+        "id": "mon_Pello",
+        "type": "MONSTER",
+        "name": { "str": "佩洛洛玩偶" },
+        "description": "佩洛洛玩偶",
+        "default_faction": "factionless",
+        "species": [ "UNKNOWN" ],
+        "volume": "62500 ml",
+        "weight": "81500 g",
+        "hp": 600,
+        "speed": 1,
+        "symbol": "@",
+        "material": [ "wood" ],
+        "aggression": -99,
+        "morale": 100,
+        "special_attacks": [
+            [ "PARROT", 1 ],
+            [ "DISAPPEAR",  2000 ]
+        ],
+        "death_function": {
+          "message": "The %s falls over!",
+          "corpse_type": "NO_CORPSE"
+        },
+        "harvest": "exempt",
+        "revert_to_itype": "mannequin_decoy",
+        "flags": [ "IMMOBILE", "NO_BREATHE", "NOT_HALLUCINATION" ]
+    }
+]
