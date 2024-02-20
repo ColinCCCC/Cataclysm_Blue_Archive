@@ -2,12 +2,28 @@
     {
         "id": "TALK_Hifumi_recruit",
         "type": "talk_topic",
-        "dynamic_line": "啊哈哈……",
+        "dynamic_line": "啊哈哈…我虽然还不成熟但请多多指教。(あはは…至らない私ですがよろしくお願いします。)",
         "responses": [
             {
                 "text": "ᕕ(◠ڼ◠)ᕗ",
                 "effect": [ "follow" ],
                 "topic": "TALK_DONE"
+            }
+        ]
+    },
+        {
+        "id": "TALK_Hifumi",
+        "type": "talk_topic",
+        "dynamic_line": "有什么需要帮忙吗？",
+        "responses": [
+            {
+                "text": "[6 Cost] 拜托了，佩洛洛大人!(召唤一个吸引怪物的诱饵并造成伤害)",
+                "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "6" ] } },
+                "success": {
+                    "topic": "TALK_DONE",
+                    "effect": { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "6" ] }
+                },
+                "failure": { "topic": "TALK_NOEnoughCost" }
             }
         ]
     }
