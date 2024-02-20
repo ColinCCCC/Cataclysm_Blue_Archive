@@ -1,6 +1,27 @@
 [
     {
-
+        "type": "effect_type",
+        "id": "effect_Yuuka_shield",
+        "name": [ "优香的护盾" ],
+        "max_intensity": 1,
+        "int_dur_factor": 1000,
+        "base_mods": {
+            "str_mod": [1]
+        },
+        "enchantments": [ "enchantment_Yuuka_shield" ]
+    },
+    {
+        "type": "enchantment",
+        "id": "enchantment_Yuuka_shield",
+        "condition": "ALWAYS",
+        "values": [
+            { "value": "ARMOR_BASH", "add": -40 },
+            { "value": "ARMOR_BULLET", "add": -40 },
+            { "value": "ARMOR_CUT", "add": -40 },
+            { "value": "ATTACK_SPEED", "multiply": 30 },
+            { "value": "BONUS_DODGE", "add": 2 },
+            { "value": "BONUS_BLOCK", "add": 5 }
+        ]
     },
     {
         "id": "spell_Yuuka_shield",
@@ -8,19 +29,13 @@
         "name": "力场护盾",
         "description": "优香的力场护盾",
         "valid_targets": [ "self" ],
-        "flags": [ "LOUD", "VERBAL", "SOMATIC", "NO_PROJECTILE" ],
+        "flags": [ "SILENT", "SOMATIC", "NO_PROJECTILE" ],
         "effect": "attack",
-        "effect_str": "haste",
+        "effect_str": "effect_Yuuka_shield",
         "shape": "blast",
-        "components": "spell_components_haste",
-        "difficulty": 8,
-        "base_casting_time": 400,
-        "casting_time_increment": -10,
-        "final_casting_time": 200,
-        "base_energy_cost": 450,
-        "max_level": 20,
-        "min_duration": 600,
+        "max_level": 3,
+        "min_duration": 6000,
         "max_duration": 12000,
-        "duration_increment": 600
+        "duration_increment": 2000
     }
 ]

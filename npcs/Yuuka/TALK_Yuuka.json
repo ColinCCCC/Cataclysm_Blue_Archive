@@ -21,7 +21,10 @@
                 "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "3" ] } },
                 "success": {
                     "topic": "TALK_DONE",
-                    "effect": { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "3" ] }
+                    "effect": [
+                        { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "3" ] },
+                        { "npc_cast_spell": { "id": "spell_Yuuka_shield" } }
+                    ]
                 },
                 "failure": { "topic": "TALK_NOEnoughCost" }
             }
