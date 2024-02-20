@@ -70,5 +70,13 @@
         "points": 0,
         "description": "变异-优香",
         "starting_trait": false
+    },
+    {
+        "type": "mutation",
+        "id": "Mutation_Mika",
+        "name": {"str": "变异-未花"},
+        "points": 0,
+        "description": "变异-未花",
+        "starting_trait": false
     }
 ]

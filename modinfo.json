@@ -3,7 +3,7 @@
     "type":"MOD_INFO",
     "category":"content",
     "ident":"blue_archive",
-    "name":"<color_cyan>Cataclysm: Blue archive</color>",
+    "name":"<color_light_cyan>Cataclysm: Blue archive</color>",
     "authors":["Colin.C.C.C.C", "卜！" ],
     "description":"啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊！",
     "dependencies":["dda"]
