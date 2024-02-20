@@ -4,6 +4,8 @@
         "id": "npc_Yuuka",
         "name_unique": "优香",
         "name_suffix": "",
+        "age": 16,
+        "height": 156,
         "gender": "female",
         "class": "NC_Yuuka",
         "attitude": 0,

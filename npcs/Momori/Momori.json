@@ -4,6 +4,8 @@
         "id": "npc_Momori",
         "name_unique": "桃井",
         "name_suffix": "",
+        "age": 15,
+        "height": 143,
         "gender": "female",
         "class": "NC_Momori",
         "attitude": 0,
