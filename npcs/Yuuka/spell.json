@@ -1,16 +1,34 @@
 [
     {
         "type": "effect_on_condition",
-        "id": "EOC_Yuuka_shield",
-        "condition": { "u_has_effect": "effect_Yuuka_shield" },
+        "id": "EOC_Yuuka_shield_on",
+        "condition": {
+            "and": [
+                { "u_has_effect": "effect_Yuuka_shield" },
+                { "not": { "u_has_item": "aura_Yuuka_shield" } }
+            ]
+        },
         "run_for_npcs": true,
         "global": true,
         "recurrence": 1 ,
         "effect": [
-            {
-                "u_spawn_item": "aura_Yuuka_shield",
-                "force_equip": true
-            }
+            { "u_spawn_item": "aura_Yuuka_shield", "force_equip": true }
+        ]
+    },
+    {
+        "type": "effect_on_condition",
+        "id": "EOC_Yuuka_shield_off",
+        "condition": {
+            "and": [
+                { "not": { "u_has_effect": "effect_Yuuka_shield" } },
+                { "u_has_item": "aura_Yuuka_shield" }
+            ]
+        },
+        "run_for_npcs": true,
+        "global": true,
+        "recurrence": 1 ,
+        "effect": [
+            { "u_remove_item_with": "aura_Yuuka_shield" }
         ]
     },
     {
