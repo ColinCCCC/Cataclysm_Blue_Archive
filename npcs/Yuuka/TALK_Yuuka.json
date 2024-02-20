@@ -2,7 +2,7 @@
     {
         "id": "TALK_Yuuka_recruit",
         "type": "talk_topic",
-        "dynamic_line": "老师，今天我也会尽全力配合您的。",
+        "dynamic_line": "条件已经达成了。我们今天将会把这瞬间定义为缘分，并且去证明它。(条件はクリアされました。私たちは今日この瞬間を絆と定義し、証明することになるでしょう。)",
         "responses": [
             {
                 "text": "ᕕ(◠ڼ◠)ᕗ",
@@ -17,7 +17,7 @@
         "dynamic_line": "有什么需要帮忙吗？",
         "responses": [
             {
-                "text": "[3 Cost] 使用力场护盾！",
+                "text": "[3 Cost] Q.E.D.(优香获得力场护盾)",
                 "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "3" ] } },
                 "success": {
                     "topic": "TALK_DONE",
