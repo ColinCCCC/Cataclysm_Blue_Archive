@@ -9,7 +9,10 @@
         "attitude": 0,
         "mission": 7,
         "chat": "TALK_Yuuka_recruit",
-        "faction": "kivotos_students"
+        "faction": "kivotos_students",
+        "<acknowledged>": "<acknowledged_Yuuka>",
+        "<danger_close_distance>": "敌人位置已确认。老师，指挥就拜托您了。",
+        "<monster_warning_h>": "确认敌人位置。距离，最近方位，战力。计算完毕。"
     },
     {
         "type": "npc_class",
@@ -119,6 +122,14 @@
         "effect": [
             {"u_spawn_item": "Generator_Yuuka", "count": 1 },
             {"u_add_var": "Yuuka_get", "type": "general", "context": "You've got Yuuka", "value": "yes" }
+        ]
+    },
+    {
+        "type":"snippet",
+        "category":"<acknowledged_Yuuka>",
+        "text": [
+            "明智的选择。",
+            "哼嗯……果然老师考虑的很周到呢。"
         ]
     }
 ]
