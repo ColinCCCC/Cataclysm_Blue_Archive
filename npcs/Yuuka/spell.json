@@ -5,6 +5,7 @@
         "condition": { "u_has_effect": "effect_Yuuka_shield" },
         "run_for_npcs": true,
         "global": true,
+        "recurrence": 1 ,
         "effect": [
             {
                 "u_spawn_item": "aura_Yuuka_shield",
@@ -26,7 +27,7 @@
     {
         "id": "aura_Yuuka_shield",
         "type": "ARMOR",
-        "name": { "str": "优香的护盾n", "str_pl": "优香的护盾" },
+        "name": { "str": "优香的护盾", "str_pl": "优香的护盾" },
         "description": "优香的护盾",
         "weight": "1 g",
         "volume": "1 ml",
