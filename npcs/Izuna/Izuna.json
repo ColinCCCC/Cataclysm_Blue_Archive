@@ -117,7 +117,7 @@
             }
         },
         "effect": [
-            {"u_buy_item": "Generator_Izuna","count": 1 },
+            {"u_spawn_item": "Generator_Izuna","count": 1 },
             {"u_add_var": "Izuna_get", "type": "general", "context": "You've got Izuna", "value": "yes" }
         ]
     }
