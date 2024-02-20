@@ -117,8 +117,8 @@
             }
         },
         "effect": [
-        {"u_spawn_item": "Generator_Yuuka","count": 1 },
-        {"u_add_var": "Yuuka_get", "type": "general", "context": "You've got Yuuka", "value": "yes" }
+            {"u_spawn_item": "Generator_Yuuka","count": 1 },
+            {"u_add_var": "Yuuka_get", "type": "general", "context": "You've got Yuuka", "value": "yes" }
         ]
     }
 ]

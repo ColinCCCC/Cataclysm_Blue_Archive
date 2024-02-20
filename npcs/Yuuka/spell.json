@@ -1,0 +1,26 @@
+[
+    {
+
+    },
+    {
+        "id": "spell_Yuuka_shield",
+        "type": "SPELL",
+        "name": "力场护盾",
+        "description": "优香的力场护盾",
+        "valid_targets": [ "self" ],
+        "flags": [ "LOUD", "VERBAL", "SOMATIC", "NO_PROJECTILE" ],
+        "effect": "attack",
+        "effect_str": "haste",
+        "shape": "blast",
+        "components": "spell_components_haste",
+        "difficulty": 8,
+        "base_casting_time": 400,
+        "casting_time_increment": -10,
+        "final_casting_time": 200,
+        "base_energy_cost": 450,
+        "max_level": 20,
+        "min_duration": 600,
+        "max_duration": 12000,
+        "duration_increment": 600
+    }
+]
