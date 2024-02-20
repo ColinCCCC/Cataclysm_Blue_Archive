@@ -7,7 +7,7 @@
                 "file": "./tiles/recruit.png",
                 "sprite_width": 128,
                 "sprite_height": 128,
-                "sprite_offset_x": 0,
+                "sprite_offset_x": 24,
                 "sprite_offset_y": -128,
                 "tiles": [
                     {
