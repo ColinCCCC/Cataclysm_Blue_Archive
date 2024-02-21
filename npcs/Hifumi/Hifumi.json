@@ -8,7 +8,7 @@
         "age": 16,
         "height": 158,
         "class": "NC_Hifumi",
-        "attitude": 0,
+        "attitude": 1,
         "mission": 7,
         "chat": "TALK_Hifumi_recruit",
         "faction": "kivotos_students"

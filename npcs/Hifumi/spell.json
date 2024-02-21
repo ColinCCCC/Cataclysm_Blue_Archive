@@ -25,5 +25,40 @@
         "harvest": "exempt",
         "revert_to_itype": "mannequin_decoy",
         "flags": [ "IMMOBILE", "NO_BREATHE", "NOT_HALLUCINATION" ]
+    },
+    {
+        "type": "SPELL",
+        "name": "拜托了，佩洛洛大人!",
+        "id": "spell_summon_Pello",
+        "description": "召唤一个吸引怪物的诱饵并对周围造成伤害",
+        "valid_targets": ["ground"],
+        "shape": "blast",
+        "min_aoe": 3,
+        "max_aoe": 3,
+        "min_range": 20,
+	    "max_range": 20,
+        "min_damage": 1,
+        "max_damage": 1,
+        "effect": "summon",
+        "effect_str": "mon_Pello",
+        "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"],
+        "extra_effects": [ { "id": "spell_summon_Pello_attack" } ]
+    },
+    {
+        "type": "SPELL",
+        "name": "拜托了，佩洛洛大人!-攻击段",
+        "id": "spell_summon_Pello_attack",
+        "description": "拜托了，佩洛洛大人!-攻击段",
+        "valid_targets": ["hostile"],
+        "min_aoe": 3,
+        "max_aoe": 3,
+        "min_range": 20,
+	    "max_range": 20,
+        "min_damage": 20,
+        "max_damage": 20,
+        "shape": "blast",
+        "damage_type": "pure",
+        "effect": "attack",
+        "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"]
     }
 ]

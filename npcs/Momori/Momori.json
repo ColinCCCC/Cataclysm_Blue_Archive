@@ -8,7 +8,7 @@
         "height": 143,
         "gender": "female",
         "class": "NC_Momori",
-        "attitude": 0,
+        "attitude": 1,
         "mission": 7,
         "chat": "TALK_Momori_recruit",
         "faction": "kivotos_students"

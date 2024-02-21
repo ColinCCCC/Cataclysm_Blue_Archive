@@ -8,7 +8,7 @@
         "height": 156,
         "gender": "female",
         "class": "NC_Yuuka",
-        "attitude": 0,
+        "attitude": 1,
         "mission": 7,
         "chat": "TALK_Yuuka_recruit",
         "faction": "kivotos_students",

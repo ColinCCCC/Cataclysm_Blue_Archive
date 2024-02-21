@@ -8,7 +8,7 @@
         "height": 155,
         "gender": "female",
         "class": "NC_Izuna",
-        "attitude": 0,
+        "attitude": 1,
         "mission": 7,
         "chat": "TALK_Izuna_recruit",
         "faction": "kivotos_students"
