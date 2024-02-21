@@ -108,7 +108,8 @@
     {
         "id": "eoc_recruit1",
         "type": "effect_on_condition",
-        "recurrence": 1,
+        "recurrence": 10,
+        "global": true,
         "condition": {
             "and": [
                 { "not": { "u_has_effect": "effect_Arona_recruited" } },
@@ -120,7 +121,8 @@
     {
         "id": "eoc_recruit2",
         "type": "effect_on_condition",
-        "recurrence": 1,
+        "recurrence": 10,
+        "global": true,
         "condition": {
             "and": [
                 { "not": { "u_has_effect": "effect_Arona_recruiting" } },
