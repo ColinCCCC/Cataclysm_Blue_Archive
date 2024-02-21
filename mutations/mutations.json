@@ -1,6 +1,14 @@
 [
     {
         "type": "mutation",
+        "id": "Mutation_Sensei",
+        "name": {"str": "老师"},
+        "points": 0,
+        "description": "夏莱的老师",
+        "starting_trait": false
+    },
+    {
+        "type": "mutation",
         "id": "Mutation_Izuna",
         "name": {"str": "变异-伊树莱"},
         "points": 0,
