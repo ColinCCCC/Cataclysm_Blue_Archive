@@ -29,10 +29,6 @@
                     ]
                 },
                 "failure": { "topic": "TALK_NOEnoughCost" }
-            },
-            {
-                "text": "互换身体",
-                "topic": "TALK_DONE"
             }
         ]
     }
