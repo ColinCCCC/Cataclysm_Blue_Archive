@@ -131,5 +131,16 @@
             { "u_cast_spell": { "id": "spell_recruit_students" } },
             { "u_lose_effect": "effect_Arona_recruited" }
         ]
+    },
+    {
+        "type": "SPELL",
+        "name": "返回控制",
+        "id": "spell_return_to_player",
+        "description": "返回控制",
+        "valid_targets": ["self"],
+        "shape": "blast",
+        "effect": "effect_on_condition",
+        "effect_str": "EOC_return_to_player",
+        "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"]
     }
 ]
