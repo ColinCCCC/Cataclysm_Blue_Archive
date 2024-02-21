@@ -1,0 +1,72 @@
+[
+  {
+    "id": "spell_Izuna_haste",
+    "type": "SPELL",
+    "name": "伊树菜忍法帖",
+    "description": "伊树菜的攻击速度将会得到提升",
+    "valid_targets": [ "self" ],
+    "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"],
+    "effect": "attack",
+    "effect_str": "Izuna_speedup",
+    "shape": "blast",
+    "base_casting_time": 0,
+    "min_duration": 8000,
+    "max_duration": 8000,
+    "extra_effects": [{ "id": "spell_return_to_player", "hit_self": true }]
+  },
+  {
+    "type": "effect_type",
+    "id": "Izuna_speedup",
+    "name": ["伊树菜的忍术"],
+    "desc": ["伊树菜开始加速啦！"],
+    "rating": "good",
+    "max_duration": "2 minutes",
+    "enchantments":[{"values": [{"value": "MOVE_COST", "multiply": -0.3}, {"value": "ATTACK_SPEED", "multiply": -0.3}]}]
+  },
+  {
+        "type": "SPELL",
+        "name": "伊树菜替身玩偶",
+        "id": "spell_summon_foxDoll",
+        "description": "召唤一个吸引怪物的诱饵",
+        "valid_targets": ["ground", "self"],
+        "shape": "blast",
+        "min_range": 20,
+	    "max_range": 20,
+        "min_damage": 1,
+        "max_damage": 1,
+        "effect": "summon",
+        "effect_str": "mon_Pello",
+        "min_duration": 3000,
+        "max_duration": 3000,
+        "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"],
+        "extra_effects": [ {"id": "spell_Izuna_rePOS"}, {"id": "spell_Izuna_haste"}]
+  },
+      {
+        "id": "caster_spell_summon_foxDoll",
+        "type": "AMMO",
+        "symbol": ";",
+        "phase": "liquid",
+        "ammo_type": "NULL",
+        "color": "light_gray",
+        "name": {"str": "释放技能：伊树菜忍法帖"},
+        "description": "释放技能：伊树菜忍法帖!",
+        "drop_action":  {
+            "type": "cast_spell",
+            "spell_id": "spell_summon_foxDoll",
+            "no_fail": true,
+            "level": 0
+        },
+        "weight": "1 g",
+        "volume": "1 ml"
+    },
+    {
+    "type": "SPELL",
+    "name": "位置变更",
+    "description": "变更伊树菜与玩偶的位置",
+    "id": "spell_Izuna_rePOS",
+    "valid_targets": ["ally", "hostile"],
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT", "SWAP_POS"]
+    }
+]

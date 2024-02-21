@@ -10,5 +10,26 @@
                 "topic": "TALK_DONE"
             }
         ]
+    },
+    {
+        "id": "TALK_Izuna",
+        "type": "talk_topic",
+        "dynamic_line": "是的，主公。忍忍。",
+        "responses": [
+            {
+                "text": "[3 Cost] 伊树菜忍法帖(伊树菜攻速增加)",
+                "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "3" ] } },
+                "success": {
+                    "topic": "TALK_DONE",
+                    "effect": [
+                        { "u_set_talker": { "global_val": "player_id" } },
+                        "take_control",
+                        { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "3" ] },
+                        { "u_spawn_item": "caster_spell_summon_foxDoll","count": 1 }
+                    ]
+                },
+                "failure": { "topic": "TALK_NOEnoughCost" }
+            }
+        ]
     }
 ]
