@@ -80,24 +80,6 @@
         "effect": "attack"
     },
     {
-        "id": "Generator_Students",
-        "type": "AMMO",
-        "symbol": ";",
-        "phase": "liquid",
-        "ammo_type": "NULL",
-        "color": "light_gray",
-        "name": {"str": "学生档案"},
-        "description": "学生档案，激活招募随机学生",
-        "use_action": {
-            "type": "cast_spell",
-            "spell_id": "spell_recruit_students",
-            "no_fail": true,
-            "level": 0
-        },
-        "weight": "1 g",
-        "volume": "1 ml"
-    },
-    {
         "type": "enchantment",
         "id": "enchantment_Arona_recruiting",
         "condition": "ALWAYS",
@@ -122,5 +104,32 @@
             { "id": "spell_recruit_Yuuka" }
         ],
         "flags": [ "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "WONDER", "SILENT"]
+    },
+    {
+        "id": "eoc_recruit1",
+        "type": "effect_on_condition",
+        "recurrence": 1,
+        "condition": {
+            "and": [
+                { "not": { "u_has_effect": "effect_Arona_recruited" } },
+                { "u_has_effect": "effect_Arona_recruiting" }
+            ]
+        },
+        "effect": { "u_add_effect": "effect_Arona_recruited", "duration": 100 }
+    },
+    {
+        "id": "eoc_recruit2",
+        "type": "effect_on_condition",
+        "recurrence": 1,
+        "condition": {
+            "and": [
+                { "not": { "u_has_effect": "effect_Arona_recruiting" } },
+                { "u_has_effect": "effect_Arona_recruited" }
+            ]
+        },
+        "effect": [
+            { "u_cast_spell": { "id": "spell_recruit_students" } },
+            { "u_lose_effect": "effect_Arona_recruited" }
+        ]
     }
 ]
