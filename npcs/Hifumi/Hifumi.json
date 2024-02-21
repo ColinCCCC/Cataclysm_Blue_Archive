@@ -80,6 +80,17 @@
             { "item": "bandages", "count": 5 }
         ]
     },
+    
+    {
+	    "type": "mutation",
+        "id": "get_Hifumi",
+        "name": {"str": "获得日富美"},
+        "points": 0,
+        "description": "你已经获得了日富美",
+        "starting_trait": false,
+	    "purifiable": false,
+	    "player_display": false
+    },
     {
         "id": "Generator_Hifumi",
         "type": "AMMO",
@@ -115,12 +126,12 @@
         "type": "effect_on_condition",
         "condition": {
             "not": {
-                "u_has_var": "Hifumi_get", "type": "general", "context": "You've got Hifumi", "value": "yes"
+                "u_has_trait": "get_Hifumi"
             }
         },
         "effect": [
             {"u_spawn_item": "Generator_Hifumi","count": 1 },
-            {"u_add_var": "Hifumi_get", "type": "general", "context": "You've got Hifumi", "value": "yes" }
+            {"u_add_trait": "get_Hifumi"}
         ]
     }
 ]

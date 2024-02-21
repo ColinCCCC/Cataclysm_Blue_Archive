@@ -83,6 +83,17 @@
             { "item": "bandages", "count": 5 }
         ]
     },
+    
+    {
+	    "type": "mutation",
+        "id": "get_Yuuka",
+        "name": {"str": "获得优香"},
+        "points": 0,
+        "description": "你已经获得了优香",
+        "starting_trait": false,
+	    "purifiable": false,
+	    "player_display": false
+    },
     {
         "id": "Generator_Yuuka",
         "type": "AMMO",
@@ -118,12 +129,12 @@
         "type": "effect_on_condition",
         "condition": {
             "not": {
-                "u_has_var": "Yuuka_get", "type": "general", "context": "You've got Yuuka", "value": "yes"
+                "u_has_trait": "get_Yuuka"
             }
         },
         "effect": [
             {"u_spawn_item": "Generator_Yuuka", "count": 1 },
-            {"u_add_var": "Yuuka_get", "type": "general", "context": "You've got Yuuka", "value": "yes" }
+            {"u_add_trait": "get_Yuuka"}
         ]
     },
     {

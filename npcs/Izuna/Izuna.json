@@ -80,6 +80,17 @@
             { "item": "bandages", "count": 5 }
         ]
     },
+    
+    {
+	    "type": "mutation",
+        "id": "get_Izuna",
+        "name": {"str": "获得伊树菜"},
+        "points": 0,
+        "description": "你已经获得了伊树菜",
+        "starting_trait": false,
+	    "purifiable": false,
+	    "player_display": false
+    },
     {
         "id": "Generator_Izuna",
         "type": "AMMO",
@@ -115,12 +126,12 @@
         "type": "effect_on_condition",
         "condition": {
             "not": {
-                "u_has_var": "Izuna_get", "type": "general", "context": "You've got Izuna", "value": "yes"
+                "u_has_trait": "get_Izuna"
             }
         },
         "effect": [
             {"u_spawn_item": "Generator_Izuna","count": 1 },
-            {"u_add_var": "Izuna_get", "type": "general", "context": "You've got Izuna", "value": "yes" }
+            {"u_add_trait": "get_Izuna" }
         ]
     }
 ]

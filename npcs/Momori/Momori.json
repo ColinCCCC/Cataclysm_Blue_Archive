@@ -80,6 +80,17 @@
             { "item": "bandages", "count": 5 }
         ]
     },
+    
+    {
+	    "type": "mutation",
+        "id": "get_Momori",
+        "name": {"str": "获得桃井"},
+        "points": 0,
+        "description": "你已经获得了桃井",
+        "starting_trait": false,
+	    "purifiable": false,
+	    "player_display": false
+    },
     {
         "id": "Generator_Momori",
         "type": "AMMO",
@@ -115,12 +126,12 @@
         "type": "effect_on_condition",
         "condition": {
             "not": {
-                "u_has_var": "Momori_get", "type": "general", "context": "You've got Momori", "value": "yes"
+                "u_has_trait": "get_Momori"
             }
         },
         "effect": [
             {"u_spawn_item": "Generator_Momori","count": 1 },
-            {"u_add_var": "Momori_get", "type": "general", "context": "You've got Momori", "value": "yes" }
+            {"u_add_trait": "get_Momori"}
         ]
     }
 ]
