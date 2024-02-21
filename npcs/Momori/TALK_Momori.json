@@ -21,7 +21,12 @@
                 "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "3" ] } },
                 "success": {
                     "topic": "TALK_DONE",
-                    "effect": { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "3" ] }
+                    "effect": [
+                        { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "3" ] },
+                        { "u_set_talker": { "global_val": "player_id" } },
+                        "take_control",
+                        { "u_spawn_item": "caster_spell_Momori_cone_aoe","count": 1 }
+                    ]
                 },
                 "failure": { "topic": "TALK_NOEnoughCost" }
             }

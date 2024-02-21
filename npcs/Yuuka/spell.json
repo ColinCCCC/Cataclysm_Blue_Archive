@@ -82,7 +82,7 @@
             { "value": "ARMOR_BASH", "add": -40 },
             { "value": "ARMOR_BULLET", "add": -40 },
             { "value": "ARMOR_CUT", "add": -40 },
-            { "value": "ATTACK_SPEED", "multiply": 30 },
+            { "value": "ATTACK_SPEED", "multiply": -0.3 },
             { "value": "BONUS_DODGE", "add": 2 },
             { "value": "BONUS_BLOCK", "add": 5 }
         ]
