@@ -15,12 +15,11 @@
         "aggression": -99,
         "morale": 100,
         "special_attacks": [
-            [ "PARROT", 1 ],
-            [ "DISAPPEAR",  2000 ]
+            [ "PARROT", 1 ]
         ],
         "death_function": {
-          "message": "The %s falls over!",
-          "corpse_type": "NO_CORPSE"
+            "message": "The %s falls over!",
+            "corpse_type": "NO_CORPSE"
         },
         "harvest": "exempt",
         "revert_to_itype": "mannequin_decoy",
@@ -30,17 +29,17 @@
         "type": "SPELL",
         "name": "拜托了，佩洛洛大人!",
         "id": "spell_summon_Pello",
-        "description": "召唤一个吸引怪物的诱饵并对周围造成伤害",
+        "description": "召唤一个吸引怪物的诱饵并对周围3格内敌对目标造成伤害",
         "valid_targets": ["ground"],
         "shape": "blast",
-        "min_aoe": 3,
-        "max_aoe": 3,
         "min_range": 20,
 	    "max_range": 20,
         "min_damage": 1,
         "max_damage": 1,
         "effect": "summon",
         "effect_str": "mon_Pello",
+        "min_duration": 3000,
+        "max_duration": 3000,
         "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"],
         "extra_effects": [ { "id": "spell_summon_Pello_attack" } ]
     },
@@ -60,5 +59,23 @@
         "damage_type": "pure",
         "effect": "attack",
         "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"]
+    },
+    {
+        "id": "caster_spell_summon_Pello",
+        "type": "AMMO",
+        "symbol": ";",
+        "phase": "liquid",
+        "ammo_type": "NULL",
+        "color": "light_gray",
+        "name": {"str": "释放技能：拜托了，佩洛洛大人!"},
+        "description": "释放技能：拜托了，佩洛洛大人!",
+        "drop_action":  {
+            "type": "cast_spell",
+            "spell_id": "spell_summon_Pello",
+            "no_fail": true,
+            "level": 0
+        },
+        "weight": "1 g",
+        "volume": "1 ml"
     }
 ]

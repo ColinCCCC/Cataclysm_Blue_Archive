@@ -17,13 +17,13 @@
         "dynamic_line": "有什么需要帮忙吗？",
         "responses": [
             {
-                "text": "[6 Cost] 拜托了，佩洛洛大人!(召唤一个吸引怪物的诱饵并对周围造成伤害)",
+                "text": "[6 Cost] 拜托了，佩洛洛大人!(召唤一个吸引怪物的诱饵并对周围3格内敌对目标造成伤害)",
                 "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "6" ] } },
                 "success": {
                     "topic": "TALK_DONE",
                     "effect": [
                         { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "6" ] },
-                        { "npc_cast_spell": { "id": "spell_summon_Pello" } }
+                        { "u_spawn_item": "caster_spell_summon_Pello","count": 1 }
                     ]
                 },
                 "failure": { "topic": "TALK_NOEnoughCost" }
