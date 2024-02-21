@@ -22,9 +22,9 @@
                 "success": {
                     "topic": "TALK_DONE",
                     "effect": [
+                        { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "6" ] },
                         { "u_set_talker": { "global_val": "player_id" } },
                         "take_control",
-                        { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "6" ] },
                         { "u_spawn_item": "caster_spell_summon_Pello","count": 1 }
                     ]
                 },
