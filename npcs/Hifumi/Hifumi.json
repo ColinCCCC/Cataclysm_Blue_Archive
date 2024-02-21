@@ -79,60 +79,6 @@
         "entries": [
             { "item": "bandages", "count": 5 }
         ]
-    },
-    
-    {
-	    "type": "mutation",
-        "id": "get_Hifumi",
-        "name": {"str": "获得日富美"},
-        "points": 0,
-        "description": "你已经获得了日富美",
-        "starting_trait": false,
-	    "purifiable": false,
-	    "player_display": false
-    },
-    {
-        "id": "Generator_Hifumi",
-        "type": "AMMO",
-        "symbol": ";",
-        "phase": "liquid",
-        "ammo_type": "NULL",
-        "color": "light_gray",
-        "name": {"str": "学生档案-日富美"},
-        "description": "学生档案-日富美",
-        "drop_action": {
-           "type": "place_npc",
-           "npc_class_id": "npc_Hifumi",
-           "summon_msg": "日富美被招募了！",
-           "place_randomly": true,
-           "moves": 1
-        },
-        "weight": "1 g",
-        "volume": "1 ml"
-    },
-    {
-        "type": "SPELL",
-        "name": "招募学生",
-        "id": "spell_recruit_Hifumi",
-        "description": "招募日富美",
-        "valid_targets": ["self"],
-        "shape": "blast",
-        "effect": "effect_on_condition",
-        "effect_str": "filter_Hifumi",
-        "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"]
-    },
-    {
-        "id": "filter_Hifumi",
-        "type": "effect_on_condition",
-        "condition": {
-            "not": {
-                "u_has_trait": "get_Hifumi"
-            }
-        },
-        "effect": [
-            {"u_spawn_item": "Generator_Hifumi","count": 1 },
-            {"u_add_trait": "get_Hifumi"}
-        ]
     }
 ]
   

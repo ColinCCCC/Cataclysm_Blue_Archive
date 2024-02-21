@@ -1,0 +1,55 @@
+[
+    {
+	    "type": "mutation",
+        "id": "get_Izuna",
+        "name": {"str": "获得伊树菜"},
+        "points": 0,
+        "description": "你已经获得了伊树菜",
+        "starting_trait": false,
+	    "purifiable": false,
+	    "player_display": false
+    },
+    {
+        "id": "Generator_Izuna",
+        "type": "AMMO",
+        "symbol": ";",
+        "phase": "liquid",
+        "ammo_type": "NULL",
+        "color": "light_gray",
+        "name": {"str": "学生档案-伊树菜"},
+        "description": "学生档案-伊树菜",
+        "drop_action": {
+           "type": "place_npc",
+           "npc_class_id": "npc_Izuna",
+           "summon_msg": "伊树菜被招募了！",
+           "place_randomly": true,
+           "moves": 1
+        },
+        "weight": "1 g",
+        "volume": "1 ml"
+    },
+    {
+        "type": "SPELL",
+        "name": "招募学生",
+        "id": "spell_recruit_Izuna",
+        "description": "招募伊树菜",
+        "valid_targets": ["self"],
+        "shape": "blast",
+        "effect": "effect_on_condition",
+        "effect_str": "filter_Izuna",
+        "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"]
+    },
+    {
+        "id": "filter_Izuna",
+        "type": "effect_on_condition",
+        "condition": {
+            "not": {
+                "u_has_trait": "get_Izuna"
+            }
+        },
+        "effect": [
+            {"u_spawn_item": "Generator_Izuna","count": 1 },
+            {"u_add_trait": "get_Izuna" }
+        ]
+    }
+]

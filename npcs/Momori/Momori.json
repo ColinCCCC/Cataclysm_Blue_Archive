@@ -79,60 +79,6 @@
         "entries": [
             { "item": "bandages", "count": 5 }
         ]
-    },
-    
-    {
-	    "type": "mutation",
-        "id": "get_Momori",
-        "name": {"str": "获得桃井"},
-        "points": 0,
-        "description": "你已经获得了桃井",
-        "starting_trait": false,
-	    "purifiable": false,
-	    "player_display": false
-    },
-    {
-        "id": "Generator_Momori",
-        "type": "AMMO",
-        "symbol": ";",
-        "phase": "liquid",
-        "ammo_type": "NULL",
-        "color": "light_gray",
-        "name": {"str": "学生档案-桃井"},
-        "description": "学生档案-桃井",
-        "drop_action": {
-           "type": "place_npc",
-           "npc_class_id": "npc_Momori",
-           "summon_msg": "桃井被招募了！",
-           "place_randomly": true,
-           "moves": 1
-        },
-        "weight": "1 g",
-        "volume": "1 ml"
-    },
-    {
-        "type": "SPELL",
-        "name": "招募学生",
-        "id": "spell_recruit_Momori",
-        "description": "招募桃井",
-        "valid_targets": ["self"],
-        "shape": "blast",
-        "effect": "effect_on_condition",
-        "effect_str": "filter_Momori",
-        "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"]
-    },
-    {
-        "id": "filter_Momori",
-        "type": "effect_on_condition",
-        "condition": {
-            "not": {
-                "u_has_trait": "get_Momori"
-            }
-        },
-        "effect": [
-            {"u_spawn_item": "Generator_Momori","count": 1 },
-            {"u_add_trait": "get_Momori"}
-        ]
     }
 ]
   
