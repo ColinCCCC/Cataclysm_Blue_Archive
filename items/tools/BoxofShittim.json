@@ -55,7 +55,7 @@
         "name": [ "阿罗娜招募完毕" ],
         "rating": "good",
         "show_in_info": false,
-        "max_duration": "1 s"
+        "max_duration": "3 s"
     },
     {
         "type": "talk_topic",
