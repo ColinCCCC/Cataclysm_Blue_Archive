@@ -15,7 +15,27 @@
         "<acknowledged>": "<acknowledged_Yuuka>",
         "<danger_close_distance>": "敌人位置已确认。老师，指挥就拜托您了。",
         "<monster_warning_h>": "确认敌人位置。距离，最近方位，战力。计算完毕。",
+        "<let_me_pass>": "请让我过去。",
+        "<run_away>": "<run_away_Yuuka>",
+        "snip_lost_blood": "好疼！",
         "snip_bye": "<acknowledged_Yuuka>"
+    },
+    {
+        "type":"snippet",
+        "category":"<acknowledged_Yuuka>",
+        "text": [
+            "明智的选择。",
+            "哼嗯……果然老师考虑的很周到呢。"
+        ]
+    },
+    {
+        "type":"snippet",
+        "category":"<run_away_Yuuka>",
+        "text": [
+            "要走了。",
+            "变数，太多了……",
+            "进入隐蔽，请求掩护。"
+        ]
     },
     {
         "type": "npc_class",
@@ -28,7 +48,7 @@
         "bonus_int": { "rng": [ 1, 1 ] },
         "bonus_per": { "rng": [ 12, 12 ] },
         "skills": [
-            { "skill": "computer", "level": { "rng": [ 2, 2 ] } },
+            { "skill": "computer", "level": { "rng": [ 8, 8 ] } },
             { "skill": "driving", "level": { "rng": [ 2, 2 ] } },
             { "skill": "fabrication", "level": { "rng": [ 11, 11 ] } },
             { "skill": "firstaid", "level": { "rng": [ 7, 7 ] } },
@@ -82,14 +102,6 @@
         "subtype": "collection",
         "entries": [
             { "item": "bandages", "count": 5 }
-        ]
-    },
-    {
-        "type":"snippet",
-        "category":"<acknowledged_Yuuka>",
-        "text": [
-            "明智的选择。",
-            "哼嗯……果然老师考虑的很周到呢。"
         ]
     }
 ]
