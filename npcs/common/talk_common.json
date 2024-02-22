@@ -5,7 +5,8 @@
         "responses": [
             { "text": "桃井，我有些事情需要你做……", "condition": { "npc_has_trait": "Mutation_Momori" }, "topic": "TALK_Momori" },
             { "text": "日富美，我有些事情需要你做……", "condition": { "npc_has_trait": "Mutation_Hifumi" }, "topic": "TALK_Hifumi" },
-            { "text": "优香，我有些事情需要你做……", "condition": { "npc_has_trait": "Mutation_Yuuka" }, "topic": "TALK_Yuuka" }
+            { "text": "优香，我有些事情需要你做……", "condition": { "npc_has_trait": "Mutation_Yuuka" }, "topic": "TALK_Yuuka" },
+            { "text": "伊树菜，我有些事情需要你做……", "condition": { "npc_has_trait": "Mutation_Izuna" }, "topic": "TALK_Izuna" }
         ]
     },
     {
