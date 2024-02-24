@@ -14,6 +14,7 @@
         "faction": "kivotos_students",
         "<acknowledged>": "<acknowledged_Yuuka>",
         "<danger_close_distance>": "敌人位置已确认。老师，指挥就拜托您了。",
+        "<combat_noise_warning>": "敌人位置已确认。老师，指挥就拜托您了。",
         "<monster_warning_h>": "确认敌人位置。距离，最近方位，战力。计算完毕。",
         "<let_me_pass>": "请让我过去。",
         "<run_away>": "<run_away_Yuuka>",
