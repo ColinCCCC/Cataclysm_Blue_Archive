@@ -2,17 +2,56 @@
     {
         "id": "hdboardCrusader",
         "type": "vehicle_part",
-        "copy-from": "hdboard_abstract",
-        "name": { "str": "隔板-十字军巡洋坦克" },
-        "extend": { "flags": [ "OPAQUE", "FULL_BOARD" ] }
+        "copy-from": "hdboard",
+        "name": { "str": "隔板-十字军巡洋坦克" }
+    },
+    {
+        "id": "hdhalfboardCrusader",
+        "type": "vehicle_part",
+        "copy-from": "hdhalfboard",
+        "name": { "str": "半隔板-十字军巡洋坦克" }
+    },
+    {
+        "id": "hddoorCrusader",
+        "type": "vehicle_part",
+        "copy-from": "hddoor_opaque",
+        "name": { "str": "车门-十字军巡洋坦克" }
     },
     {
         "id": "hdroofCrusader",
         "type": "vehicle_part",
         "copy-from": "hdroof",
+        "location": "on_roof",
         "name": { "str": "顶盖-十字军巡洋坦克" },
         "variants": [
-            { "id": "horizontal", "label": "Horizontal", "symbols": "──│───│─", "symbols_broken": "#" }
+            { "id": "normal", "label": "normal", "symbols": "########", "symbols_broken": "#" },
+            { "id": "pleft", "label": "normal", "symbols": "########", "symbols_broken": "#" },
+            { "id": "pright", "label": "normal", "symbols": "########", "symbols_broken": "#" },
+            { "id": "nn", "label": "nn", "symbols": "########", "symbols_broken": "#" },
+            { "id": "nnw", "label": "nnw", "symbols": "########", "symbols_broken": "#" },
+            { "id": "nne", "label": "nne", "symbols": "########", "symbols_broken": "#" },
+            { "id": "nnww", "label": "nnww", "symbols": "########", "symbols_broken": "#" },
+            { "id": "nnee", "label": "nnee", "symbols": "########", "symbols_broken": "#" },
+            { "id": "n", "label": "n", "symbols": "########", "symbols_broken": "#" },
+            { "id": "nw", "label": "nw", "symbols": "########", "symbols_broken": "#" },
+            { "id": "ne", "label": "ne", "symbols": "########", "symbols_broken": "#" },
+            { "id": "nww", "label": "nww", "symbols": "########", "symbols_broken": "#" },
+            { "id": "nee", "label": "nee", "symbols": "########", "symbols_broken": "#" },
+            { "id": "o", "label": "o", "symbols": "########", "symbols_broken": "#" },
+            { "id": "w", "label": "w", "symbols": "########", "symbols_broken": "#" },
+            { "id": "e", "label": "e", "symbols": "########", "symbols_broken": "#" },
+            { "id": "ww", "label": "ww", "symbols": "########", "symbols_broken": "#" },
+            { "id": "ee", "label": "ee", "symbols": "########", "symbols_broken": "#" },
+            { "id": "s", "label": "s", "symbols": "########", "symbols_broken": "#" },
+            { "id": "sw", "label": "sw", "symbols": "########", "symbols_broken": "#" },
+            { "id": "se", "label": "se", "symbols": "########", "symbols_broken": "#" },
+            { "id": "sww", "label": "sww", "symbols": "########", "symbols_broken": "#" },
+            { "id": "see", "label": "see", "symbols": "########", "symbols_broken": "#" },
+            { "id": "ss", "label": "ss", "symbols": "########", "symbols_broken": "#" },
+            { "id": "ssw", "label": "ssw", "symbols": "########", "symbols_broken": "#" },
+            { "id": "sse", "label": "sse", "symbols": "########", "symbols_broken": "#" },
+            { "id": "ssww", "label": "ssww", "symbols": "########", "symbols_broken": "#" },
+            { "id": "ssee", "label": "ssee", "symbols": "########", "symbols_broken": "#" }
         ]
     }
 ]
