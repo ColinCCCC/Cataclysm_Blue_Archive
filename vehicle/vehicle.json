@@ -1,0 +1,23 @@
+[
+    {
+        "id": "tank_cruiser_MK4_crusader",
+        "type": "vehicle",
+        "name": "十字军巡洋坦克",
+        "items": [ { "y": -1, "x": 3, "chance": 2, "items": [ "id_military" ] } ],
+        "parts": [
+            { "x": 0, "y": 0, "parts": [ "hdframe#cross", "aisle#vertical", "hdroof" ] },
+            { "x": 1, "y": 0, "parts": [ "hdframe#cross", "seat", "seatbelt", "hdroof" ] },
+            { "x": -1, "y": 0, "parts": [ "hdframe#cross", "seat", "seatbelt", "hdroof" ] },
+            { "x": 2, "y": 0, "parts": [ "hdframe#cross", "plating_military", "hdboardCrusader#hatch_wheel_right", "hdroof", "wheel_mount_heavy", "wheel_armor" ] },
+            { "x": -2, "y": 0, "parts": [ "hdframe#cross", "plating_military", "hdboardCrusader#hatch_wheel_left", "hdroof", "wheel_mount_heavy", "wheel_armor" ] },
+            { "x": -0, "y": -1, "parts": [ "hdframe#cross", "plating_military", "hdboardCrusader#horizontal", "hdroof", "wheel_mount_heavy", "wheel_armor" ] },
+            
+            { "x": 3, "y": 1, "parts": [ { "part": "tank_small", "fuel": "jp8" }, "cam_control" ] },
+            { "x": 3, "y": 1, "parts": [ "turret_mount" ] },
+            { "x": 3, "y": 1, "parts": [ { "part": "turret_mark19", "ammo": 60, "ammo_types": [ "40x53mm_m430a1" ], "ammo_qty": [ 1, 25 ] } ] },
+            { "x": 3, "y": 2, "parts": [ "plating_military", "wheel_mount_heavy_steerable" ] },
+            { "x": 3, "y": 2, "parts": [ "wheel_armor", "omnicam" ] },
+            { "x": -3, "y": 2, "parts": [ { "part": "external_tank", "fuel": "jp8" } ] }
+        ]
+    }
+]

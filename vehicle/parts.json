@@ -1,0 +1,18 @@
+[
+    {
+        "id": "hdboardCrusader",
+        "type": "vehicle_part",
+        "copy-from": "hdboard_abstract",
+        "name": { "str": "隔板-十字军巡洋坦克" },
+        "extend": { "flags": [ "OPAQUE", "FULL_BOARD" ] }
+    },
+    {
+        "id": "hdroofCrusader",
+        "type": "vehicle_part",
+        "copy-from": "hdroof",
+        "name": { "str": "顶盖-十字军巡洋坦克" },
+        "variants": [
+            { "id": "horizontal", "label": "Horizontal", "symbols": "──│───│─", "symbols_broken": "#" }
+        ]
+    }
+]
