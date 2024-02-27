@@ -3,16 +3,16 @@
         "id": "tank_cruiser_MK4_crusader",
         "type": "vehicle",
         "name": "十字军巡洋坦克",
-        "items": [ { "y": -1, "x": 3, "chance": 2, "items": [ "id_military" ] } ],
+        "items": [ { "y": 0, "x": 0, "chance": 2, "items": [ "id_military" ] } ],
         "parts": [
-            { "y": 0, "x": 0, "parts": [ "hdframe#cross", "aisle#vertical", "hdroofCrusader#nn" ] },
+            { "y": 0, "x": 0, "parts": [ "hdframe#cross", "box", "hdroofCrusader#nn", "diesel_engine_v12" ] },
             { "y": -1, "x": 0, "parts": [ "hdframe#cross", "seat", "seatbelt", "hdroofCrusader#nnw" ] },
-            { "y": 1, "x": 0, "parts": [ "hdframe#cross", "seat", "seatbelt", "hdroofCrusader#nne" ] },
+            { "y": 1, "x": 0, "parts": [ "hdframe#cross", "seat", "seatbelt", "hdroofCrusader#nne", "controls" ] },
             { "y": -2, "x": 0, "parts": [ "hdframe#cross", "plating_military", "hdboardCrusader#hatch_wheel_left", "hdroofCrusader#nnww", "wheel_mount_heavy", "wheel_armor" ] },
             { "y": 2, "x": 0, "parts": [ "hdframe#cross", "plating_military", "hdboardCrusader#hatch_wheel_right", "hdroofCrusader#nnee", "wheel_mount_heavy", "wheel_armor" ] },
             { "y": 0, "x": 1, "parts": [ "hdframe#cross", "plating_military", "hdboardCrusader#horizontal", "hdroof", "wheel_mount_heavy", "wheel_armor" ] },
             { "y": -1, "x": 1, "parts": [ "hdframe#cross", "plating_military", "hdboardCrusader#cover_left", "hdroof" ] },
-            { "y": 1, "x": 1, "parts": [ "hdframe#cross", "plating_military", "hdboardCrusader#cover_right", "hdroof" ] },
+            { "y": 1, "x": 1, "parts": [ "hdframe#cross", "plating_military", "windowCrusader#cover_right", "hdroof" ] },
             { "y": -2, "x": 1, "parts": [ "hdframe#cross", "plating_military", "hdboardCrusader#nw", "hdroof", "wheel_mount_heavy_steerable", "wheel_armor" ] },
             { "y": 2, "x": 1, "parts": [ "hdframe#cross", "plating_military", "hdboardCrusader#ne", "hdroof", "wheel_mount_heavy_steerable", "wheel_armor" ] },
             { "y": 0, "x": 2, "parts": [ "hdframe#cross", "plating_military", "hdhalfboardCrusader#horizontal" ] },
@@ -20,7 +20,7 @@
             { "y": 1, "x": 2, "parts": [ "hdframe#cross", "plating_military", "hdhalfboardCrusader#cover_right" ] },
             { "y": -2, "x": 2, "parts": [ "hdframe#cross", "plating_military", "hdhalfboardCrusader#nw" ] },
             { "y": 2, "x": 2, "parts": [ "hdframe#cross", "plating_military", "hdhalfboardCrusader#ne" ] },
-            { "y": 0, "x": 3, "parts": [ "hdframe#cross", "plating_military", "hdhalfboardCrusader#ne" ] },
+            { "y": 0, "x": 3, "parts": [ "barrelCrusader#horizontal", "plating_military" ] },
             { "y": 0, "x": -1, "parts": [ "hdframe#cross", "aisle#vertical", "hdroofCrusader#n" ] },
             { "y": -1, "x": -1, "parts": [ "hdframe#cross", "aisle#vertical", "hdroofCrusader#nw" ] },
             { "y": 1, "x": -1, "parts": [ "hdframe#cross", "aisle#vertical", "hdroofCrusader#ne" ] },
@@ -55,7 +55,9 @@
             { "y": -1, "x": -7, "parts": [ "hdframe#cross", "plating_military", "hddoorCrusader#rear" ] },
             { "y": 1, "x": -7, "parts": [ "hdframe#cross", "plating_military", "hddoorCrusader#rear" ] },
             { "y": -2, "x": -7, "parts": [ "hdframe#cross", "plating_military", "hdhalfboardCrusader#sw" ] },
-            { "y": 2, "x": -7, "parts": [ "hdframe#cross", "plating_military", "hdhalfboardCrusader#se" ] }
+            { "y": 2, "x": -7, "parts": [ "hdframe#cross", "plating_military", "hdhalfboardCrusader#se" ] },
+            { "y": -1, "x": -8, "parts": [ { "part": "external_tank", "fuel": "jp8" } ] },
+            { "y": 1, "x": -8, "parts": [ { "part": "external_tank", "fuel": "jp8" } ] }
         ],
         "//": [ { "x": -3, "y": 2, "parts": [ { "part": "external_tank", "fuel": "jp8" } ] } ]
     }

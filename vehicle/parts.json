@@ -6,6 +6,21 @@
         "name": { "str": "隔板-十字军巡洋坦克" }
     },
     {
+        "id": "windowCrusader",
+        "type": "vehicle_part",
+        "copy-from": "hdboard",
+        "name": { "str": "观察窗-十字军巡洋坦克" },
+        "extend": { "flags": [ "WINDOW", "WINDSHIELD"] }
+    },
+    {
+        "id": "barrelCrusader",
+        "type": "vehicle_part",
+        "copy-from": "hdhalfboard",
+        "location": "structure",
+        "name": { "str": "炮管-十字军巡洋坦克" },
+        "flags": [ "WINDOW", "WINDSHIELD" ]
+    },
+    {
         "id": "hdhalfboardCrusader",
         "type": "vehicle_part",
         "copy-from": "hdhalfboard",

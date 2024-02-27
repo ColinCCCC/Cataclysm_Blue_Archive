@@ -23,6 +23,10 @@
           { "id": "vp_hdboardCrusader_vertical_right", "fg":93, "rotates": true, "multitile": true },
           { "id": "vp_hdboardCrusader_vertical_2_left", "fg": 70, "rotates": true, "multitile": true },
           { "id": "vp_hdboardCrusader_vertical_2_right", "fg":74, "rotates": true, "multitile": true },
+
+          { "id": "vp_windowCrusader_cover_right", "fg":13, "rotates": true, "multitile": true },
+
+          { "id": "vp_barrelCrusader_horizontal", "fg":3, "rotates": true, "multitile": true },
           
           { "id": "vp_hdhalfboardCrusader_horizontal", "fg": 2, "rotates": true, "multitile": true },
           { "id": "vp_hdhalfboardCrusader_horizontal_rear", "fg": 82, "rotates": true, "multitile": true },
