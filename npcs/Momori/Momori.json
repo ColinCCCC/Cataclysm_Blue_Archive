@@ -70,7 +70,7 @@
         "id": "NC_Momori_weapon",
         "type": "item_group",
         "subtype": "collection",
-        "entries": [ { "item": "pointy_stick" } ]
+        "entries": [ { "item": "hk_g3a3" } ]
     },
     {
         "id": "NC_Momori_carry",

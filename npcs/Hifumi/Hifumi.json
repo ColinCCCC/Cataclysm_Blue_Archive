@@ -11,7 +11,50 @@
         "attitude": 1,
         "mission": 7,
         "chat": "TALK_Hifumi_recruit",
-        "faction": "kivotos_students"
+        "faction": "kivotos_students",
+        "<acknowledged>": "<acknowledged_Hifumi>",
+        "<danger_close_distance>": "一起的话就没问题的！大家一起努力吧！",
+        "<combat_noise_warning>": "到底是什么声音呢？",
+        "<monster_warning_h>": "<monster_warning_Hifumi>",
+        "<let_me_pass>": "请让我过去。",
+        "<run_away>": "<run_away_Hifumi>",
+        "snip_lost_blood": "<blood_lost_Hifumi>",
+        "snip_bye": "请交给我吧！"
+    },
+    {
+        "type": "snippet",
+        "category": "<acknowledged_Hifumi>",
+        "text": [
+            "感觉到向前迈进了一步！",
+            "这全部都是老师的功劳呢！"
+        ],
+    },
+    {
+        "type": "snippet",
+        "category": "<blood_lost_Hifumi>",
+        "text": [
+            "我...我不害怕...不害怕",
+            "呀,痛..."
+        ]
+    },
+    {
+        "type":"snippet",
+        "category":"<monster_warning_Hifumi>",
+        "text": [
+            "呜哇，动起来了诶！",
+            "轮到佩洛洛大人上场了",
+            "佩洛洛大人，拜托了！",
+            "啊哈哈，他奶奶的"
+            "我...我会尽力做到最好！"
+        ]
+    },
+    {
+        "type":"snippet",
+        "category":"<run_away_Hifumi>",
+        "text": [
+            "对...对不起",
+            "对不起，是我能力不够..."
+        ]
     },
     {
         "type": "npc_class",
