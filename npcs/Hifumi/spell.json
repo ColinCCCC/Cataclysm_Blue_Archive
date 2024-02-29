@@ -59,7 +59,7 @@
         "damage_type": "pure",
         "effect": "attack",
         "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"],
-        "extra_effects": [ { "id": "spell_return_to_player", "hit_self": true } ]
+        "extra_effects": [ { "id": "spell_return_to_player", "hit_self": true }]
     },
     {
         "id": "caster_spell_summon_Pello",

@@ -25,7 +25,8 @@
                         { "u_set_talker": { "global_val": "player_id" } },
                         "take_control",
                         { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "3" ] },
-                        { "u_spawn_item": "caster_spell_summon_foxDoll","count": 1 }
+                        { "u_spawn_item": "caster_spell_summon_foxDoll","count": 1 },
+                        { "queue_eocs": "EOC_return_to_player", "time_in_future": 5 }
                     ]
                 },
                 "failure": { "topic": "TALK_NOEnoughCost" }
