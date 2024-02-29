@@ -1,0 +1,36 @@
+[
+    {
+	    "type": "mutation",
+        "id": "get_Common",
+        "name": {"str": "获得-模板"},
+        "points": 0,
+        "description": "你已经获得了学生",
+        "starting_trait": false,
+	    "purifiable": false,
+	    "player_display": false
+    },
+    {
+        "id": "Generator_Common",
+        "type": "AMMO",
+        "symbol": ";",
+        "phase": "liquid",
+        "ammo_type": "NULL",
+        "color": "light_gray",
+        "name": {"str": "学生档案-模板"},
+        "description": "学生档案-模板",
+        "weight": "1 g",
+        "volume": "1 ml"
+    },
+    {
+        "id": "Fragments_Common",
+        "type": "AMMO",
+        "symbol": ";",
+        "phase": "solid",
+        "ammo_type": "NULL",
+        "color": "light_gray",
+        "name": {"str": "神名文字碎片-模板"},
+        "description": "神名文字碎片-模板",
+        "weight": "1 g",
+        "volume": "1 ml"
+    }
+]
