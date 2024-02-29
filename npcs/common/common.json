@@ -86,27 +86,6 @@
         "intermittent_activation": { "effects": [ { "frequency": "2 s", "spell_effects": [ { "id": "spell_recruit_students" } ] } ] }
     },
     {
-        "type": "SPELL",
-        "name": "招募学生",
-        "id": "spell_recruit_students",
-        "description": "招募学生",
-        "valid_targets": ["self"],
-        "shape": "blast",
-        "effect": "recover_energy",
-        "base_casting_time": 0, 
-        "effect_str": "STAMINA",
-        "min_damage": 1,
-        "max_damage": 1,
-        "extra_effects": [
-            { "id": "spell_recruit_Izuna" },
-            { "id": "spell_recruit_Momori" },
-            { "id": "spell_recruit_Hifumi" },
-            { "id": "spell_recruit_Yuuka" }
-        ],
-        "flags": [ "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "WONDER", "SILENT"]
-    },
-
-    {
         "id": "eoc_recruit",
         "type": "effect_on_condition",
         "effect": [

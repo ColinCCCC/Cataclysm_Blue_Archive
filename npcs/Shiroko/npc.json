@@ -1,0 +1,84 @@
+[
+    {
+        "type": "npc",
+        "id": "npc_Shiroko",
+        "name_unique": "白子",
+        "name_suffix": "",
+        "age": 15,
+        "height": 155,
+        "gender": "female",
+        "class": "NC_Shiroko",
+        "attitude": 1,
+        "mission": 7,
+        "chat": "TALK_Shiroko_recruit",
+        "faction": "kivotos_students"
+    },
+    {
+        "type": "npc_class",
+        "id": "NC_Shiroko",
+        "name": "白子",
+        "job_description": "白子",
+        "common": false,
+        "bonus_str": { "rng": [ 6, 6 ] },
+        "bonus_dex": { "rng": [ 7, 7 ] },
+        "bonus_int": { "rng": [ 1, 1 ] },
+        "bonus_per": { "rng": [ 12, 12 ] },
+        "skills": [
+            { "skill": "computer", "level": { "rng": [ 2, 2 ] } },
+            { "skill": "driving", "level": { "rng": [ 2, 2 ] } },
+            { "skill": "fabrication", "level": { "rng": [ 11, 11 ] } },
+            { "skill": "firstaid", "level": { "rng": [ 7, 7 ] } },
+            { "skill": "survival", "level": { "rng": [ 2, 2 ] } },
+            { "skill": "swimming", "level": { "rng": [ 2, 2 ] } },
+            { "skill": "archery", "level": { "rng": [ 5, 5 ] } },
+            { "skill": "bashing", "level": { "rng": [ 5, 5 ] } },
+            { "skill": "cutting", "level": { "rng": [ 8, 8 ] } },
+            { "skill": "dodge", "level": { "rng": [ 7, 7 ] } },
+            { "skill": "melee", "level": { "rng": [ 7, 7 ] } },
+            { "skill": "stabbing", "level": { "rng": [ 7, 7 ] } },
+            { "skill": "throw", "level": { "rng": [ 7, 7 ] } },
+            { "skill": "rifle", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "pistol", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "gun", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "launcher", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "shotgun", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "smg", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "unarmed", "level": { "rng": [ 7, 7 ] } }
+        ],
+        "worn_override": "NC_Shiroko_worn",
+        "carry_override": "NC_Shiroko_carry",
+        "weapon_override": "NC_Shiroko_weapon",
+        "traits": [
+            [ "Mutation_Shiroko", 100 ],
+            [ "Mutation_Kivotos_Halo", 100 ],
+            [ "NIGHTVISION", 100 ],
+            [ "GOODHEARING", 100 ],
+            [ "SKIN_LIGHT", 100 ]
+        ]
+    },
+    {
+        "id": "NC_Shiroko_worn",
+        "type": "item_group",
+        "subtype": "collection",
+        "entries": [
+            { "item": "panties" },
+            { "item": "bra" },
+            { "item": "Armor_Shiroko" }
+        ]
+    },
+    {
+        "id": "NC_Shiroko_weapon",
+        "type": "item_group",
+        "subtype": "collection",
+        "entries": [ { "item": "type_100" } ]
+    },
+    {
+        "id": "NC_Shiroko_carry",
+        "type": "item_group",
+        "subtype": "collection",
+        "entries": [
+            { "item": "bandages", "count": 5 }
+        ]
+    }
+]
+  
