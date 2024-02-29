@@ -54,15 +54,6 @@
     {
         "id": "filter_Yuuka",
         "type": "effect_on_condition",
-        "condition": { "not": { "u_has_trait": "get_Yuuka" } },
-        "effect": [
-            {"u_spawn_item": "Generator_Yuuka", "count": 1 },
-            {"u_add_trait": "get_Yuuka"}
-        ]
-    },
-    {
-        "id": "filter_Yuuka",
-        "type": "effect_on_condition",
         "effect": [
             {
                 "if": { "not": { "u_has_trait": "get_Yuuka" } },

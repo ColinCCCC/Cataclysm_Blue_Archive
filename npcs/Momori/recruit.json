@@ -54,19 +54,6 @@
     {
         "id": "filter_Momori",
         "type": "effect_on_condition",
-        "condition": {
-            "not": {
-                "u_has_trait": "get_Momori"
-            }
-        },
-        "effect": [
-            {"u_spawn_item": "Generator_Momori","count": 1 },
-            {"u_add_trait": "get_Momori"}
-        ]
-    },
-    {
-        "id": "filter_Momori",
-        "type": "effect_on_condition",
         "effect": [
             {
                 "if": { "not": { "u_has_trait": "get_Momori" } },
