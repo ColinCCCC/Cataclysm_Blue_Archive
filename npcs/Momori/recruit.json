@@ -29,6 +29,18 @@
         "volume": "1 ml"
     },
     {
+        "id": "Fragments_Momori",
+        "type": "AMMO",
+        "symbol": ";",
+        "phase": "solid",
+        "ammo_type": "NULL",
+        "color": "light_gray",
+        "name": {"str": "神名文字碎片-桃井"},
+        "description": "神名文字碎片-桃井",
+        "weight": "1 g",
+        "volume": "1 ml"
+    },
+    {
         "type": "SPELL",
         "name": "招募学生",
         "id": "spell_recruit_Momori",
@@ -50,6 +62,20 @@
         "effect": [
             {"u_spawn_item": "Generator_Momori","count": 1 },
             {"u_add_trait": "get_Momori"}
+        ]
+    },
+    {
+        "id": "filter_Momori",
+        "type": "effect_on_condition",
+        "effect": [
+            {
+                "if": { "not": { "u_has_trait": "get_Momori" } },
+                "then": [
+                    {"u_spawn_item": "Generator_Momori","count": 1 },
+                    {"u_add_trait": "get_Momori" }
+                ],
+                "else": {"u_spawn_item": "Fragments_Momori","count": 10 }
+            }
         ]
     }
 ]
