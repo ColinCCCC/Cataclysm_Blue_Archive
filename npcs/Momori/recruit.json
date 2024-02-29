@@ -2,20 +2,14 @@
     {
 	    "type": "mutation",
         "id": "get_Momori",
+        "copy-from": "mutation_get_Common",
         "name": {"str": "获得桃井"},
-        "points": 0,
-        "description": "你已经获得了桃井",
-        "starting_trait": false,
-	    "purifiable": false,
-	    "player_display": false
+        "description": "你已经获得了桃井"
     },
     {
         "id": "Generator_Momori",
         "type": "AMMO",
-        "symbol": ";",
-        "phase": "liquid",
-        "ammo_type": "NULL",
-        "color": "light_gray",
+        "copy-from": "Generator_Common",
         "name": {"str": "学生档案-桃井"},
         "description": "学生档案-桃井",
         "drop_action": {
@@ -24,21 +18,14 @@
            "summon_msg": "桃井被招募了！",
            "place_randomly": true,
            "moves": 1
-        },
-        "weight": "1 g",
-        "volume": "1 ml"
+        }
     },
     {
         "id": "Fragments_Momori",
         "type": "AMMO",
-        "symbol": ";",
-        "phase": "solid",
-        "ammo_type": "NULL",
-        "color": "light_gray",
+        "copy-from": "Fragments_Common",
         "name": {"str": "神名文字碎片-桃井"},
-        "description": "神名文字碎片-桃井",
-        "weight": "1 g",
-        "volume": "1 ml"
+        "description": "神名文字碎片-桃井"
     },
     {
         "type": "SPELL",

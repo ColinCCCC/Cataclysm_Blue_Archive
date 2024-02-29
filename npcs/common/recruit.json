@@ -1,7 +1,7 @@
 [
     {
 	    "type": "mutation",
-        "id": "get_Common",
+        "id": "mutation_get_Common",
         "name": {"str": "获得-模板"},
         "points": 0,
         "description": "你已经获得了学生",

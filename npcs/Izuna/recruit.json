@@ -2,20 +2,14 @@
     {
 	    "type": "mutation",
         "id": "get_Izuna",
+        "copy-from": "mutation_get_Common",
         "name": {"str": "获得伊树菜"},
-        "points": 0,
-        "description": "你已经获得了伊树菜",
-        "starting_trait": false,
-	    "purifiable": false,
-	    "player_display": false
+        "description": "你已经获得了伊树菜"
     },
     {
         "id": "Generator_Izuna",
         "type": "AMMO",
-        "symbol": ";",
-        "phase": "liquid",
-        "ammo_type": "NULL",
-        "color": "light_gray",
+        "copy-from": "Generator_Common",
         "name": {"str": "学生档案-伊树菜"},
         "description": "学生档案-伊树菜",
         "drop_action": {
@@ -24,21 +18,14 @@
            "summon_msg": "伊树菜被招募了！",
            "place_randomly": true,
            "moves": 1
-        },
-        "weight": "1 g",
-        "volume": "1 ml"
+        }
     },
     {
         "id": "Fragments_Izuna",
         "type": "AMMO",
-        "symbol": ";",
-        "phase": "solid",
-        "ammo_type": "NULL",
-        "color": "light_gray",
+        "copy-from": "Fragments_Common",
         "name": {"str": "神名文字碎片-伊树菜"},
-        "description": "神名文字碎片-伊树菜",
-        "weight": "1 g",
-        "volume": "1 ml"
+        "description": "神名文字碎片-伊树菜"
     },
     {
         "type": "SPELL",
