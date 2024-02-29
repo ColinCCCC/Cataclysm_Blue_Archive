@@ -4,7 +4,7 @@
   "reload_noise_volume": 10,
   "handling": 20,
   "name": {
-    "str": "l85a2 automatic rifle"
+    "str": "L85A2自动步枪"
   },
   "symbol": "(",
   "color": "dark_gray",
@@ -126,7 +126,7 @@
   "reload_noise_volume": 10,
   "handling": 20,
   "name": {
-    "str": "H&K G3A3 AR"
+    "str": "H&K G3A3自动步枪"
   },
   "symbol": "(",
   "color": "dark_gray",
@@ -242,5 +242,103 @@
   "melee_damage": {
     "bash": 12
   }
+},
+{
+  "id": "type_100",
+  "type": "GUN",
+  "reload_noise_volume": 10,
+  "name": { "str": "百式冲锋枪" },
+  "looks_like": "hk_mp5",
+  "description": "日本陆军在第二次世界大战中唯一量产的冲锋枪，日军中的制式名称是「机关短铳」，有時被误写成「短机关铳」。使用特制的8mm口径子弹。",
+  "weight": "3380 g",
+  "volume": "3932 ml",
+  "longest_side": "903 mm",
+  "barrel_length": "285 mm",
+  "price": 160000,
+  "price_postapoc": 3500,
+  "to_hit": -2,
+  "material": [ "steel", "plastic" ],
+  "symbol": "(",
+  "color": "dark_gray",
+  "ammo": [ "8x40mm" ],
+  "skill": "smg",
+  "ranged_damage": { "damage_type": "bullet", "amount": 1 },
+  "range": 4,
+  "dispersion": 240,
+  "durability": 8,
+  "min_cycle_recoil": 450,
+  "blackpowder_tolerance": 32,
+  "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "3 rd.", 3 ], [ "AUTO", "auto", 4 ] ],
+  "valid_mod_locations": [
+    [ "barrel", 1 ],
+    [ "bore", 1 ],
+    [ "brass catcher", 1 ],
+    [ "grip", 1 ],
+    [ "mechanism", 4 ],
+    [ "muzzle", 1 ],
+    [ "rail mount", 1 ],
+    [ "sights mount", 1 ],
+    [ "underbarrel mount", 1 ],
+    [ "sling", 1 ],
+    [ "stock", 1 ],
+    [ "stock accessory", 1 ]
+  ],
+  "faults": [ "fault_gun_blackpowder", "fault_gun_dirt", "fault_gun_chamber_spent" ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "item_restriction": [ "8x40_25_mag", "8x40_10_mag" ]
+    }
+  ],
+  "melee_damage": { "bash": 10 }
+},
+{
+  "id": "sig_mpx",
+  "type": "GUN",
+  "reload_noise_volume": 10,
+  "name": { "str": "SIG-MPX冲锋枪" },
+  "looks_like": "hk_mp5",
+  "description": "SIG-MPX是西格&绍尔美国分公司的新款产品，具有多个可提供军队和执法机构使用的选射式配置，是MP5的有力竞争对手，使用9mm子弹。",
+  "weight": "2000 g",
+  "volume": "3112 ml",
+  "longest_side": "409 mm",
+  "barrel_length": "114 mm",
+  "price": 160000,
+  "price_postapoc": 3500,
+  "to_hit": -2,
+  "material": [ "steel", "plastic" ],
+  "symbol": "(",
+  "color": "dark_gray",
+  "ammo": [ "9mm" ],
+  "skill": "smg",
+  "ranged_damage": { "damage_type": "bullet", "amount": 1 },
+  "range": 4,
+  "dispersion": 230,
+  "durability": 8,
+  "min_cycle_recoil": 450,
+  "blackpowder_tolerance": 32,
+  "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "3 rd.", 3 ], [ "AUTO", "auto", 4 ] ],
+  "valid_mod_locations": [
+    [ "barrel", 1 ],
+    [ "bore", 1 ],
+    [ "brass catcher", 1 ],
+    [ "grip", 1 ],
+    [ "mechanism", 4 ],
+    [ "muzzle", 1 ],
+    [ "rail mount", 1 ],
+    [ "sights mount", 1 ],
+    [ "underbarrel mount", 1 ],
+    [ "sling", 1 ],
+    [ "stock", 1 ],
+    [ "stock accessory", 1 ]
+  ],
+  "faults": [ "fault_gun_blackpowder", "fault_gun_dirt", "fault_gun_chamber_spent" ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "item_restriction": [  "mp5mag", "mp5mag_10rd", "mp5mag_15rd", "mp5mag_20rd"  ]
+    }
+  ],
+  "melee_damage": { "bash": 10 }
 }
 ]

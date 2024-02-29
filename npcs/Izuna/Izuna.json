@@ -70,7 +70,7 @@
         "id": "NC_Izuna_weapon",
         "type": "item_group",
         "subtype": "collection",
-        "entries": [ { "item": "pointy_stick" } ]
+        "entries": [ { "item": "type_100" } ]
     },
     {
         "id": "NC_Izuna_carry",

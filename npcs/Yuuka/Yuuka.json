@@ -95,7 +95,7 @@
         "id": "NC_Yuuka_weapon",
         "type": "item_group",
         "subtype": "collection",
-        "entries": [ { "item": "pointy_stick" } ]
+        "entries": [ { "item": "sig_mpx" } ]
     },
     {
         "id": "NC_Yuuka_carry",
