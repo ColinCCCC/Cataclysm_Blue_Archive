@@ -1,0 +1,29 @@
+[
+    {
+        "type": "profession",
+        "id": "prof_kivotos_sensei",
+        "name": "夏莱的老师",
+        "description": "夏莱的老师",
+        "points": 0,
+        "items": {
+            "both": {
+              "entries": [
+                { "item": "dress_shirt" },
+                { "item": "blazer" },
+                { "item": "socks" },
+                { "item": "dress_shoes" },
+                { "item": "tie_skinny" },
+                { "item": "tieclip" },
+                { "item": "poetry_book" },
+                { "item": "wristwatch" },
+                { "group": "charged_smart_phone" },
+                { "item": "BoxoffShittim" },
+                { "item": "pants", "variant": "pants_black" }
+              ]
+            },
+            "male": { "entries": [ { "item": "briefs" } ] },
+            "female": { "entries": [ { "item": "bra" }, { "item": "panties" } ] }
+        },
+        "traits": [ "Mutation_Sensei" ]
+    }
+]
