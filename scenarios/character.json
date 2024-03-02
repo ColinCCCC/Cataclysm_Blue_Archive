@@ -45,17 +45,37 @@
         "condition": { "u_has_trait": "Mutation_Sensei" },
         "effect": [
             {
-                "run_eoc_selector": [ "EOC_sensei_start", "EOC_sensei_start", "EOC_sensei_start", "EOC_sensei_start" ],
-                "names": [ "Option 1", "Option 2", "Option 3", "Option 4" ],
-                "keys": [ "a", "b", "1", "2" ],
-                "title": "Choose your destiny",
+                "run_eoc_selector": [ "EOC_sensei_start_2", "EOC_sensei_start_2" ],
+                "names": [ "总算来到个相对安全的地方……", "传送到这里已经一个多小时了" ],
+                "keys": [ "a", "b" ],
+                "title": "到达避难所",
                 "descriptions": [
-                  "Gives you something good",
-                  "Gives you something bad",
-                  "Gives you twice as good",
-                  "Gives you twice as bad, but condition is not met, so you can't pick it up"
+                    "",
+                    ""
                 ]
             }
+        ]
+    },
+    {
+        "type": "effect_on_condition",
+        "id": "EOC_sensei_start_2",
+        "effect": [
+            {
+                "run_eoc_selector": [ "EOC_sensei_start_3" ],
+                "names": [ "……？" ],
+                "keys": [ "a" ],
+                "title": "（什亭之匣点亮了）",
+                "descriptions": [
+                    ""
+                ]
+            }
+        ]
+    },
+    {
+        "type": "effect_on_condition",
+        "id": "EOC_sensei_start_3",
+        "effect": [
+            { "open_dialogue": { "topic": "TALK_BlueArchive_Start" } }
         ]
     }
 ]
