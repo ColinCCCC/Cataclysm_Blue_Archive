@@ -25,5 +25,37 @@
             "female": { "entries": [ { "item": "bra" }, { "item": "panties" } ] }
         },
         "traits": [ "Mutation_Sensei" ]
+    },
+    {
+        "type": "scenario",
+        "id": "scenario_kivotos_sensei",
+        "name": "夏莱的老师",
+        "points": 0,
+        "professions": [ "prof_kivotos_sensei" ],
+        "description": "",
+        "allowed_locs": [ "sloc_shelter_a", "sloc_shelter_b", "sloc_shelter_c" ],
+        "start_name": "避难所",
+        "flags": [ "CITY_START" ]
+    },
+    {
+        "type": "effect_on_condition",
+        "id": "EOC_sensei_start",
+        "eoc_type": "EVENT",
+        "required_event": "game_begin",
+        "condition": { "u_has_trait": "Mutation_Sensei" },
+        "effect": [
+            {
+                "run_eoc_selector": [ "EOC_sensei_start", "EOC_sensei_start", "EOC_sensei_start", "EOC_sensei_start" ],
+                "names": [ "Option 1", "Option 2", "Option 3", "Option 4" ],
+                "keys": [ "a", "b", "1", "2" ],
+                "title": "Choose your destiny",
+                "descriptions": [
+                  "Gives you something good",
+                  "Gives you something bad",
+                  "Gives you twice as good",
+                  "Gives you twice as bad, but condition is not met, so you can't pick it up"
+                ]
+            }
+        ]
     }
 ]
