@@ -1,4 +1,8 @@
-with open('./tiles/ascii/Hare.txt', 'r', encoding='utf-8') as f:
+import os
+
+os.chdir(os.path.dirname(__file__))
+
+with open('Hare.txt', 'r', encoding='utf-8') as f:
     for line in f.readlines():
         liners = line.rstrip('\n')
         print("<color_light_cyan>" + liners + "</color>\\n", end='')
