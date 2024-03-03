@@ -1,5 +1,15 @@
 [
     {
+        "type": "mutation",
+        "id": "Mutation_Sensei_Start",
+        "name": {"str": "老师-开局"},
+        "points": 0,
+        "description": "Sensei开局eoc用变异",
+        "purifiable": false,
+	    "player_display": false,
+        "starting_trait": false
+    },
+    {
         "type": "profession",
         "id": "prof_kivotos_sensei",
         "name": "夏莱的老师",
@@ -24,7 +34,7 @@
             "male": { "entries": [ { "item": "briefs" } ] },
             "female": { "entries": [ { "item": "bra" }, { "item": "panties" } ] }
         },
-        "traits": [ "Mutation_Sensei" ]
+        "traits": [ "Mutation_Sensei", "Mutation_Sensei_Start" ]
     },
     {
         "type": "scenario",
@@ -42,8 +52,9 @@
         "id": "EOC_sensei_start",
         "eoc_type": "EVENT",
         "required_event": "game_begin",
-        "condition": { "u_has_trait": "Mutation_Sensei" },
+        "condition": { "u_has_trait": "Mutation_Sensei_Start" },
         "effect": [
+            {"u_lose_trait": "Mutation_Sensei_Start"},
             {
                 "run_eoc_selector": [ "EOC_sensei_start_2", "EOC_sensei_start_2" ],
                 "names": [ "总算来到个相对安全的地方……", "传送到这里已经一个多小时了" ],
