@@ -2,7 +2,7 @@
     {
         "id": "TALK_Shiroko_recruit",
         "type": "talk_topic",
-        "dynamic_line": "……",
+        "dynamic_line": "我是阿拜多斯对策委员会2年级砂狼白子。拜托你了。(アビドス対策委員会２年生砂狼シロコ。よろしく。)",
         "responses": [
             {
                 "text": "ᕕ(◠ڼ◠)ᕗ",
@@ -14,7 +14,7 @@
     {
         "id": "TALK_Shiroko",
         "type": "talk_topic",
-        "dynamic_line": "……",
+        "dynamic_line": "(未实装)",
         "responses": [
             {
                 "text": "[3 Cost] ",

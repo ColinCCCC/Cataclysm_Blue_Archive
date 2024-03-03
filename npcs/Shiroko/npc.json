@@ -4,8 +4,8 @@
         "id": "npc_Shiroko",
         "name_unique": "白子",
         "name_suffix": "",
-        "age": 15,
-        "height": 155,
+        "age": 16,
+        "height": 156,
         "gender": "female",
         "class": "NC_Shiroko",
         "attitude": 1,
@@ -70,7 +70,7 @@
         "id": "NC_Shiroko_weapon",
         "type": "item_group",
         "subtype": "collection",
-        "entries": [ { "item": "type_100" } ]
+        "entries": [ { "item": "sig_assault_rifle" } ]
     },
     {
         "id": "NC_Shiroko_carry",
