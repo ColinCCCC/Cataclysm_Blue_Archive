@@ -28,6 +28,7 @@
                 { "item": "wristwatch" },
                 { "group": "charged_smart_phone" },
                 { "item": "BoxoffShittim" },
+                { "item": "AdultsCard", "ammo-item": "anthochroite", "charges": 240 },
                 { "item": "pants", "variant": "pants_black" }
               ]
             },
