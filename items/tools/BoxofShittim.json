@@ -64,12 +64,17 @@
         "dynamic_line": "<color_light_cyan>⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠸⣿⢻⣥⣄⣀⣀⣀⣀⣀⣀⣤⣤⣤⣴⣶⣾⠿⠟⣱⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠈⢿⣶⣤⣀⠀⠀⠈⠈⠙⠛⠛⠋⠛⠛⠛⠛⠛⠛⠋⠉⠉⠀⢀⣾⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⣷⢶⣦⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⢟⣽⣺⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠈⢻⣿⣿⣿⣷⣜⠭⣟⠷⣦⡀⠀⠀⠀⢀⣀⢀⣴⠿⣫⠵⣻⣵⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣿⣿⣿⣿⣶⣭⣂⡙⠒⠞⢟⣛⣋⣭⣶⣶⣾⣿⣿⣉⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⢿⣿⣿⣿⣿⡿⠿⠻⠛⢙⣉⣉⣩⠿⢷⣦⡻⣿⣿⣶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣢⡶⢖⣢⣴⣶⣿⣿⣿⣿⣿⣿⣿⣿⣶⣯⣎⠻⣿⣿⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⡱⣫⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣻⣿⣿⣿⣿⣇⡽⣿⣏⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⠇⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⢿⣿⣿⣟⣿⣿⡽⣿⡼⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⡿⣸⣿⣿⣿⡏⣿⣿⣿⣿⣸⣿⣿⣿⣿⣿⣟⣿⣿⣿⡞⣿⣿⣽⣿⢻⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⡇⣿⣏⣿⣿⡇⣿⣿⣿⣿⡟⣿⣿⣿⣿⣿⣿⢹⣿⣿⣿⢹⣿⣿⣽⡏⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⡇⣿⢸⣿⣿⡇⢻⣿⣿⣿⣷⢿⣿⣿⣿⣹⣿⡏⣿⣿⣿⡏⣿⣿⣧⢿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⡇⢇⣿⣿⣿⢸⡿⣿⢻⣿⣿⣾⡏⣿⣿⣿⣯⡅⡜⣻⡻⣷⢹⣿⣿⢸⢸⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣷⢸⣿⣿⡟⡼⠿⣻⣟⣿⣿⣿⣿⢻⣿⣿⣿⣧⢡⢻⣇⣿⠘⣿⣿⠀⢸⠿⢋⣾⣦⡀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⢀⣠⣾⣿⣿⢸⣿⠟⣱⣾⣿⣿⣻⡸⣿⣿⣿⠞⣿⣿⣿⣿⠘⠎⣿⣿⠀⣿⣿⠀⢳⣾⣿⣿⣿⣿⣦⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠐⠛⠿⠇⣿⣿⡌⡫⣳⣿⣿⣿⣿⢷⢽⣿⣿⡗⣹⣿⣿⡵⠰⡆⣮⠙⡇⣿⡿⠀⠌⣿⣿⣿⣿⣿⢟⡑⠄⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⢖⡼⣿⣇⣵⣿⠟⢉⣉⠉⣛⣯⣿⣿⣿⣿⡱⣻⣿⡇⠀⠀⢸⡀⣿⣿⠃⣸⣸⢿⣿⣿⣿⣿⣷⡹⣮⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠔⢒⣯⣥⣶⡽⣿⣹⡟⢠⡿⠆⠈⠁⢻⣷⣏⢯⡻⣷⣱⡹⠇⠺⢏⣿⠁⣿⣫⣦⡥⣣⢸⣿⣿⣟⣿⣿⡇⠘⡇⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⡿⣿⡽⣯⢧⣘⢧⡀⣤⡴⢺⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢇⢶⣶⡹⡌⣿⣟⡾⢹⣿⣷⠁⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⢶⣿⣿⣿⢫⣿⢧⣞⢎⡻⣿⣿⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢟⣾⣯⣿⡇⠃⣯⣿⢷⡟⣿⡿⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⡌⣿⣿⣿⢹⡟⢸⣿⣞⢏⠚⣿⣿⣿⣿⣿⣿⠛⣙⣧⣤⣽⣿⣿⣿⣿⢏⣠⣝⢿⡞⢃⣼⢿⣟⣾⡇⢸⠆⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⡈⠑⠸⣿⣿⣦⣷⡙⠿⣿⣿⣿⣿⣷⣟⣟⣿⣾⣿⡿⠛⣵⠸⣿⣿⣧⢣⣾⣯⡏⡻⠟⢀⠞⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠻⣟⠆⡸⡔⠙⢿⣿⠰⣝⢿⣶⣭⣛⣻⠿⢿⡿⢟⣫⣶⢙⢿⡷⣪⣝⠛⡏⠔⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⢀⡴⣫⣯⢧⣻⣮⣵⣶⠭⢉⣙⣛⣪⣿⣽⣶⡋⣯⣿⣿⣯⣿⡾⡻⣳⣶⣭⣅⡳⠮⡂⠀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⣿⣟⢗⢎⣫⢿⠟⡁⣿⢸⣿⣷⣶⣶⣶⣶⡇⣿⣭⣽⣿⣿⣽⣾⢓⣯⣿⣿⣯⣭⡨⠦⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>老师，等您很久了！</color>\n<color_light_cyan>有什么能帮到您？</color>",
         "responses": [
             {
-                "text": "招募学生！",
-                "effect": [
-                    { "u_add_effect": "effect_Arona_recruiting", "duration": 300 },
-                    { "queue_eocs": "eoc_recruit", "time_in_future": 5 }
-                ],
-                "topic": "TALK_DONE"
+                "text": "[120青辉石]招募学生！",
+                "trial": { "type": "CONDITION", "condition": { "u_has_items": { "item": "anthochroite", "count": 120 } } },
+                "success": {
+                    "topic": "TALK_DONE",
+                    "effect": [
+                        { "u_sell_item": "anthochroite", "count": 120 },
+                        { "u_add_effect": "effect_Arona_recruiting", "duration": 300 },
+                        { "queue_eocs": "eoc_recruit", "time_in_future": 5 }
+                    ]
+                },
+                "failure": { "topic": "TALK_NOEnoughAnthochroite" }
             },
             { "text": "没有了，再见。ᕕ(◠ڼ◠)ᕗ", "topic": "TALK_DONE" }
         ]
