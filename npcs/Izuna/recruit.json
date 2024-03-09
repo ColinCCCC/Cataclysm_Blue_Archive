@@ -45,7 +45,7 @@
             {
                 "if": { "not": { "u_has_trait": "get_Izuna" } },
                 "then": [
-                    {"u_spawn_item": "Generator_Izuna","count": 1 },
+                    {"u_spawn_item": "Generator_Izuna", "count": 1, "suppress_message": true },
                     {"u_add_trait": "get_Izuna" }
                 ],
                 "else": {"u_spawn_item": "Fragments_Izuna","count": 10 }

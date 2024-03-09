@@ -45,7 +45,7 @@
             {
                 "if": { "not": { "u_has_trait": "get_Yuuka" } },
                 "then": [
-                    {"u_spawn_item": "Generator_Yuuka","count": 1 },
+                    {"u_spawn_item": "Generator_Yuuka", "count": 1, "suppress_message": true },
                     {"u_add_trait": "get_Yuuka" }
                 ],
                 "else": {"u_spawn_item": "Fragments_Yuuka","count": 10 }
