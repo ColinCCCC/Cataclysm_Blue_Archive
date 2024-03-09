@@ -29,7 +29,7 @@
         "ascii_picture": "cashcard",
         "description": "大人的卡片",
         "price": 1000,
-        "extend": { "flags": [ "NO_UNLOAD", "NO_RELOAD", "TRADER_AVOID" ] },
+        "extend": { "flags": [ "TRADER_AVOID" ] },
         "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "anthochroite": 200000000 } } ],
         "ammo": [ "anthochroite" ]
     }
