@@ -48,7 +48,10 @@
                     {"u_spawn_item": "Generator_Momori", "count": 1, "suppress_message": true },
                     {"u_add_trait": "get_Momori" }
                 ],
-                "else": {"u_spawn_item": "Fragments_Momori","count": 10 }
+                "else": [
+                    {"u_spawn_item": "Fragments_Momori", "count": 10, "suppress_message": true },
+                    {"u_message": "神名文字碎片-桃井 x10", "popup": true }
+                ]
             }
         ]
     }
