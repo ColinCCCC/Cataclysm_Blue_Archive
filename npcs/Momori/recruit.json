@@ -50,7 +50,7 @@
                 ],
                 "else": [
                     {"u_spawn_item": "Fragments_Momori", "count": 10, "suppress_message": true },
-                    {"u_message": "神名文字碎片-桃井 x10", "popup": true }
+                    {"u_message": "获得 神名文字碎片-桃井 x10", "popup": true }
                 ]
             }
         ]
