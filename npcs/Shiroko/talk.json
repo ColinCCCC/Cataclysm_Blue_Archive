@@ -14,15 +14,19 @@
     {
         "id": "TALK_Shiroko",
         "type": "talk_topic",
-        "dynamic_line": "(未实装)",
+        "dynamic_line": "召唤无人机:火力支援",
         "responses": [
             {
-                "text": "[3 Cost] ",
-                "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "3" ] } },
+                "text": "[2 Cost] ",
+                "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "2" ] } },
                 "success": {
                     "topic": "TALK_DONE",
                     "effect": [
-                        { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "3" ] }
+                        { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "2" ] },
+                        { "u_set_talker": { "global_val": "player_id" } },
+                        "take_control",
+                        { "u_spawn_item": "caster_spell_summon_uav","count": 1 },
+                        { "queue_eocs": "EOC_return_to_player", "time_in_future": 5 }
                     ]
                 },
                 "failure": { "topic": "TALK_NOEnoughCost" }
