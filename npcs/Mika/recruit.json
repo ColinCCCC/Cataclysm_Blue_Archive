@@ -1,0 +1,58 @@
+[
+    {
+	"type": "mutation",
+        "id": "get_Mika",
+        "copy-from": "mutation_get_Common",
+        "name": {"str": "获得未花"},
+        "description": "你已经获得了未花"
+    },
+    {
+        "id": "Generator_Mika",
+        "type": "AMMO",
+        "copy-from": "Generator_Common",
+        "name": {"str": "学生档案-未花"},
+        "description": "学生档案-未花",
+        "drop_action": {
+           "type": "place_npc",
+           "npc_class_id": "npc_Mika",
+           "summon_msg": "未花被招募了！",
+           "place_randomly": true,
+           "moves": 1
+        }
+    },
+    {
+        "id": "Fragments_Mika",
+        "type": "AMMO",
+        "copy-from": "Fragments_Common",
+        "name": {"str": "神名文字碎片-未花"},
+        "description": "神名文字碎片-未花"
+    },
+    {
+        "type": "SPELL",
+        "name": "招募学生",
+        "id": "spell_recruit_Mika",
+        "description": "招募未花",
+        "valid_targets": ["self"],
+        "shape": "blast",
+        "effect": "effect_on_condition",
+        "effect_str": "filter_Mika",
+        "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"]
+    },
+    {
+        "id": "filter_Mika",
+        "type": "effect_on_condition",
+        "effect": [
+            {
+                "if": { "not": { "u_has_trait": "get_Mika" } },
+                "then": [
+                    {"u_spawn_item": "Generator_Mika", "count": 1, "suppress_message": true },
+                    {"u_add_trait": "get_Mika" }
+                ],
+                "else": [
+                    {"u_spawn_item": "Fragments_Mika", "count": 10, "suppress_message": true },
+                    {"u_message": "获得 神名文字碎片-未花 x10", "popup": true }
+                ]
+            }
+        ]
+    }
+]

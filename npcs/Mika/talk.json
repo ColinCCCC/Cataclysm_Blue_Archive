@@ -1,0 +1,40 @@
+[
+    {
+        "id": "TALK_Mika_recruit",
+        "type": "talk_topic",
+        "dynamic_line": "圣园弥香，闪亮登场☆~这样的感觉么？啊，老师我们关系很好，就不需要见外了，对吧？今后请多多指教~(聖園ミカ、ついに登場～☆ って感じかな？あっ、私と先生の仲だしアイスブレイクとかはいらないよね？これからよろしくね、先生。)。",
+        "responses": [
+            {
+                "text": "ᕕ(◠ڼ◠)ᕗ",
+                "effect": [ "follow" ],
+                "topic": "TALK_DONE"
+            }
+        ]
+    },
+    {
+        "id": "TALK_Mika",
+        "type": "talk_topic",
+        "dynamic_line": "有什么需要帮忙吗？",
+        "responses": [
+            {
+                "text": "[6 Cost] 拜托了，佩洛洛大人!(召唤一个吸引怪物的诱饵并对周围3格内敌对目标造成伤害)",
+                "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "6" ] } },
+                "success": {
+                    "topic": "TALK_DONE",
+                    "effect": [
+                        { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "6" ] },
+                        { "u_set_talker": { "global_val": "player_id" } },
+                        "take_control",
+                        { "u_spawn_item": "caster_spell_summon_Pello","count": 1 },
+                        { "queue_eocs": "EOC_return_to_player", "time_in_future": 5 }
+                    ]
+                },
+                "failure": { "topic": "TALK_NOEnoughCost" }
+            },
+            {
+                "text": "取消",
+                "topic": "TALK_DONE"
+            }
+        ]
+    }
+]

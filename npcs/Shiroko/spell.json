@@ -24,7 +24,7 @@
         "ammo_type": "NULL",
         "color": "light_gray",
         "name": {"str": "召唤无人机施放器"},
-        "description": "",
+        "description": "召唤无人机施放器",
         "drop_action":  {
             "type": "cast_spell",
             "spell_id": "spell_summon_uav",

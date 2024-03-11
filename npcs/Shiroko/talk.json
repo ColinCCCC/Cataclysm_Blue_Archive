@@ -14,10 +14,10 @@
     {
         "id": "TALK_Shiroko",
         "type": "talk_topic",
-        "dynamic_line": "召唤无人机:火力支援",
+        "dynamic_line": "老师，终于决定要抢银行了吗！",
         "responses": [
             {
-                "text": "[2 Cost] ",
+                "text": "[2 Cost] 召唤无人机:火力支援(召唤一个友善的榴弹无人机)",
                 "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "2" ] } },
                 "success": {
                     "topic": "TALK_DONE",

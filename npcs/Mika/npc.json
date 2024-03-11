@@ -1,0 +1,91 @@
+[
+    {
+        "type": "npc",
+        "id": "npc_Mika",
+        "name_unique": "未花",
+        "name_suffix": "",
+        "gender": "female",
+        "age": 16,
+        "height": 158,
+        "class": "NC_Mika",
+        "attitude": 1,
+        "mission": 7,
+        "chat": "TALK_Mika_recruit",
+        "faction": "kivotos_students",
+        "<acknowledged>": "<acknowledged_Mika>",
+        "<danger_close_distance>": "烫烫烫",
+        "<combat_noise_warning>": "烫烫烫烫烫",
+        "<monster_warning_h>": "烫烫烫",
+        "<let_me_pass>": "烫",
+        "<run_away>": "烫烫烫烫烫烫烫",
+        "snip_lost_blood": "烫烫",
+        "snip_bye": "烫烫烫"
+    },
+    {
+        "type": "npc_class",
+        "id": "NC_Mika",
+        "name": "未花",
+        "job_description": "未花",
+        "common": false,
+        "bonus_str": { "rng": [ 6, 6 ] },
+        "bonus_dex": { "rng": [ 7, 7 ] },
+        "bonus_int": { "rng": [ 1, 1 ] },
+        "bonus_per": { "rng": [ 12, 12 ] },
+        "skills": [
+            { "skill": "computer", "level": { "rng": [ 2, 2 ] } },
+            { "skill": "driving", "level": { "rng": [ 2, 2 ] } },
+            { "skill": "fabrication", "level": { "rng": [ 11, 11 ] } },
+            { "skill": "firstaid", "level": { "rng": [ 7, 7 ] } },
+            { "skill": "survival", "level": { "rng": [ 2, 2 ] } },
+            { "skill": "swimming", "level": { "rng": [ 2, 2 ] } },
+            { "skill": "archery", "level": { "rng": [ 5, 5 ] } },
+            { "skill": "bashing", "level": { "rng": [ 5, 5 ] } },
+            { "skill": "cutting", "level": { "rng": [ 8, 8 ] } },
+            { "skill": "dodge", "level": { "rng": [ 7, 7 ] } },
+            { "skill": "melee", "level": { "rng": [ 7, 7 ] } },
+            { "skill": "stabbing", "level": { "rng": [ 7, 7 ] } },
+            { "skill": "throw", "level": { "rng": [ 7, 7 ] } },
+            { "skill": "rifle", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "pistol", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "gun", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "launcher", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "shotgun", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "smg", "bonus": { "rng": [ 8, 8 ] } },
+            { "skill": "unarmed", "level": { "rng": [ 7, 7 ] } }
+        ],
+        "worn_override": "NC_Mika_worn",
+        "carry_override": "NC_Mika_carry",
+        "weapon_override": "NC_Mika_weapon",
+        "traits": [
+            [ "Mutation_Mika", 100 ],
+            [ "Mutation_Kivotos_Halo", 100 ],
+            [ "NIGHTVISION", 100 ],
+            [ "GOODHEARING", 100 ],
+            [ "SKIN_LIGHT", 100 ]
+        ]
+    },
+    {
+        "id": "NC_Mika_worn",
+        "type": "item_group",
+        "subtype": "collection",
+        "entries": [
+            { "item": "panties" },
+            { "item": "bra" },
+            { "item": "Armor_Mika" }
+        ]
+    },
+    {
+        "id": "NC_Mika_weapon",
+        "type": "item_group",
+        "subtype": "collection",
+        "entries": [ { "item": "l85a2" } ]
+    },
+    {
+        "id": "NC_Mika_carry",
+        "type": "item_group",
+        "subtype": "collection",
+        "entries": [
+            { "item": "bandages", "count": 5 }
+        ]
+    }
+]
