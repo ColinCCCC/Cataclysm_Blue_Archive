@@ -89,8 +89,7 @@
             { "item": "panties" },
             { "item": "bra" },
             { "item": "Armor_Momori" },
-            { "item": "mbag" },
-            { "item": "sheath" }
+            { "item": "mbag" }
         ]
     },
     {
@@ -105,7 +104,6 @@
         "subtype": "collection",
         "entries": [
             { "item": "bandages", "count": 5 },
-            { "item": "katana_fake", "count": 1 },
             { "item": "portable_game", "count":1 }
         ]
     }

@@ -80,8 +80,7 @@
         "entries": [
             { "item": "bandages", "count": 5 },
             { "item": "2lcanteen", "count":1 },
-            { "item": "mask_rioter", "count":1 },
-            { "item": "lug_wrench", "count":1 }
+            { "item": "mask_rioter", "count":1 }
         ]
     }
 ]
