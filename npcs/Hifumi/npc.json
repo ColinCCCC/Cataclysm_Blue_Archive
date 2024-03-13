@@ -62,31 +62,32 @@
         "name": "日富美",
         "job_description": "日富美",
         "common": false,
-        "bonus_str": { "rng": [ 6, 6 ] },
-        "bonus_dex": { "rng": [ 7, 7 ] },
-        "bonus_int": { "rng": [ 1, 1 ] },
-        "bonus_per": { "rng": [ 12, 12 ] },
+        "bonus_str": 4,
+        "bonus_dex": 2,
+        "bonus_int": 2,
+        "bonus_per": 12,
+        "bonus_bravery": 100,
         "skills": [
-            { "skill": "computer", "level": { "rng": [ 2, 2 ] } },
-            { "skill": "driving", "level": { "rng": [ 2, 2 ] } },
-            { "skill": "fabrication", "level": { "rng": [ 11, 11 ] } },
-            { "skill": "firstaid", "level": { "rng": [ 7, 7 ] } },
-            { "skill": "survival", "level": { "rng": [ 2, 2 ] } },
-            { "skill": "swimming", "level": { "rng": [ 2, 2 ] } },
-            { "skill": "archery", "level": { "rng": [ 5, 5 ] } },
-            { "skill": "bashing", "level": { "rng": [ 5, 5 ] } },
-            { "skill": "cutting", "level": { "rng": [ 8, 8 ] } },
-            { "skill": "dodge", "level": { "rng": [ 7, 7 ] } },
-            { "skill": "melee", "level": { "rng": [ 7, 7 ] } },
-            { "skill": "stabbing", "level": { "rng": [ 7, 7 ] } },
-            { "skill": "throw", "level": { "rng": [ 7, 7 ] } },
-            { "skill": "rifle", "bonus": { "rng": [ 8, 8 ] } },
-            { "skill": "pistol", "bonus": { "rng": [ 8, 8 ] } },
-            { "skill": "gun", "bonus": { "rng": [ 8, 8 ] } },
-            { "skill": "launcher", "bonus": { "rng": [ 8, 8 ] } },
-            { "skill": "shotgun", "bonus": { "rng": [ 8, 8 ] } },
-            { "skill": "smg", "bonus": { "rng": [ 8, 8 ] } },
-            { "skill": "unarmed", "level": { "rng": [ 7, 7 ] } }
+            { "skill": "computer", "level": 0 },
+            { "skill": "driving", "level": 6 },
+            { "skill": "fabrication", "level": 4 },
+            { "skill": "firstaid", "level": 2 },
+            { "skill": "survival", "level": 0 },
+            { "skill": "swimming", "level": 4 },
+            { "skill": "archery", "level": 0 },
+            { "skill": "bashing", "level": 4 },
+            { "skill": "cutting", "level": 2 },
+            { "skill": "dodge", "level": 4 },
+            { "skill": "melee", "level": 1 },
+            { "skill": "stabbing", "level": 1 },
+            { "skill": "throw", "level": 6 },
+            { "skill": "rifle", "bonus": 8 },
+            { "skill": "pistol", "bonus": 0 },
+            { "skill": "gun", "bonus": 8 },
+            { "skill": "launcher", "bonus": 0 },
+            { "skill": "shotgun", "bonus": 0 },
+            { "skill": "smg", "bonus": 0 },
+            { "skill": "unarmed", "level": 0 }
         ],
         "worn_override": "NC_Hifumi_worn",
         "carry_override": "NC_Hifumi_carry",
@@ -106,7 +107,8 @@
         "entries": [
             { "item": "panties" },
             { "item": "bra" },
-            { "item": "Armor_Hifumi" }
+            { "item": "Armor_Hifumi" },
+            { "item": "backpack" }
         ]
     },
     {
@@ -120,7 +122,9 @@
         "type": "item_group",
         "subtype": "collection",
         "entries": [
-            { "item": "bandages", "count": 5 }
+            { "item": "bandages", "count": 5 },
+            { "item": "talking_doll", "count":1 },
+            { "item": "clay_teapot", "count":1 }
         ]
     }
 ]

@@ -13,7 +13,7 @@
         "type": "profession",
         "id": "prof_kivotos_sensei",
         "name": "夏莱的老师",
-        "description":  {"male": "夏莱的老师", "female": "原则上不应该存在女老师"},
+        "description":  {"male": "夏莱的老师", "female": "你认真的吗？"},
         "points": 0,
         "items": {
             "both": {

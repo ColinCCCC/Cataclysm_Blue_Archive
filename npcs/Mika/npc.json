@@ -12,14 +12,22 @@
         "mission": 7,
         "chat": "TALK_Mika_recruit",
         "faction": "kivotos_students",
-        "<acknowledged>": "<acknowledged_Mika>",
-        "<danger_close_distance>": "烫烫烫",
-        "<combat_noise_warning>": "烫烫烫烫烫",
-        "<monster_warning_h>": "烫烫烫",
-        "<let_me_pass>": "烫",
-        "<run_away>": "烫烫烫烫烫烫烫",
-        "snip_lost_blood": "烫烫",
-        "snip_bye": "烫烫烫"
+        "<acknowledged>": "OK～☆",
+        "<danger_close_distance>": "<danger_close_distance_Mika>",
+        "<combat_noise_warning>": "那么，开始行动吧！",
+        "<monster_warning_h>": "不会让你们通过的",
+        "<let_me_pass>": "我走这边哟",
+        "<run_away>": "对不起，如果我再做得好一点的话",
+        "snip_lost_blood": "……痛！",
+        "snip_bye": "继续前进吧"
+    },
+    {
+        "type": "snippet",
+        "category": "<danger_close_distance_Mika>",
+        "text": [
+            "嗯？这回是你们？",
+            "嗯，所以，要为你们祈祷呢。"
+        ]
     },
     {
         "type": "npc_class",
@@ -27,31 +35,32 @@
         "name": "未花",
         "job_description": "未花",
         "common": false,
-        "bonus_str": { "rng": [ 6, 6 ] },
-        "bonus_dex": { "rng": [ 7, 7 ] },
-        "bonus_int": { "rng": [ 1, 1 ] },
-        "bonus_per": { "rng": [ 12, 12 ] },
+        "bonus_str": 10,
+        "bonus_dex": 7,
+        "bonus_int": 1,
+        "bonus_per": 12,
+        "bonus_bravery": 100,
         "skills": [
-            { "skill": "computer", "level": { "rng": [ 2, 2 ] } },
-            { "skill": "driving", "level": { "rng": [ 2, 2 ] } },
-            { "skill": "fabrication", "level": { "rng": [ 11, 11 ] } },
-            { "skill": "firstaid", "level": { "rng": [ 7, 7 ] } },
-            { "skill": "survival", "level": { "rng": [ 2, 2 ] } },
-            { "skill": "swimming", "level": { "rng": [ 2, 2 ] } },
-            { "skill": "archery", "level": { "rng": [ 5, 5 ] } },
-            { "skill": "bashing", "level": { "rng": [ 5, 5 ] } },
-            { "skill": "cutting", "level": { "rng": [ 8, 8 ] } },
-            { "skill": "dodge", "level": { "rng": [ 7, 7 ] } },
-            { "skill": "melee", "level": { "rng": [ 7, 7 ] } },
-            { "skill": "stabbing", "level": { "rng": [ 7, 7 ] } },
-            { "skill": "throw", "level": { "rng": [ 7, 7 ] } },
-            { "skill": "rifle", "bonus": { "rng": [ 8, 8 ] } },
-            { "skill": "pistol", "bonus": { "rng": [ 8, 8 ] } },
-            { "skill": "gun", "bonus": { "rng": [ 8, 8 ] } },
-            { "skill": "launcher", "bonus": { "rng": [ 8, 8 ] } },
-            { "skill": "shotgun", "bonus": { "rng": [ 8, 8 ] } },
-            { "skill": "smg", "bonus": { "rng": [ 8, 8 ] } },
-            { "skill": "unarmed", "level": { "rng": [ 7, 7 ] } }
+            { "skill": "computer", "level": 0 },
+            { "skill": "driving", "level": 0 },
+            { "skill": "fabrication", "level": 2 },
+            { "skill": "firstaid", "level": 2 },
+            { "skill": "survival", "level": 2 },
+            { "skill": "swimming", "level": 2 },
+            { "skill": "archery", "level": 0 },
+            { "skill": "bashing", "level": 10 },
+            { "skill": "cutting", "level": 10 },
+            { "skill": "dodge", "level": 10 },
+            { "skill": "melee", "level": 10 },
+            { "skill": "stabbing", "level": 10 },
+            { "skill": "throw", "level": 10 },
+            { "skill": "rifle", "bonus": 0 },
+            { "skill": "pistol", "bonus": 3 },
+            { "skill": "gun", "bonus": 8 },
+            { "skill": "launcher", "bonus": 0 },
+            { "skill": "shotgun", "bonus": 0 },
+            { "skill": "smg", "bonus": 8 },
+            { "skill": "unarmed", "level": 10 }
         ],
         "worn_override": "NC_Mika_worn",
         "carry_override": "NC_Mika_carry",
@@ -71,21 +80,25 @@
         "entries": [
             { "item": "panties" },
             { "item": "bra" },
-            { "item": "Armor_Mika" }
+            { "item": "Armor_Mika" },
+            { "item": "platinum_hairpin" },
+            { "item": "mbag" }
         ]
     },
     {
         "id": "NC_Mika_weapon",
         "type": "item_group",
         "subtype": "collection",
-        "entries": [ { "item": "l85a2" } ]
+        "entries": [ { "item": "lanchester_mki" } ]
     },
     {
         "id": "NC_Mika_carry",
         "type": "item_group",
         "subtype": "collection",
         "entries": [
-            { "item": "bandages", "count": 5 }
+            { "item": "bandages", "count": 5 },
+            { "item": "moisturizer", "count": 1},
+            { "item": "holybook_bible1", "count":1}
         ]
     }
 ]
