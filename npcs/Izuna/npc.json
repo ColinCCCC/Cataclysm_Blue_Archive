@@ -12,14 +12,22 @@
         "mission": 7,
         "chat": "TALK_Izuna_recruit",
         "faction": "kivotos_students",
-        "<acknowledged>": "",
-        "<danger_close_distance>": "",
-        "<combat_noise_warning>": "",
-        "<monster_warning_h>": "",
-        "<let_me_pass>": "",
-        "<run_away>": "",
-        "snip_lost_blood": "",
-        "snip_bye": ""
+        "<acknowledged>": "这也是主公的恩赐！",
+        "<danger_close_distance>": "泉奈，前往目标点！",
+        "<combat_noise_warning>": "向下一个作战区域冲刺！",
+        "<monster_warning_h>": "<monster_warning_h_Izuna>",
+        "<let_me_pass>": "让一让",
+        "<run_away>": "诶！任务失败了吗！？",
+        "snip_lost_blood": "好痛！",
+        "snip_bye": "忍忍！（可爱的小狐狸叫声）"
+    },
+    {
+        "type": "snippet",
+        "category": "<monster_warning_h_Izuna>",
+        "text": [
+            "各位，请相信泉奈，跟着我来吧！",
+            "躲好了！"
+        ]
     },
     {
         "type": "npc_class",

@@ -11,7 +11,32 @@
         "attitude": 1,
         "mission": 7,
         "chat": "TALK_Momori_recruit",
-        "faction": "kivotos_students"
+        "faction": "kivotos_students",
+        "<acknowledged>": "升级什么的总是让人振奋不已呢！",
+        "<danger_close_distance>": "就让你瞧瞧我的枪法！",
+        "<combat_noise_warning>": "<combat_noise_warning_Momori>",
+        "<monster_warning_h>": "唔……要是在平板上操作的话我倒是自信满满啦……",
+        "<let_me_pass>": "苦呀西……苦呀西(您塞住了桃井的路)",
+        "<run_away>": "啊，真是的！根本就是垃圾游戏啊！",
+        "snip_lost_blood": "<snip_lost_blood_Momori>",
+        "snip_bye": "通关！"
+    },
+    {
+        "type": "snippet",
+        "category": "<combat_noise_warning_Momori>",
+        "text": [
+            "血条快空了，队友呢？救一下啊？",
+            "好痛！",
+            "苦呀西"
+        ]
+    },
+    {
+        "type": "snippet",
+        "category": "<snip_lost_blood_Momori>",
+        "text": [
+            "呀啊！等一下，这样就打不了游戏啦！",
+            "快快搞完就回去吧！"
+        ]
     },
     {
         "type": "npc_class",
