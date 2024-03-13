@@ -7,7 +7,8 @@
             { "text": "日富美，我有些事情需要你做……", "condition": { "and": [ { "u_has_trait": "Mutation_Sensei"}, {"npc_has_trait": "Mutation_Hifumi" } ] }, "topic": "TALK_Hifumi" },
             { "text": "优香，我有些事情需要你做……", "condition": { "and": [ { "u_has_trait": "Mutation_Sensei"}, {"npc_has_trait": "Mutation_Yuuka" } ] }, "topic": "TALK_Yuuka" },
             { "text": "白子，我有些事情需要你做……", "condition": { "and": [ { "u_has_trait": "Mutation_Sensei"}, {"npc_has_trait": "Mutation_Shiroko" } ] }, "topic": "TALK_Shiroko" },
-            { "text": "伊树菜，我有些事情需要你做……", "condition": { "and": [ { "u_has_trait": "Mutation_Sensei"}, {"npc_has_trait": "Mutation_Izuna" } ] }, "topic": "TALK_Izuna" }
+            { "text": "伊树菜，我有些事情需要你做……", "condition": { "and": [ { "u_has_trait": "Mutation_Sensei"}, {"npc_has_trait": "Mutation_Izuna" } ] }, "topic": "TALK_Izuna" },
+            { "text": "未花，我有些事情需要你做……", "condition": { "and": [ { "u_has_trait": "Mutation_Sensei"}, {"npc_has_trait": "Mutation_Mika" } ] }, "topic": "TALK_Mika" }
         ]
     },
     {

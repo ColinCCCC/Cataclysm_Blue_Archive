@@ -1,0 +1,36 @@
+[
+    {
+        "type": "SPELL",
+        "name": "愿主垂怜",
+        "id": "spell_kyrie",
+        "description": "愿主垂怜",
+        "valid_targets": ["hostile", "self"],
+        "min_range": 20,
+	    "max_range": 20,
+        "min_damage": 373,
+        "max_damage": 373,
+        "shape": "blast",
+        "damage_type": "pure",
+        "effect": "attack",
+        "flags": [ "NO_LEGS", "NO_PROJECTILE", "SILENT"],
+        "extra_effects": [ { "id": "spell_return_to_player", "hit_self": true }]
+    },
+    {
+        "id": "caster_spell_kyrie",
+        "type": "AMMO",
+        "symbol": ";",
+        "phase": "liquid",
+        "ammo_type": "NULL",
+        "color": "light_gray",
+        "name": {"str": "释放技能：愿主垂怜"},
+        "description": "释放技能：愿主垂怜",
+        "drop_action":  {
+            "type": "cast_spell",
+            "spell_id": "spell_kyrie",
+            "no_fail": true,
+            "level": 0
+        },
+        "weight": "1 g",
+        "volume": "1 ml"
+    }
+]

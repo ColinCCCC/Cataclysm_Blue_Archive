@@ -30,7 +30,7 @@
         "description": "大人的卡片",
         "price": 1000,
         "extend": { "flags": [ "TRADER_AVOID" ] },
-        "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "1 min", "regenerate_ammo": true } },
+        "relic_data": { "charge_info": { "recharge_type": "periodic", "time": 1000, "regenerate_ammo": true } },
         "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "anthochroite": 200000000 } } ],
         "ammo": [ "anthochroite" ]
     }
