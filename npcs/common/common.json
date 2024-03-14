@@ -23,13 +23,15 @@
         "healing_multiplier": 600,
         "mending_modifier": 600,
         "armor": [ { "part_types": [ "ALL" ], "cut": 800, "bash": 800, "bullet":800 } ],
-        "hp_modifier": 600,
         "enchantments": [ "enchantment_kivotos" ]
     },
     {
         "type": "enchantment",
         "id": "enchantment_kivotos",
         "condition": "ALWAYS",
+        "values": [
+            { "value": "MAX_HP", "multiply": 40 }
+        ],
         "hit_you_effect": [
             {
                 "id": "kivotos_pure_damage",
