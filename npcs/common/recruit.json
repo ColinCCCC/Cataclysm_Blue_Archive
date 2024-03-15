@@ -1,7 +1,7 @@
 [
     {
 	    "type": "mutation",
-        "id": "mutation_get_Common",
+        "id": "mutation_mark_Common",
         "name": {"str": "获得-模板"},
         "points": 0,
         "description": "你已经获得了学生",

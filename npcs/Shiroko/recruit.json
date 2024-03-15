@@ -2,7 +2,7 @@
     {
 	    "type": "mutation",
         "id": "get_Shiroko",
-        "copy-from": "mutation_get_Common",
+        "copy-from": "mutation_mark_Common",
         "name": {"str": "获得白子"},
         "description": "你已经获得了白子"
     },

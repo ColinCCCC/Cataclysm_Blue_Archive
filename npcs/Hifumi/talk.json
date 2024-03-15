@@ -1,12 +1,22 @@
 [
     {
+	    "type": "mutation",
+        "id": "standby_Hifumi",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "日富美待命中"},
+        "description": "日富美待命中"
+    },
+    {
         "id": "TALK_Hifumi_recruit",
         "type": "talk_topic",
         "dynamic_line": "啊哈哈…我虽然还不成熟但请多多指教。(あはは…至らない私ですがよろしくお願いします。)",
         "responses": [
             {
                 "text": "ᕕ(◠ڼ◠)ᕗ",
-                "effect": [ "follow" ],
+                "effect": [
+                    { "npc_set_talker": { "global_val": "Hifumi_id" } },
+                    "follow"
+                ],
                 "topic": "TALK_DONE"
             }
         ]
@@ -32,9 +42,15 @@
                 "failure": { "topic": "TALK_NOEnoughCost" }
             },
             {
-                "text": "取消",
+                "text": "先到临时指挥部待命吧",
+                "effect": [
+                    { "u_location_variable": { "context_val": "loc" }, "z_override":true, "z_adjust": -8 },
+                    { "u_add_trait": "standby_Hifumi" },
+                    { "npc_teleport": { "context_val": "loc" }, "force": true }, { "u_message": "日富美进入待命状态，可用什亭之匣召回" }
+                ],
                 "topic": "TALK_DONE"
-            }
+            },
+            { "text": "暂时没有了", "topic": "TALK_DONE" }
         ]
     }
 ]

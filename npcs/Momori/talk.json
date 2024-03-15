@@ -31,10 +31,7 @@
                 },
                 "failure": { "topic": "TALK_NOEnoughCost" }
             },
-            {
-                "text": "取消",
-                "topic": "TALK_DONE"
-            }
+            { "text": "暂时没有了", "topic": "TALK_DONE" }
         ]
     }
 ]

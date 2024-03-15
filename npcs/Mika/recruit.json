@@ -2,7 +2,7 @@
     {
 	"type": "mutation",
         "id": "get_Mika",
-        "copy-from": "mutation_get_Common",
+        "copy-from": "mutation_mark_Common",
         "name": {"str": "获得未花"},
         "description": "你已经获得了未花"
     },
