@@ -16,6 +16,8 @@
                 "effect": [
                     "follow",
                     { "npc_set_talker": { "global_val": "Mika_id" } },
+                    { "set_string_var": "茶会", "target_var": { "npc_val": "student_organization" } },
+                    { "set_string_var": "★★★", "target_var": { "npc_val": "student_stars" } },
                     { "set_string_var": "standby_Mika", "target_var": { "npc_val": "student_standby" } },
                     { "set_string_var": "有什么需要帮忙吗？", "target_var": { "npc_val": "student_topic" } }
                 ],

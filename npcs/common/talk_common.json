@@ -18,7 +18,7 @@
     {
         "id": "TALK_Kivotos_Students",
         "type": "talk_topic",
-        "dynamic_line": "<npc_val:student_topic>",
+        "dynamic_line": "<npc_name><npc_val:student_stars> <color_light_cyan><npc_val:student_organization></color>\n<npc_val:student_topic>",
         "responses": [
             {
                 "text": "先到临时指挥部待命吧",
