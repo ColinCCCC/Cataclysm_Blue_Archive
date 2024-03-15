@@ -18,7 +18,7 @@
                     { "npc_set_talker": { "global_val": "Izuna_id" } },
                     { "set_string_var": "忍术研究部", "target_var": { "npc_val": "student_organization" } },
                     { "set_string_var": "★★★", "target_var": { "npc_val": "student_stars" } },
-                    { "set_string_var": "standby_Izuna", "target_var": { "npc_val": "student_standby" } },
+                    { "set_string_var": "Izuna", "target_var": { "npc_val": "student_ename" } },
                     { "set_string_var": "是的，主公。忍忍。", "target_var": { "npc_val": "student_topic" } }
                 ],
                 "topic": "TALK_DONE"
