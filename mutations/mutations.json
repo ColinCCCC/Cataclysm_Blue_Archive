@@ -10,6 +10,15 @@
     },
     {
         "type": "mutation",
+        "id": "日富美",
+        "name": {"str": "变异-伊树莱"},
+        "points": 0,
+        "description": "变异-伊树莱",
+        "purifiable": false,
+        "starting_trait": false
+    },
+    {
+        "type": "mutation",
         "id": "Mutation_Izuna",
         "name": {"str": "变异-伊树莱"},
         "points": 0,

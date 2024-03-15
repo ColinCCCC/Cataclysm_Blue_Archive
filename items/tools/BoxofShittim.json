@@ -63,7 +63,7 @@
         "id": "EOC_Recall_Student",
         "effect": [
             {
-                "run_eoc_with": { "id": "EOC_Recall_Student_do", "effect": [ { "npc_teleport": { "context_val": "your_loc" }, "force": true }, { "u_message": "已召回" } ] },
+                "run_eoc_with": { "id": "EOC_Recall_Student_do", "effect": [ { "npc_teleport": { "context_val": "your_loc" }, "force": true }, { "u_message": "<npc_name>已召回" } ] },
                 "alpha_talker": "avatar",
                 "beta_talker": { "global_val": "Student_id" },
                 "false_eocs": "_EOC_return_to_player_fail_msg"
@@ -88,7 +88,7 @@
                 },
                 "failure": { "topic": "TALK_NOEnoughAnthochroite" }
             },
-            { "text": "召回待命学生", "effect": [ { "u_location_variable": { "context_val": "your_loc" }, "min_radius": 1, "max_radius": 5 } ], "topic": "TALK_Arona_Recall" },
+            { "text": "召回待命学生", "effect": [ { "u_location_variable": { "context_val": "your_loc" }, "passable_only": true, "min_radius": 1, "max_radius": 8 } ], "topic": "TALK_Arona_Recall" },
             { "text": "没有了，再见。ᕕ(◠ڼ◠)ᕗ", "topic": "TALK_DONE" }
         ]
     },
@@ -97,16 +97,6 @@
         "id": "TALK_Arona_Recall",
         "dynamic_line": "<color_light_cyan>⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠸⣿⢻⣥⣄⣀⣀⣀⣀⣀⣀⣤⣤⣤⣴⣶⣾⠿⠟⣱⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠈⢿⣶⣤⣀⠀⠀⠈⠈⠙⠛⠛⠋⠛⠛⠛⠛⠛⠛⠋⠉⠉⠀⢀⣾⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⣷⢶⣦⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⢟⣽⣺⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠈⢻⣿⣿⣿⣷⣜⠭⣟⠷⣦⡀⠀⠀⠀⢀⣀⢀⣴⠿⣫⠵⣻⣵⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣿⣿⣿⣿⣶⣭⣂⡙⠒⠞⢟⣛⣋⣭⣶⣶⣾⣿⣿⣉⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⢿⣿⣿⣿⣿⡿⠿⠻⠛⢙⣉⣉⣩⠿⢷⣦⡻⣿⣿⣶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣢⡶⢖⣢⣴⣶⣿⣿⣿⣿⣿⣿⣿⣿⣶⣯⣎⠻⣿⣿⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⡱⣫⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣻⣿⣿⣿⣿⣇⡽⣿⣏⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⠇⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⢿⣿⣿⣟⣿⣿⡽⣿⡼⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⡿⣸⣿⣿⣿⡏⣿⣿⣿⣿⣸⣿⣿⣿⣿⣿⣟⣿⣿⣿⡞⣿⣿⣽⣿⢻⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⡇⣿⣏⣿⣿⡇⣿⣿⣿⣿⡟⣿⣿⣿⣿⣿⣿⢹⣿⣿⣿⢹⣿⣿⣽⡏⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⡇⣿⢸⣿⣿⡇⢻⣿⣿⣿⣷⢿⣿⣿⣿⣹⣿⡏⣿⣿⣿⡏⣿⣿⣧⢿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⡇⢇⣿⣿⣿⢸⡿⣿⢻⣿⣿⣾⡏⣿⣿⣿⣯⡅⡜⣻⡻⣷⢹⣿⣿⢸⢸⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣷⢸⣿⣿⡟⡼⠿⣻⣟⣿⣿⣿⣿⢻⣿⣿⣿⣧⢡⢻⣇⣿⠘⣿⣿⠀⢸⠿⢋⣾⣦⡀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⢀⣠⣾⣿⣿⢸⣿⠟⣱⣾⣿⣿⣻⡸⣿⣿⣿⠞⣿⣿⣿⣿⠘⠎⣿⣿⠀⣿⣿⠀⢳⣾⣿⣿⣿⣿⣦⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠐⠛⠿⠇⣿⣿⡌⡫⣳⣿⣿⣿⣿⢷⢽⣿⣿⡗⣹⣿⣿⡵⠰⡆⣮⠙⡇⣿⡿⠀⠌⣿⣿⣿⣿⣿⢟⡑⠄⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⢖⡼⣿⣇⣵⣿⠟⢉⣉⠉⣛⣯⣿⣿⣿⣿⡱⣻⣿⡇⠀⠀⢸⡀⣿⣿⠃⣸⣸⢿⣿⣿⣿⣿⣷⡹⣮⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠔⢒⣯⣥⣶⡽⣿⣹⡟⢠⡿⠆⠈⠁⢻⣷⣏⢯⡻⣷⣱⡹⠇⠺⢏⣿⠁⣿⣫⣦⡥⣣⢸⣿⣿⣟⣿⣿⡇⠘⡇⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⡿⣿⡽⣯⢧⣘⢧⡀⣤⡴⢺⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢇⢶⣶⡹⡌⣿⣟⡾⢹⣿⣷⠁⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⢶⣿⣿⣿⢫⣿⢧⣞⢎⡻⣿⣿⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢟⣾⣯⣿⡇⠃⣯⣿⢷⡟⣿⡿⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⡌⣿⣿⣿⢹⡟⢸⣿⣞⢏⠚⣿⣿⣿⣿⣿⣿⠛⣙⣧⣤⣽⣿⣿⣿⣿⢏⣠⣝⢿⡞⢃⣼⢿⣟⣾⡇⢸⠆⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⡈⠑⠸⣿⣿⣦⣷⡙⠿⣿⣿⣿⣿⣷⣟⣟⣿⣾⣿⡿⠛⣵⠸⣿⣿⣧⢣⣾⣯⡏⡻⠟⢀⠞⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠻⣟⠆⡸⡔⠙⢿⣿⠰⣝⢿⣶⣭⣛⣻⠿⢿⡿⢟⣫⣶⢙⢿⡷⣪⣝⠛⡏⠔⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⢀⡴⣫⣯⢧⣻⣮⣵⣶⠭⢉⣙⣛⣪⣿⣽⣶⡋⣯⣿⣿⣯⣿⡾⡻⣳⣶⣭⣅⡳⠮⡂⠀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⣿⣟⢗⢎⣫⢿⠟⡁⣿⢸⣿⣷⣶⣶⣶⣶⡇⣿⣭⣽⣿⣿⣽⣾⢓⣯⣿⣿⣯⣭⡨⠦⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>老师需要阿罗娜联系哪个学生？</color>",
         "responses": [
-            {
-                "text": "召回日富美",
-                "condition": { "u_has_trait": "standby_Hifumi"},
-                "effect": [
-                    { "math": [ "Student_id", "=", "Hifumi_id" ] },
-                    { "u_lose_trait": "standby_Hifumi" },
-                    { "run_eocs": [  "EOC_Recall_Student" ] }
-                ],
-                "topic": "TALK_DONE"
-            },
             { "text": "没有了，再见。ᕕ(◠ڼ◠)ᕗ", "topic": "TALK_NONE" }
         ]
     },

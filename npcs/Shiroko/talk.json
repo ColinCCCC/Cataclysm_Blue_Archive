@@ -1,22 +1,34 @@
 [
     {
+	    "type": "mutation",
+        "id": "standby_Shiroko",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "白子待命中"},
+        "description": "白子待命中"
+    },
+    {
         "id": "TALK_Shiroko_recruit",
         "type": "talk_topic",
         "dynamic_line": "我是阿拜多斯对策委员会2年级砂狼白子。拜托你了。(アビドス対策委員会２年生砂狼シロコ。よろしく。)",
         "responses": [
             {
                 "text": "ᕕ(◠ڼ◠)ᕗ",
-                "effect": [ "follow" ],
+                "effect": [
+                    "follow",
+                    { "npc_set_talker": { "global_val": "Shiroki_id" } },
+                    { "set_string_var": "standby_Shiroko", "target_var": { "npc_val": "student_standby" } },
+                    { "set_string_var": "老师，终于决定要抢银行了吗！", "target_var": { "npc_val": "student_topic" } }
+                ],
                 "topic": "TALK_DONE"
             }
         ]
     },
     {
-        "id": "TALK_Shiroko",
+        "id": [ "TALK_Kivotos_Students" ],
         "type": "talk_topic",
-        "dynamic_line": "老师，终于决定要抢银行了吗！",
         "responses": [
             {
+                "condition": { "npc_has_trait": "Mutation_Shiroko" },
                 "text": "[2 Cost] 召唤无人机:火力支援(召唤一个友善的榴弹无人机)",
                 "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "2" ] } },
                 "success": {
@@ -30,8 +42,23 @@
                     ]
                 },
                 "failure": { "topic": "TALK_NOEnoughCost" }
-            },
-            { "text": "暂时没有了", "topic": "TALK_DONE" }
+            }
+        ]
+    },
+    {
+        "type": "talk_topic",
+        "id": [ "TALK_Arona_Recall" ],
+        "responses": [
+            {
+                "text": "召回白子",
+                "condition": { "u_has_trait": "standby_Shiroko"},
+                "effect": [
+                    { "math": [ "Student_id", "=", "Shiroko_id" ] },
+                    { "u_lose_trait": "standby_Shiroko" },
+                    { "run_eocs": [  "EOC_Recall_Student" ] }
+                ],
+                "topic": "TALK_DONE"
+            }
         ]
     }
 ]

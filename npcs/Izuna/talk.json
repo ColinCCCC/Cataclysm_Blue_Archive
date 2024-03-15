@@ -1,23 +1,35 @@
 [
     {
+	    "type": "mutation",
+        "id": "standby_Izuna",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "伊树菜待命中"},
+        "description": "伊树菜待命中"
+    },
+    {
         "id": "TALK_Izuna_recruit",
         "type": "talk_topic",
         "dynamic_line": "伊树菜参上！老师…不， 为了回应主公的呼唤，飞奔前来！忍忍！(イズナ、参上です！先生の……、いえ、主殿のお呼びを受けて、走って参りました～！にんにん！)",
         "responses": [
             {
                 "text": "ᕕ(◠ڼ◠)ᕗ",
-                "effect": [ "follow" ],
+                "effect": [
+                    "follow",
+                    { "npc_set_talker": { "global_val": "Izuna_id" } },
+                    { "set_string_var": "standby_Izuna", "target_var": { "npc_val": "student_standby" } },
+                    { "set_string_var": "是的，主公。忍忍。", "target_var": { "npc_val": "student_topic" } }
+                ],
                 "topic": "TALK_DONE"
             }
         ]
     },
     {
-        "id": "TALK_Izuna",
+        "id": [ "TALK_Kivotos_Students" ],
         "type": "talk_topic",
-        "dynamic_line": "是的，主公。忍忍。",
         "responses": [
             {
-                "text": "[3 Cost] 伊树菜忍法帖(伊树菜攻速增加)",
+                "condition": { "npc_has_trait": "Mutation_Izuna" },
+                "text": "[3 Cost] 伊树菜忍法帖(伊树菜原地放下替身，并瞬移到指定地点，攻速增加)",
                 "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "3" ] } },
                 "success": {
                     "topic": "TALK_DONE",
@@ -30,8 +42,23 @@
                     ]
                 },
                 "failure": { "topic": "TALK_NOEnoughCost" }
-            },
-            { "text": "暂时没有了", "topic": "TALK_DONE" }
+            }
+        ]
+    },
+    {
+        "type": "talk_topic",
+        "id": [ "TALK_Arona_Recall" ],
+        "responses": [
+            {
+                "text": "召回伊树菜",
+                "condition": { "u_has_trait": "standby_Izuna"},
+                "effect": [
+                    { "math": [ "Student_id", "=", "Izuna_id" ] },
+                    { "u_lose_trait": "standby_Izuna" },
+                    { "run_eocs": [  "EOC_Recall_Student" ] }
+                ],
+                "topic": "TALK_DONE"
+            }
         ]
     }
 ]

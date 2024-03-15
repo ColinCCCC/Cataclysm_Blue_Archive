@@ -1,22 +1,34 @@
 [
     {
+	    "type": "mutation",
+        "id": "standby_Momori",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "桃井待命中"},
+        "description": "桃井待命中"
+    },
+    {
         "id": "TALK_Momori_recruit",
         "type": "talk_topic",
         "dynamic_line": "有趣的事现在开始！(これから、すっごく面白い物語が始まるよ！)",
         "responses": [
             {
                 "text": "ᕕ(◠ڼ◠)ᕗ",
-                "effect": [ "follow" ],
+                "effect": [
+                    "follow",
+                    { "npc_set_talker": { "global_val": "Momori_id" } },
+                    { "set_string_var": "standby_Momori", "target_var": { "npc_val": "student_standby" } },
+                    { "set_string_var": "有什么需要帮忙吗？", "target_var": { "npc_val": "student_topic" } }
+                ],
                 "topic": "TALK_DONE"
             }
         ]
     },
     {
-        "id": "TALK_Momori",
+        "id": [ "TALK_Kivotos_Students" ],
         "type": "talk_topic",
-        "dynamic_line": "有什么需要帮忙吗？",
         "responses": [
             {
+                "condition": { "npc_has_trait": "Mutation_Momori" },
                 "text": "[3 Cost] 创作的痛苦(进行带有范围伤害的扫射)",
                 "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "3" ] } },
                 "success": {
@@ -30,8 +42,23 @@
                     ]
                 },
                 "failure": { "topic": "TALK_NOEnoughCost" }
-            },
-            { "text": "暂时没有了", "topic": "TALK_DONE" }
+            }
+        ]
+    },
+    {
+        "type": "talk_topic",
+        "id": [ "TALK_Arona_Recall" ],
+        "responses": [
+            {
+                "text": "召回桃井",
+                "condition": { "u_has_trait": "standby_Momori"},
+                "effect": [
+                    { "math": [ "Student_id", "=", "Momori_id" ] },
+                    { "u_lose_trait": "standby_Momori" },
+                    { "run_eocs": [  "EOC_Recall_Student" ] }
+                ],
+                "topic": "TALK_DONE"
+            }
         ]
     }
 ]

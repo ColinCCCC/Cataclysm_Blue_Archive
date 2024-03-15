@@ -14,19 +14,21 @@
             {
                 "text": "ᕕ(◠ڼ◠)ᕗ",
                 "effect": [
+                    "follow",
                     { "npc_set_talker": { "global_val": "Hifumi_id" } },
-                    "follow"
+                    { "set_string_var": "standby_Hifumi", "target_var": { "npc_val": "student_standby" } },
+                    { "set_string_var": "有什么需要帮忙吗？", "target_var": { "npc_val": "student_topic" } }
                 ],
                 "topic": "TALK_DONE"
             }
         ]
     },
     {
-        "id": "TALK_Hifumi",
+        "id": [ "TALK_Kivotos_Students" ],
         "type": "talk_topic",
-        "dynamic_line": "有什么需要帮忙吗？",
         "responses": [
             {
+                "condition": { "npc_has_trait": "Mutation_Hifumi" },
                 "text": "[6 Cost] 拜托了，佩洛洛大人!(召唤一个吸引怪物的诱饵并对周围3格内敌对目标造成伤害)",
                 "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "6" ] } },
                 "success": {
@@ -40,17 +42,23 @@
                     ]
                 },
                 "failure": { "topic": "TALK_NOEnoughCost" }
-            },
+            }
+        ]
+    },
+    {
+        "type": "talk_topic",
+        "id": [ "TALK_Arona_Recall" ],
+        "responses": [
             {
-                "text": "先到临时指挥部待命吧",
+                "text": "召回日富美",
+                "condition": { "u_has_trait": "standby_Hifumi"},
                 "effect": [
-                    { "u_location_variable": { "context_val": "loc" }, "max_radius": 8, "z_override":true, "z_adjust": -8 },
-                    { "u_add_trait": "standby_Hifumi" },
-                    { "npc_teleport": { "context_val": "loc" }, "force": true }, { "u_message": "日富美进入待命状态，可用什亭之匣召回" }
+                    { "math": [ "Student_id", "=", "Hifumi_id" ] },
+                    { "u_lose_trait": "standby_Hifumi" },
+                    { "run_eocs": [  "EOC_Recall_Student" ] }
                 ],
                 "topic": "TALK_DONE"
-            },
-            { "text": "暂时没有了", "topic": "TALK_DONE" }
+            }
         ]
     }
 ]

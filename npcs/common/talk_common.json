@@ -3,12 +3,34 @@
         "id": [ "TALK_FRIEND" ],
         "type": "talk_topic",
         "responses": [
-            { "text": "桃井，我有些事情需要你做……", "condition": { "and": [ { "u_has_trait": "Mutation_Sensei"}, {"npc_has_trait": "Mutation_Momori"} ] }, "topic": "TALK_Momori" },
-            { "text": "日富美，我有些事情需要你做……", "condition": { "and": [ { "u_has_trait": "Mutation_Sensei"}, {"npc_has_trait": "Mutation_Hifumi" } ] }, "topic": "TALK_Hifumi" },
-            { "text": "优香，我有些事情需要你做……", "condition": { "and": [ { "u_has_trait": "Mutation_Sensei"}, {"npc_has_trait": "Mutation_Yuuka" } ] }, "topic": "TALK_Yuuka" },
-            { "text": "白子，我有些事情需要你做……", "condition": { "and": [ { "u_has_trait": "Mutation_Sensei"}, {"npc_has_trait": "Mutation_Shiroko" } ] }, "topic": "TALK_Shiroko" },
-            { "text": "伊树菜，我有些事情需要你做……", "condition": { "and": [ { "u_has_trait": "Mutation_Sensei"}, {"npc_has_trait": "Mutation_Izuna" } ] }, "topic": "TALK_Izuna" },
-            { "text": "未花，我有些事情需要你做……", "condition": { "and": [ { "u_has_trait": "Mutation_Sensei"}, {"npc_has_trait": "Mutation_Mika" } ] }, "topic": "TALK_Mika" }
+            { 
+                "text": "<npc_name>，我有些事情需要你做……",
+                "condition": {
+                    "and": [
+                        { "u_has_trait": "Mutation_Sensei"},
+                        {"npc_has_trait": "Mutation_Kivotos_Halo"}
+                    ]
+                },
+                "topic": "TALK_Kivotos_Students"
+            }
+        ]
+    },
+    {
+        "id": "TALK_Kivotos_Students",
+        "type": "talk_topic",
+        "dynamic_line": "<npc_val:student_topic>",
+        "responses": [
+            {
+                "text": "先到临时指挥部待命吧",
+                "effect": [
+                    { "u_location_variable": { "context_val": "loc" }, "max_radius": 8, "z_override":true, "z_adjust": -8 },
+                    { "set_string_var": "<npc_val:student_standby>", "target_var": { "context_val": "student_standby" }, "parse_tags": true },
+                    { "u_add_trait": { "context_val": "student_standby" } },
+                    { "npc_teleport": { "context_val": "loc" }, "force": true }, { "u_message": "<npc_name>进入待命状态，可用什亭之匣召回" }
+                ],
+                "topic": "TALK_DONE"
+            },
+            { "text": "暂时没有了", "topic": "TALK_DONE" }
         ]
     },
     {
