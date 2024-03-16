@@ -96,6 +96,11 @@
         ]
     },
     {
+        "id": "EOC_student_cast_spell",
+        "type": "effect_on_condition",
+        "effect": [ { "u_spawn_item": { "context_val": "student_spell_caster" },"count": 1 } ]
+    },
+    {
         "type": "SPELL",
         "name": "返回控制",
         "id": "spell_return_to_player",
