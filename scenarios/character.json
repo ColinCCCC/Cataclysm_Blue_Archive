@@ -19,6 +19,7 @@
             "both": {
                 "entries": [
                     { "item": "dress_shirt" },
+                    { "item": "slingpack" },
                     { "item": "blazer" },
                     { "item": "socks" },
                     { "item": "dress_shoes" },
