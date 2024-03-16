@@ -15,7 +15,7 @@
                 "text": "ᕕ(◠ڼ◠)ᕗ",
                 "effect": [
                     "follow",
-                    { "npc_set_talker": { "global_val": "Shiroki_id" } },
+                    { "npc_set_talker": { "global_val": "Shiroko_id" } },
                     { "set_string_var": "对策委员会", "target_var": { "npc_val": "student_organization" } },
                     { "set_string_var": "★★★", "target_var": { "npc_val": "student_stars" } },
                     { "math": [ "npc_number_stars_cnt_student_stars", "=", "3" ] },
