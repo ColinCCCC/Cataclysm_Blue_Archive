@@ -25,6 +25,24 @@
         "effect": [ { "u_spawn_item": { "context_val": "student_spell_caster" },"count": 1 } ]
     },
     {
+        "type": "effect_on_condition",
+        "id": "EOC_Recall_Student",
+        "effect": [
+            {
+                "run_eoc_with": {
+                    "id": "EOC_Recall_Student_do",
+                    "effect": [
+                        { "npc_teleport": { "context_val": "your_loc" }, "force": true },
+                        { "u_message": "<npc_name>已召回", "popup": true }
+                    ]
+                },
+                "alpha_talker": "avatar",
+                "beta_talker": { "global_val": "Student_id" },
+                "false_eocs": "_EOC_return_to_player_fail_msg"
+            }
+        ]
+    },
+    {
         "type": "SPELL",
         "name": "返回控制",
         "id": "spell_return_to_player",

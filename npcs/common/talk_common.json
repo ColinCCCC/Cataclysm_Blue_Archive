@@ -25,7 +25,7 @@
                     { "set_string_var": "standby_<npc_val:student_ename>", "target_var": { "context_val": "student_standby" }, "parse_tags": true },
                     { "u_add_trait": { "context_val": "student_standby" } },
                     { "npc_teleport": { "context_val": "loc" }, "force": true },
-                    { "u_message": "<npc_name>进入待命状态，可用什亭之匣召回" }
+                    { "u_message": "<npc_name>进入待命状态，可用什亭之匣召回", "popup": true }
                 ],
                 "topic": "TALK_DONE"
             },

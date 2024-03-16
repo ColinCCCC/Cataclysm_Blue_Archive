@@ -59,18 +59,6 @@
         "max_duration": "5 s"
     },
     {
-        "type": "effect_on_condition",
-        "id": "EOC_Recall_Student",
-        "effect": [
-            {
-                "run_eoc_with": { "id": "EOC_Recall_Student_do", "effect": [ { "npc_teleport": { "context_val": "your_loc" }, "force": true }, { "u_message": "<npc_name>已召回" } ] },
-                "alpha_talker": "avatar",
-                "beta_talker": { "global_val": "Student_id" },
-                "false_eocs": "_EOC_return_to_player_fail_msg"
-            }
-        ]
-    },
-    {
         "type": "talk_topic",
         "id": "TALK_Arona",
         "dynamic_line": "<global_val:student_face_Arona>\n<color_light_cyan>老师，等您很久了！</color>\n<color_light_cyan>有什么能帮到您？</color>",
