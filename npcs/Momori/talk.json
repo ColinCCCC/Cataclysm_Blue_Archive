@@ -42,7 +42,7 @@
                         { "u_set_talker": { "global_val": "player_id" } },
                         "take_control",
                         { "set_string_var": "caster_spell_Momori_cone_aoe", "target_var": { "context_val": "student_spell_caster" } },
-                        { "queue_eocs": "EOC_student_cast_spell", "time_in_future": 1 },
+                        { "queue_eocs": "EOC_student_cast_spell", "time_in_future": 2 },
                         { "queue_eocs": "EOC_return_to_player", "time_in_future": 5 }
                     ]
                 },
