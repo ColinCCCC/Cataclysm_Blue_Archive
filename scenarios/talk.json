@@ -20,13 +20,13 @@
     {
         "type": "talk_topic",
         "id": "TALK_BlueArchive_Start_3",
-        "dynamic_line": "<global_val:student_face_Hare>\n晴 <color_light_cyan>『贝里塔斯』</color>\n 虽然不知道老师是通过什么手段联系我们的，我们完全无法解析老师所在的世界的电讯信息。\n但是只要联系上了就有希望。",
+        "dynamic_line": "<global_val:student_face_Hare>\n晴 <color_light_cyan>『贝里塔斯』</color>\n虽然不知道老师是通过什么手段联系我们的，我们完全无法解析老师所在的世界的电讯信息。\n但是只要联系上了就有希望。",
         "responses": [ { "text": "……", "topic": "TALK_BlueArchive_Start_4" } ]
     },
     {
         "type": "talk_topic",
         "id": "TALK_BlueArchive_Start_4",
-        "dynamic_line": "<global_val:student_face_Hare>\n晴 <color_light_cyan>『贝里塔斯』</color>\n 老师是通过身上的电子设备联系我们的吗？也许它能够成为联系两个世界的介质……\n等一等……",
+        "dynamic_line": "<global_val:student_face_Hare>\n晴 <color_light_cyan>『贝里塔斯』</color>\n老师是通过身上的电子设备联系我们的吗？也许它能够成为联系两个世界的介质……\n等一等……",
         "responses": [ { "text": "……", "topic": "TALK_BlueArchive_Start_5" } ]
     },
     {

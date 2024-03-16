@@ -22,7 +22,7 @@
             "EBOOKREAD",
             {
                 "type": "effect_on_conditions",
-                "menu_text": "与阿罗娜对话",
+                "menu_text": "<color_light_cyan>与阿罗娜对话</color>",
                 "description": "与阿罗娜对话",
                 "effect_on_conditions": [ { "id": "EOC_TALK_Arona", "effect": [ "open_dialogue" ] } ]
             }
@@ -73,7 +73,7 @@
     {
         "type": "talk_topic",
         "id": "TALK_Arona",
-        "dynamic_line": "<color_light_cyan>⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠸⣿⢻⣥⣄⣀⣀⣀⣀⣀⣀⣤⣤⣤⣴⣶⣾⠿⠟⣱⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠈⢿⣶⣤⣀⠀⠀⠈⠈⠙⠛⠛⠋⠛⠛⠛⠛⠛⠛⠋⠉⠉⠀⢀⣾⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⣷⢶⣦⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⢟⣽⣺⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠈⢻⣿⣿⣿⣷⣜⠭⣟⠷⣦⡀⠀⠀⠀⢀⣀⢀⣴⠿⣫⠵⣻⣵⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣿⣿⣿⣿⣶⣭⣂⡙⠒⠞⢟⣛⣋⣭⣶⣶⣾⣿⣿⣉⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⢿⣿⣿⣿⣿⡿⠿⠻⠛⢙⣉⣉⣩⠿⢷⣦⡻⣿⣿⣶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣢⡶⢖⣢⣴⣶⣿⣿⣿⣿⣿⣿⣿⣿⣶⣯⣎⠻⣿⣿⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⡱⣫⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣻⣿⣿⣿⣿⣇⡽⣿⣏⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⠇⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⢿⣿⣿⣟⣿⣿⡽⣿⡼⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⡿⣸⣿⣿⣿⡏⣿⣿⣿⣿⣸⣿⣿⣿⣿⣿⣟⣿⣿⣿⡞⣿⣿⣽⣿⢻⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⡇⣿⣏⣿⣿⡇⣿⣿⣿⣿⡟⣿⣿⣿⣿⣿⣿⢹⣿⣿⣿⢹⣿⣿⣽⡏⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⡇⣿⢸⣿⣿⡇⢻⣿⣿⣿⣷⢿⣿⣿⣿⣹⣿⡏⣿⣿⣿⡏⣿⣿⣧⢿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⡇⢇⣿⣿⣿⢸⡿⣿⢻⣿⣿⣾⡏⣿⣿⣿⣯⡅⡜⣻⡻⣷⢹⣿⣿⢸⢸⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣷⢸⣿⣿⡟⡼⠿⣻⣟⣿⣿⣿⣿⢻⣿⣿⣿⣧⢡⢻⣇⣿⠘⣿⣿⠀⢸⠿⢋⣾⣦⡀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⢀⣠⣾⣿⣿⢸⣿⠟⣱⣾⣿⣿⣻⡸⣿⣿⣿⠞⣿⣿⣿⣿⠘⠎⣿⣿⠀⣿⣿⠀⢳⣾⣿⣿⣿⣿⣦⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠐⠛⠿⠇⣿⣿⡌⡫⣳⣿⣿⣿⣿⢷⢽⣿⣿⡗⣹⣿⣿⡵⠰⡆⣮⠙⡇⣿⡿⠀⠌⣿⣿⣿⣿⣿⢟⡑⠄⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⢖⡼⣿⣇⣵⣿⠟⢉⣉⠉⣛⣯⣿⣿⣿⣿⡱⣻⣿⡇⠀⠀⢸⡀⣿⣿⠃⣸⣸⢿⣿⣿⣿⣿⣷⡹⣮⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠔⢒⣯⣥⣶⡽⣿⣹⡟⢠⡿⠆⠈⠁⢻⣷⣏⢯⡻⣷⣱⡹⠇⠺⢏⣿⠁⣿⣫⣦⡥⣣⢸⣿⣿⣟⣿⣿⡇⠘⡇⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⡿⣿⡽⣯⢧⣘⢧⡀⣤⡴⢺⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢇⢶⣶⡹⡌⣿⣟⡾⢹⣿⣷⠁⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⢶⣿⣿⣿⢫⣿⢧⣞⢎⡻⣿⣿⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢟⣾⣯⣿⡇⠃⣯⣿⢷⡟⣿⡿⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⡌⣿⣿⣿⢹⡟⢸⣿⣞⢏⠚⣿⣿⣿⣿⣿⣿⠛⣙⣧⣤⣽⣿⣿⣿⣿⢏⣠⣝⢿⡞⢃⣼⢿⣟⣾⡇⢸⠆⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⡈⠑⠸⣿⣿⣦⣷⡙⠿⣿⣿⣿⣿⣷⣟⣟⣿⣾⣿⡿⠛⣵⠸⣿⣿⣧⢣⣾⣯⡏⡻⠟⢀⠞⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠻⣟⠆⡸⡔⠙⢿⣿⠰⣝⢿⣶⣭⣛⣻⠿⢿⡿⢟⣫⣶⢙⢿⡷⣪⣝⠛⡏⠔⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⢀⡴⣫⣯⢧⣻⣮⣵⣶⠭⢉⣙⣛⣪⣿⣽⣶⡋⣯⣿⣿⣯⣿⡾⡻⣳⣶⣭⣅⡳⠮⡂⠀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⣿⣟⢗⢎⣫⢿⠟⡁⣿⢸⣿⣷⣶⣶⣶⣶⡇⣿⣭⣽⣿⣿⣽⣾⢓⣯⣿⣿⣯⣭⡨⠦⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>老师，等您很久了！</color>\n<color_light_cyan>有什么能帮到您？</color>",
+        "dynamic_line": "<global_val:student_face_Arona>\n<color_light_cyan>老师，等您很久了！</color>\n<color_light_cyan>有什么能帮到您？</color>",
         "responses": [
             {
                 "text": "[120青辉石]招募学生！",
@@ -95,7 +95,7 @@
     {
         "type": "talk_topic",
         "id": "TALK_Arona_Recall",
-        "dynamic_line": "<color_light_cyan>⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠸⣿⢻⣥⣄⣀⣀⣀⣀⣀⣀⣤⣤⣤⣴⣶⣾⠿⠟⣱⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠈⢿⣶⣤⣀⠀⠀⠈⠈⠙⠛⠛⠋⠛⠛⠛⠛⠛⠛⠋⠉⠉⠀⢀⣾⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⣷⢶⣦⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⢟⣽⣺⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠈⢻⣿⣿⣿⣷⣜⠭⣟⠷⣦⡀⠀⠀⠀⢀⣀⢀⣴⠿⣫⠵⣻⣵⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣿⣿⣿⣿⣶⣭⣂⡙⠒⠞⢟⣛⣋⣭⣶⣶⣾⣿⣿⣉⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⢿⣿⣿⣿⣿⡿⠿⠻⠛⢙⣉⣉⣩⠿⢷⣦⡻⣿⣿⣶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣢⡶⢖⣢⣴⣶⣿⣿⣿⣿⣿⣿⣿⣿⣶⣯⣎⠻⣿⣿⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⡱⣫⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣻⣿⣿⣿⣿⣇⡽⣿⣏⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⠇⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⢿⣿⣿⣟⣿⣿⡽⣿⡼⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⡿⣸⣿⣿⣿⡏⣿⣿⣿⣿⣸⣿⣿⣿⣿⣿⣟⣿⣿⣿⡞⣿⣿⣽⣿⢻⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⡇⣿⣏⣿⣿⡇⣿⣿⣿⣿⡟⣿⣿⣿⣿⣿⣿⢹⣿⣿⣿⢹⣿⣿⣽⡏⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⡇⣿⢸⣿⣿⡇⢻⣿⣿⣿⣷⢿⣿⣿⣿⣹⣿⡏⣿⣿⣿⡏⣿⣿⣧⢿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⡇⢇⣿⣿⣿⢸⡿⣿⢻⣿⣿⣾⡏⣿⣿⣿⣯⡅⡜⣻⡻⣷⢹⣿⣿⢸⢸⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣷⢸⣿⣿⡟⡼⠿⣻⣟⣿⣿⣿⣿⢻⣿⣿⣿⣧⢡⢻⣇⣿⠘⣿⣿⠀⢸⠿⢋⣾⣦⡀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⢀⣠⣾⣿⣿⢸⣿⠟⣱⣾⣿⣿⣻⡸⣿⣿⣿⠞⣿⣿⣿⣿⠘⠎⣿⣿⠀⣿⣿⠀⢳⣾⣿⣿⣿⣿⣦⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠐⠛⠿⠇⣿⣿⡌⡫⣳⣿⣿⣿⣿⢷⢽⣿⣿⡗⣹⣿⣿⡵⠰⡆⣮⠙⡇⣿⡿⠀⠌⣿⣿⣿⣿⣿⢟⡑⠄⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠀⢖⡼⣿⣇⣵⣿⠟⢉⣉⠉⣛⣯⣿⣿⣿⣿⡱⣻⣿⡇⠀⠀⢸⡀⣿⣿⠃⣸⣸⢿⣿⣿⣿⣿⣷⡹⣮⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠔⢒⣯⣥⣶⡽⣿⣹⡟⢠⡿⠆⠈⠁⢻⣷⣏⢯⡻⣷⣱⡹⠇⠺⢏⣿⠁⣿⣫⣦⡥⣣⢸⣿⣿⣟⣿⣿⡇⠘⡇⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⡿⣿⡽⣯⢧⣘⢧⡀⣤⡴⢺⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢇⢶⣶⡹⡌⣿⣟⡾⢹⣿⣷⠁⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⢶⣿⣿⣿⢫⣿⢧⣞⢎⡻⣿⣿⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢟⣾⣯⣿⡇⠃⣯⣿⢷⡟⣿⡿⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⡌⣿⣿⣿⢹⡟⢸⣿⣞⢏⠚⣿⣿⣿⣿⣿⣿⠛⣙⣧⣤⣽⣿⣿⣿⣿⢏⣠⣝⢿⡞⢃⣼⢿⣟⣾⡇⢸⠆⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⡈⠑⠸⣿⣿⣦⣷⡙⠿⣿⣿⣿⣿⣷⣟⣟⣿⣾⣿⡿⠛⣵⠸⣿⣿⣧⢣⣾⣯⡏⡻⠟⢀⠞⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⠀⠀⠻⣟⠆⡸⡔⠙⢿⣿⠰⣝⢿⣶⣭⣛⣻⠿⢿⡿⢟⣫⣶⢙⢿⡷⣪⣝⠛⡏⠔⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⢀⡴⣫⣯⢧⣻⣮⣵⣶⠭⢉⣙⣛⣪⣿⣽⣶⡋⣯⣿⣿⣯⣿⡾⡻⣳⣶⣭⣅⡳⠮⡂⠀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>⠀⠀⠀⠀⠀⠀⣿⣟⢗⢎⣫⢿⠟⡁⣿⢸⣿⣷⣶⣶⣶⣶⡇⣿⣭⣽⣿⣿⣽⣾⢓⣯⣿⣿⣯⣭⡨⠦⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</color>\n<color_light_cyan>老师需要阿罗娜联系哪个学生？</color>",
+        "dynamic_line": "<global_val:student_face_Arona>\n<color_light_cyan>老师需要阿罗娜联系哪个学生？</color>",
         "responses": [
             { "text": "没有了，再见。ᕕ(◠ڼ◠)ᕗ", "topic": "TALK_NONE" }
         ]

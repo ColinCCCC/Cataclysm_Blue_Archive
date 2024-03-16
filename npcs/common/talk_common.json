@@ -5,9 +5,7 @@
         "responses": [
             { 
                 "text": "<color_light_cyan><npc_name>，我有些事情需要你做……</color>",
-                "condition": {
-                    "and": [ { "u_has_trait": "Mutation_Sensei"}, {"npc_has_trait": "Mutation_Kivotos_Halo"} ]
-                },
+                "condition": { "and": [ { "u_has_trait": "Mutation_Sensei"}, {"npc_has_trait": "Mutation_Kivotos_Halo"} ] },
                 "effect": [ 
                     { "set_string_var": "Fragments_<npc_val:student_ename>", "target_var": { "context_val": "student_fragments" }, "parse_tags": true }
                 ],
@@ -18,7 +16,7 @@
     {
         "id": "TALK_Kivotos_Students",
         "type": "talk_topic",
-        "dynamic_line": "<npc_name><npc_val:student_stars> <color_light_cyan><npc_val:student_organization></color>\n<npc_val:student_topic>",
+        "dynamic_line": "<npc_name> <npc_val:student_stars> <color_light_cyan>『<npc_val:student_organization>』</color>\n<npc_val:student_topic>",
         "responses": [
             {
                 "text": "<npc_name>，先暂时离队到临时指挥部待命吧",
