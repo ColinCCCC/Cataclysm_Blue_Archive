@@ -4,7 +4,7 @@
         "type": "talk_topic",
         "responses": [
             { 
-                "text": "<npc_name>，我有些事情需要你做……",
+                "text": "<color_light_cyan><npc_name>，我有些事情需要你做……</color>",
                 "condition": {
                     "and": [ { "u_has_trait": "Mutation_Sensei"}, {"npc_has_trait": "Mutation_Kivotos_Halo"} ]
                 },
