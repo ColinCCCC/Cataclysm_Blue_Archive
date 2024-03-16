@@ -51,7 +51,7 @@
             { "id": "spell_recruit_Hifumi" },
             { "id": "spell_recruit_Shiroko" },
             { "id": "spell_recruit_Yuuka" },
-	    { "id": "spell_recruit_Mika" }
+	        { "id": "spell_recruit_Mika" }
         ],
         "flags": [ "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "WONDER", "SILENT"]
     }
