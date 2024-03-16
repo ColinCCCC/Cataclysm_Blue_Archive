@@ -12,25 +12,25 @@
     {
         "type": "profession",
         "id": "prof_kivotos_sensei",
-        "name": "夏莱的老师",
-        "description":  {"male": "夏莱的老师", "female": "你认真的吗？"},
+        "name": "『夏莱』的老师",
+        "description":  {"male": "『夏莱』的老师", "female": "你认真的吗？"},
         "points": 0,
         "items": {
             "both": {
-              "entries": [
-                { "item": "dress_shirt" },
-                { "item": "blazer" },
-                { "item": "socks" },
-                { "item": "dress_shoes" },
-                { "item": "tie_skinny" },
-                { "item": "tieclip" },
-                { "item": "poetry_book" },
-                { "item": "wristwatch" },
-                { "group": "charged_smart_phone" },
-                { "item": "BoxoffShittim" },
-                { "item": "AdultsCard", "ammo-item": "anthochroite", "charges": 240 },
-                { "item": "pants", "variant": "pants_black" }
-              ]
+                "entries": [
+                    { "item": "dress_shirt" },
+                    { "item": "blazer" },
+                    { "item": "socks" },
+                    { "item": "dress_shoes" },
+                    { "item": "tie_skinny" },
+                    { "item": "tieclip" },
+                    { "item": "poetry_book" },
+                    { "item": "wristwatch" },
+                    { "group": "charged_smart_phone" },
+                    { "item": "BoxoffShittim" },
+                    { "item": "AdultsCard", "ammo-item": "anthochroite", "charges": 240 },
+                    { "item": "pants", "variant": "pants_black" }
+                ]
             },
             "male": { "entries": [ { "item": "briefs" } ] },
             "female": { "entries": [ { "item": "bra" }, { "item": "panties" } ] }
@@ -40,10 +40,10 @@
     {
         "type": "scenario",
         "id": "scenario_kivotos_sensei",
-        "name": "夏莱的老师",
+        "name": "『夏莱』的老师",
         "points": 0,
         "professions": [ "prof_kivotos_sensei" ],
-        "description": "",
+        "description": "你是『基沃托斯』世界中『夏莱』的老师，意外被传送到了新英格兰这片沾染疯狂的土地。费劲全力跑到避难所后，你终于收到了来自学生的通讯……",
         "allowed_locs": [ "sloc_shelter_a", "sloc_shelter_b", "sloc_shelter_c" ],
         "start_name": "避难所",
         "flags": [ "CITY_START", "LONE_START"]
