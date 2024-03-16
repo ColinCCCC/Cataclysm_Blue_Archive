@@ -32,56 +32,15 @@
                 "topic": "TALK_DONE"
             },
             {
-                "text": "[10 神名文字碎片-<npc_name>] 升至★★",
-                "condition": { "compare_string": [ "★", { "npc_val": "student_stars" } ] },
+                "text": "[10 神名文字碎片-<npc_name>] 升至★<npc_val:student_stars>",
+                "condition": { "and": [ { "math": [ "npc_number_stars_cnt_student_stars", ">=", "1" ] }, { "math": [ "npc_number_stars_cnt_student_stars", "<=", "4" ] } ] },
                 "trial": { "type": "CONDITION", "condition": { "u_has_items": { "item": { "context_val": "student_fragments" }, "count": 10 } } },
                 "success": {
                     "topic": "TALK_DONE",
                     "effect": [ 
                         { "u_consume_item": { "context_val": "student_fragments" }, "count": 10 },
-                        { "set_string_var": "★★", "target_var": { "npc_val": "student_stars" } },
-                        { "u_message": "<npc_name>升至<npc_val:student_stars>" }
-                    ]
-                },
-                "failure": { "topic": "TALK_NOEnoughFragments" }
-            },
-            {
-                "text": "[10 神名文字碎片-<npc_name>] 升至★★★",
-                "condition": { "compare_string": [ "★★", { "npc_val": "student_stars" } ] },
-                "trial": { "type": "CONDITION", "condition": { "u_has_items": { "item": { "context_val": "student_fragments" }, "count": 10 } } },
-                "success": {
-                    "topic": "TALK_DONE",
-                    "effect": [ 
-                        { "u_consume_item": { "context_val": "student_fragments" }, "count": 10 },
-                        { "set_string_var": "★★★", "target_var": { "npc_val": "student_stars" } },
-                        { "u_message": "<npc_name>升至<npc_val:student_stars>" }
-                    ]
-                },
-                "failure": { "topic": "TALK_NOEnoughFragments" }
-            },
-            {
-                "text": "[10 神名文字碎片-<npc_name>] 升至★★★★",
-                "condition": { "compare_string": [ "★★★", { "npc_val": "student_stars" } ] },
-                "trial": { "type": "CONDITION", "condition": { "u_has_items": { "item": { "context_val": "student_fragments" }, "count": 10 } } },
-                "success": {
-                    "topic": "TALK_DONE",
-                    "effect": [ 
-                        { "u_consume_item": { "context_val": "student_fragments" }, "count": 10 },
-                        { "set_string_var": "★★★★", "target_var": { "npc_val": "student_stars" } },
-                        { "u_message": "<npc_name>升至<npc_val:student_stars>" }
-                    ]
-                },
-                "failure": { "topic": "TALK_NOEnoughFragments" }
-            },
-            {
-                "text": "[10 神名文字碎片-<npc_name>] 升至★★★★★",
-                "condition": { "compare_string": [ "★★★★", { "npc_val": "student_stars" } ] },
-                "trial": { "type": "CONDITION", "condition": { "u_has_items": { "item": { "context_val": "student_fragments" }, "count": 10 } } },
-                "success": {
-                    "topic": "TALK_DONE",
-                    "effect": [ 
-                        { "u_consume_item": { "context_val": "student_fragments" }, "count": 10 },
-                        { "set_string_var": "★★★★★", "target_var": { "npc_val": "student_stars" } },
+                        { "math": [ "npc_number_stars_cnt_student_stars", "+=", "1" ] },
+                        { "set_string_var": "★<npc_val:student_stars>", "target_var": { "npc_val": "student_stars" }, "parse_tags": true },
                         { "u_message": "<npc_name>升至<npc_val:student_stars>" }
                     ]
                 },

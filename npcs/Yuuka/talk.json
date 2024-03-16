@@ -18,6 +18,7 @@
                     { "npc_set_talker": { "global_val": "Yuuka_id" } },
                     { "set_string_var": "研讨会", "target_var": { "npc_val": "student_organization" } },
                     { "set_string_var": "★", "target_var": { "npc_val": "student_stars" } },
+                    { "math": [ "npc_number_stars_cnt_student_stars", "=", "1" ] },
                     { "set_string_var": "Yuuka", "target_var": { "npc_val": "student_ename" } },
                     { "set_string_var": "有什么需要帮忙吗？", "target_var": { "npc_val": "student_topic" } }
                 ],

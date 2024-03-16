@@ -15,9 +15,11 @@
                 "text": "ᕕ(◠ڼ◠)ᕗ",
                 "effect": [
                     "follow",
+                    { "npc_learn_martial_art": "style_niten" },
                     { "npc_set_talker": { "global_val": "Momori_id" } },
                     { "set_string_var": "游戏开发部", "target_var": { "npc_val": "student_organization" } },
                     { "set_string_var": "★★", "target_var": { "npc_val": "student_stars" } },
+                    { "math": [ "npc_number_stars_cnt_student_stars", "=", "2" ] },
                     { "set_string_var": "Momori", "target_var": { "npc_val": "student_ename" } },
                     { "set_string_var": "有什么需要帮忙吗？", "target_var": { "npc_val": "student_topic" } }
                 ],
