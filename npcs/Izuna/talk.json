@@ -15,6 +15,7 @@
                 "text": "ᕕ(◠ڼ◠)ᕗ",
                 "effect": [
                     "follow",
+                    { "npc_learn_martial_art": "style_ninjutsu" },
                     { "npc_set_talker": { "global_val": "Izuna_id" } },
                     { "set_string_var": "忍术研究部", "target_var": { "npc_val": "student_organization" } },
                     { "set_string_var": "★★★", "target_var": { "npc_val": "student_stars" } },
