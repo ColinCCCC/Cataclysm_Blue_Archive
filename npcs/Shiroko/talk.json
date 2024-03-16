@@ -18,7 +18,7 @@
                     { "npc_set_talker": { "global_val": "Shiroki_id" } },
                     { "set_string_var": "对策委员会", "target_var": { "npc_val": "student_organization" } },
                     { "set_string_var": "★★★", "target_var": { "npc_val": "student_stars" } },
-                    { "math": [ "npc_number_stars_cnt_student_stars", "=", "2" ] },
+                    { "math": [ "npc_number_stars_cnt_student_stars", "=", "3" ] },
                     { "set_string_var": "Shiroko", "target_var": { "npc_val": "student_ename" } },
                     { "set_string_var": "老师，终于决定要抢银行了吗！", "target_var": { "npc_val": "student_topic" } }
                 ],
