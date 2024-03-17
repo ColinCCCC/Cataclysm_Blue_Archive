@@ -9,7 +9,7 @@
     "effect": "attack",
     "effect_str": "Izuna_speedup",
     "shape": "blast",
-    "base_casting_time": 0,
+    "max_level": 5,
     "min_duration": 8000,
     "max_duration": 8000,
     "extra_effects": [{ "id": "spell_return_to_player", "hit_self": true }]
@@ -30,8 +30,10 @@
     "description": "召唤一个吸引怪物的诱饵",
     "valid_targets": ["ground", "self"],
     "shape": "blast",
-    "min_range": 20,
-    "max_range": 20,
+    "max_level": 5,
+    "min_range": 1,
+    "max_range": 26,
+    "range_increment": 5,
     "min_damage": 1,
     "max_damage": 1,
     "effect": "summon",
@@ -49,6 +51,7 @@
     "valid_targets": ["ally", "hostile"],
     "effect": "attack",
     "shape": "blast",
+    "max_level": 5,
     "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT", "SWAP_POS"]
   }
 ]

@@ -97,7 +97,7 @@
         "effect": "attack",
         "effect_str": "effect_Yuuka_shield",
         "shape": "blast",
-        "max_level": 3,
+        "max_level": 5,
         "min_duration": 6000,
         "max_duration": 12000,
         "duration_increment": 2000,
