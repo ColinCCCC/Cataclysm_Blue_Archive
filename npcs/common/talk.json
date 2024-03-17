@@ -27,6 +27,7 @@
                         { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "n_student_spell_cost" ] },
                         { "u_set_talker": { "global_val": "player_id" } },
                         { "set_string_var": "<npc_val:student_spell_id>", "target_var": { "context_val": "spell_id" }, "parse_tags": true },
+                        { "set_string_var": "<npc_val:cnt_student_stars>", "target_var": { "context_val": "spell_level" }, "parse_tags": true },
                         "take_control",
                         { "queue_eocs": "EOC_student_cast_spell", "time_in_future": 1 },
                         { "queue_eocs": "EOC_return_to_player", "time_in_future": 5 }

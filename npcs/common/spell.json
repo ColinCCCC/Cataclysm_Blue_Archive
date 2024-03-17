@@ -14,7 +14,15 @@
     {
         "id": "EOC_student_cast_spell",
         "type": "effect_on_condition",
-        "effect": [ { "u_cast_spell": { "id": { "context_val": "spell_id" } }, "targeted": true } ]
-        
+        "effect": [
+            {
+                "u_cast_spell": {
+                    "id": { "context_val": "spell_id" },
+                    "min_level": { "context_val": "spell_level" },
+                    "max_level": { "context_val": "spell_level" }
+                },
+                "targeted": true
+            }
+        ]
     }
 ]
