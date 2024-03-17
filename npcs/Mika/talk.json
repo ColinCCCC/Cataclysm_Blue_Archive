@@ -18,35 +18,14 @@
                     { "npc_set_talker": { "global_val": "Mika_id" } },
                     { "set_string_var": "茶会", "target_var": { "npc_val": "student_organization" } },
                     { "set_string_var": "★★★", "target_var": { "npc_val": "student_stars" } },
-                    { "math": [ "npc_number_stars_cnt_student_stars", "=", "3" ] },
+                    { "set_string_var": "3", "target_var": { "npc_val": "cnt_student_stars" } },
                     { "set_string_var": "Mika", "target_var": { "npc_val": "student_ename" } },
                     { "set_string_var": "spell_kyrie", "target_var": { "npc_val": "student_spell_id" } },
+                    { "set_string_var": "6", "target_var": { "npc_val": "student_spell_cost" } },
+                    { "set_string_var": "Kyrie Eleison(对一名敌人造成大量伤害)", "target_var": { "npc_val": "student_spell_name" } },
                     { "set_string_var": "有什么需要帮忙吗？", "target_var": { "npc_val": "student_topic" } }
                 ],
                 "topic": "TALK_DONE"
-            }
-        ]
-    },
-    {
-        "id": [ "TALK_Kivotos_Students" ],
-        "type": "talk_topic",
-        "responses": [
-            {
-                "condition": { "npc_has_trait": "Mutation_Mika" },
-                "text": "[6 Cost] Kyrie Eleison(对一名敌人造成大量伤害)",
-                "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "6" ] } },
-                "success": {
-                    "topic": "TALK_DONE",
-                    "effect": [
-                        { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "6" ] },
-                        { "u_set_talker": { "global_val": "player_id" } },
-                        { "set_string_var": "<npc_val:student_spell_id>", "target_var": { "context_val": "spell_id" }, "parse_tags": true },
-                        "take_control",
-                        { "queue_eocs": "EOC_student_cast_spell", "time_in_future": 3 },
-                        { "queue_eocs": "EOC_return_to_player", "time_in_future": 5 }
-                    ]
-                },
-                "failure": { "topic": "TALK_NOEnoughCost" }
             }
         ]
     },

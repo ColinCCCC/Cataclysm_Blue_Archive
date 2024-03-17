@@ -19,6 +19,22 @@
         "dynamic_line": "<npc_name> <npc_val:student_stars> <color_light_cyan>『<npc_val:student_organization>』</color>\n<npc_val:student_topic>",
         "responses": [
             {
+                "text": "[<npc_val:student_spell_cost> Cost](Lv.<npc_val:cnt_student_stars>) <npc_val:student_spell_name>",
+                "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "n_student_spell_cost" ] } },
+                "success": {
+                    "topic": "TALK_DONE",
+                    "effect": [
+                        { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "n_student_spell_cost" ] },
+                        { "u_set_talker": { "global_val": "player_id" } },
+                        { "set_string_var": "<npc_val:student_spell_id>", "target_var": { "context_val": "spell_id" }, "parse_tags": true },
+                        "take_control",
+                        { "queue_eocs": "EOC_student_cast_spell", "time_in_future": 1 },
+                        { "queue_eocs": "EOC_return_to_player", "time_in_future": 5 }
+                    ]
+                },
+                "failure": { "topic": "TALK_NOEnoughCost" }
+            },
+            {
                 "text": "<npc_name>，先暂时离队到临时指挥部待命吧",
                 "effect": [
                     { "u_location_variable": { "context_val": "loc" }, "max_radius": 8, "z_override":true, "z_adjust": -8 },
@@ -31,13 +47,13 @@
             },
             {
                 "text": "[10 神名文字碎片-<npc_name>] 升至★<npc_val:student_stars>",
-                "condition": { "and": [ { "math": [ "npc_number_stars_cnt_student_stars", ">=", "1" ] }, { "math": [ "npc_number_stars_cnt_student_stars", "<=", "4" ] } ] },
+                "condition": { "and": [ { "math": [ "n_cnt_student_stars", ">=", "1" ] }, { "math": [ "n_cnt_student_stars", "<=", "4" ] } ] },
                 "trial": { "type": "CONDITION", "condition": { "u_has_items": { "item": { "context_val": "student_fragments" }, "count": 10 } } },
                 "success": {
                     "topic": "TALK_DONE",
                     "effect": [ 
                         { "u_consume_item": { "context_val": "student_fragments" }, "count": 10 },
-                        { "math": [ "npc_number_stars_cnt_student_stars", "+=", "1" ] },
+                        { "math": [ "n_cnt_student_stars", "+=", "1" ] },
                         { "set_string_var": "★<npc_val:student_stars>", "target_var": { "npc_val": "student_stars" }, "parse_tags": true },
                         { "u_message": "<npc_name>升至<npc_val:student_stars>" }
                     ]

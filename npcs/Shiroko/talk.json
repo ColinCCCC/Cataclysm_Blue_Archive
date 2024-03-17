@@ -18,35 +18,14 @@
                     { "npc_set_talker": { "global_val": "Shiroko_id" } },
                     { "set_string_var": "对策委员会", "target_var": { "npc_val": "student_organization" } },
                     { "set_string_var": "★★★", "target_var": { "npc_val": "student_stars" } },
-                    { "math": [ "npc_number_stars_cnt_student_stars", "=", "3" ] },
+                    { "set_string_var": "3", "target_var": { "npc_val": "cnt_student_stars" } },
                     { "set_string_var": "Shiroko", "target_var": { "npc_val": "student_ename" } },
                     { "set_string_var": "spell_summon_uav", "target_var": { "npc_val": "student_spell_id" } },
+                    { "set_string_var": "2", "target_var": { "npc_val": "student_spell_cost" } },
+                    { "set_string_var": "召唤无人机:火力支援(召唤一个友善的榴弹无人机)", "target_var": { "npc_val": "student_spell_name" } },
                     { "set_string_var": "老师，终于决定要抢银行了吗！", "target_var": { "npc_val": "student_topic" } }
                 ],
                 "topic": "TALK_DONE"
-            }
-        ]
-    },
-    {
-        "id": [ "TALK_Kivotos_Students" ],
-        "type": "talk_topic",
-        "responses": [
-            {
-                "condition": { "npc_has_trait": "Mutation_Shiroko" },
-                "text": "[2 Cost] 召唤无人机:火力支援(召唤一个友善的榴弹无人机)",
-                "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "2" ] } },
-                "success": {
-                    "topic": "TALK_DONE",
-                    "effect": [
-                        { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "2" ] },
-                        { "u_set_talker": { "global_val": "player_id" } },
-                        { "set_string_var": "<npc_val:student_spell_id>", "target_var": { "context_val": "spell_id" }, "parse_tags": true },
-                        "take_control",
-                        { "queue_eocs": "EOC_student_cast_spell", "time_in_future": 3 },
-                        { "queue_eocs": "EOC_return_to_player", "time_in_future": 5 }
-                    ]
-                },
-                "failure": { "topic": "TALK_NOEnoughCost" }
             }
         ]
     },

@@ -18,34 +18,18 @@
                     { "npc_set_talker": { "global_val": "Yuuka_id" } },
                     { "set_string_var": "研讨会", "target_var": { "npc_val": "student_organization" } },
                     { "set_string_var": "★", "target_var": { "npc_val": "student_stars" } },
-                    { "math": [ "npc_number_stars_cnt_student_stars", "=", "1" ] },
+                    { "set_string_var": "1", "target_var": { "npc_val": "cnt_student_stars" } },
                     { "set_string_var": "Yuuka", "target_var": { "npc_val": "student_ename" } },
                     { "set_string_var": "spell_Yuuka_shield", "target_var": { "npc_val": "student_spell_id" } },
+                    { "set_string_var": "3", "target_var": { "npc_val": "student_spell_cost" } },
+                    { "set_string_var": "Q.E.D.(优香获得力场护盾)", "target_var": { "npc_val": "student_spell_name" } },
                     { "set_string_var": "有什么需要帮忙吗？", "target_var": { "npc_val": "student_topic" } }
                 ],
                 "topic": "TALK_DONE"
             }
         ]
     },
-    {
-        "id": [ "TALK_Kivotos_Students" ],
-        "type": "talk_topic",
-        "responses": [
-            {
-                "condition": { "npc_has_trait": "Mutation_Yuuka" },
-                "text": "[3 Cost] Q.E.D.(优香获得力场护盾)",
-                "trial": { "type": "CONDITION", "condition": { "math": [ "u_vitamin('vitamin_ba_cost')", ">=", "3" ] } },
-                "success": {
-                    "topic": "TALK_DONE",
                     "effect": [
-                        { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "3" ] },
-                        { "npc_cast_spell": { "id": "spell_Yuuka_shield" } }
-                    ]
-                },
-                "failure": { "topic": "TALK_NOEnoughCost" }
-            }
-        ]
-    },
     {
         "type": "talk_topic",
         "id": [ "TALK_Arona_Recall" ],
