@@ -100,6 +100,7 @@
         "max_level": 3,
         "min_duration": 6000,
         "max_duration": 12000,
-        "duration_increment": 2000
+        "duration_increment": 2000,
+        "extra_effects": [ { "id": "spell_return_to_player", "hit_self": true } ]
     }
 ]
