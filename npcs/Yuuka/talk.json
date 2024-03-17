@@ -29,7 +29,6 @@
             }
         ]
     },
-                    "effect": [
     {
         "type": "talk_topic",
         "id": [ "TALK_Arona_Recall" ],
