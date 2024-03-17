@@ -6,8 +6,8 @@
         "description": "召唤一个无人机",
         "valid_targets": ["ground", "self"],
         "shape": "blast",
-        "min_range": 1,
-	    "max_range": 1,
+        "min_range": 5,
+	    "max_range": 5,
         "min_damage": 1,
         "max_damage": 1,
         "effect": "summon",
@@ -15,23 +15,5 @@
         "min_duration": 3000,
         "max_duration": 3000,
         "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"]
-    },
-    {
-        "id": "caster_spell_summon_uav",
-        "type": "AMMO",
-        "symbol": ";",
-        "phase": "liquid",
-        "ammo_type": "NULL",
-        "color": "light_gray",
-        "name": {"str": "召唤无人机施放器"},
-        "description": "召唤无人机施放器",
-        "drop_action":  {
-            "type": "cast_spell",
-            "spell_id": "spell_summon_uav",
-            "no_fail": true,
-            "level": 0
-        },
-        "weight": "1 g",
-        "volume": "1 ml"
     }
 ]

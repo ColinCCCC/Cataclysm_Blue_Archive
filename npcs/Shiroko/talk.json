@@ -20,6 +20,7 @@
                     { "set_string_var": "★★★", "target_var": { "npc_val": "student_stars" } },
                     { "math": [ "npc_number_stars_cnt_student_stars", "=", "3" ] },
                     { "set_string_var": "Shiroko", "target_var": { "npc_val": "student_ename" } },
+                    { "set_string_var": "spell_summon_uav", "target_var": { "npc_val": "student_spell_id" } },
                     { "set_string_var": "老师，终于决定要抢银行了吗！", "target_var": { "npc_val": "student_topic" } }
                 ],
                 "topic": "TALK_DONE"
@@ -39,8 +40,8 @@
                     "effect": [
                         { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "2" ] },
                         { "u_set_talker": { "global_val": "player_id" } },
+                        { "set_string_var": "<npc_val:student_spell_id>", "target_var": { "context_val": "spell_id" }, "parse_tags": true },
                         "take_control",
-                        { "set_string_var": "caster_spell_summon_uav", "target_var": { "context_val": "student_spell_caster" } },
                         { "queue_eocs": "EOC_student_cast_spell", "time_in_future": 3 },
                         { "queue_eocs": "EOC_return_to_player", "time_in_future": 5 }
                     ]

@@ -32,8 +32,9 @@
         "description": "召唤一个吸引怪物的诱饵并对周围3格内敌对目标造成伤害",
         "valid_targets": ["ground", "self"],
         "shape": "blast",
+        "max_level": 5,
         "min_range": 20,
-	    "max_range": 20,
+	    "max_range": 40,
         "min_damage": 1,
         "max_damage": 1,
         "effect": "summon",
@@ -49,10 +50,11 @@
         "id": "spell_summon_Pello_attack",
         "description": "拜托了，佩洛洛大人!-攻击段",
         "valid_targets": ["hostile", "self"],
+        "max_level": 5,
         "min_aoe": 3,
         "max_aoe": 3,
         "min_range": 20,
-	    "max_range": 20,
+	    "max_range": 40,
         "min_damage": 20,
         "max_damage": 20,
         "shape": "blast",
@@ -60,23 +62,5 @@
         "effect": "attack",
         "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"],
         "extra_effects": [ { "id": "spell_return_to_player", "hit_self": true }]
-    },
-    {
-        "id": "caster_spell_summon_Pello",
-        "type": "AMMO",
-        "symbol": ";",
-        "phase": "liquid",
-        "ammo_type": "NULL",
-        "color": "light_gray",
-        "name": {"str": "释放技能：拜托了，佩洛洛大人!"},
-        "description": "释放技能：拜托了，佩洛洛大人!",
-        "drop_action":  {
-            "type": "cast_spell",
-            "spell_id": "spell_summon_Pello",
-            "no_fail": true,
-            "level": 0
-        },
-        "weight": "1 g",
-        "volume": "1 ml"
     }
 ]

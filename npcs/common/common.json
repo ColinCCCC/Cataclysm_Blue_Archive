@@ -12,19 +12,6 @@
         "description":""
     },
     {
-        "id": "eoc_recruit",
-        "type": "effect_on_condition",
-        "effect": [
-            { "u_cast_spell": { "id": "spell_recruit_students" } },
-            { "u_lose_effect": "effect_Arona_recruited" }
-        ]
-    },
-    {
-        "id": "EOC_student_cast_spell",
-        "type": "effect_on_condition",
-        "effect": [ { "u_spawn_item": { "context_val": "student_spell_caster" },"count": 1 } ]
-    },
-    {
         "type": "effect_on_condition",
         "id": "EOC_Recall_Student",
         "effect": [

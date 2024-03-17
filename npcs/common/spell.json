@@ -1,0 +1,20 @@
+[
+    {
+        "id": "caster_spell_common",
+        "type": "AMMO",
+        "symbol": ";",
+        "phase": "liquid",
+        "ammo_type": "NULL",
+        "color": "light_gray",
+        "name": {"str": "释放技能"},
+        "description": "释放技能",
+        "weight": "1 g",
+        "volume": "1 ml"
+    },
+    {
+        "id": "EOC_student_cast_spell",
+        "type": "effect_on_condition",
+        "effect": [ { "u_cast_spell": { "id": { "context_val": "spell_id" } }, "targeted": true } ]
+        
+    }
+]

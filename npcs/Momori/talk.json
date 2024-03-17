@@ -21,6 +21,7 @@
                     { "set_string_var": "★★", "target_var": { "npc_val": "student_stars" } },
                     { "math": [ "npc_number_stars_cnt_student_stars", "=", "2" ] },
                     { "set_string_var": "Momori", "target_var": { "npc_val": "student_ename" } },
+                    { "set_string_var": "spell_Momori_cone_aoe", "target_var": { "npc_val": "student_spell_id" } },
                     { "set_string_var": "有什么需要帮忙吗？", "target_var": { "npc_val": "student_topic" } }
                 ],
                 "topic": "TALK_DONE"
@@ -40,8 +41,8 @@
                     "effect": [
                         { "math": [ "u_vitamin('vitamin_ba_cost')", "-=", "3" ] },
                         { "u_set_talker": { "global_val": "player_id" } },
+                        { "set_string_var": "<npc_val:student_spell_id>", "target_var": { "context_val": "spell_id" }, "parse_tags": true },
                         "take_control",
-                        { "set_string_var": "caster_spell_Momori_cone_aoe", "target_var": { "context_val": "student_spell_caster" } },
                         { "queue_eocs": "EOC_student_cast_spell", "time_in_future": 3 },
                         { "queue_eocs": "EOC_return_to_player", "time_in_future": 5 }
                     ]

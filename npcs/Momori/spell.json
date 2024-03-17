@@ -16,23 +16,5 @@
         "effect": "attack",
         "flags": [ "NO_LEGS", "IGNORE_WALLS", "LOUD"],
         "extra_effects": [ { "id": "spell_return_to_player", "hit_self": true } ]
-    },
-    {
-        "id": "caster_spell_Momori_cone_aoe",
-        "type": "AMMO",
-        "symbol": ";",
-        "phase": "liquid",
-        "ammo_type": "NULL",
-        "color": "light_gray",
-        "name": {"str": "释放技能：创作的痛苦"},
-        "description": "释放技能：创作的痛苦",
-        "drop_action":  {
-            "type": "cast_spell",
-            "spell_id": "spell_Momori_cone_aoe",
-            "no_fail": true,
-            "level": 0
-        },
-        "weight": "1 g",
-        "volume": "1 ml"
     }
 ]
