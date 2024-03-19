@@ -1,0 +1,111 @@
+[
+    {
+        "type": "npc",
+        "id": "npc_Junko",
+        "name_unique": "淳子",
+        "name_suffix": "",
+        "age": 15,
+        "height": 149,
+        "gender": "female",
+        "class": "NC_Junko",
+        "attitude": 1,
+        "mission": 7,
+        "chat": "TALK_Junko_recruit",
+        "faction": "kivotos_students",
+        "<acknowledged>": "thank you，下次我会报答你的。",
+        "<danger_close_distance>": "来大干一场吧！",
+        "<combat_noise_warning>": "<combat_noise_warning_Junko>",
+        "<monster_warning_h>": "快点结束掉，一起去吃饭吧！",
+        "<let_me_pass>": "移动吧！",
+        "<run_away>": "因为肚子饿了，所以...对不起。",
+        "snip_lost_blood": "<snip_lost_blood_Junko>",
+        "snip_bye": "老师！真的会请我吃饭的吧？"
+    },
+    {
+        "type": "snippet",
+        "category": "<combat_noise_warning_Junko>",
+        "text": [
+            "我来带头冲锋！",
+            "赢了就能吃到好吃的！",
+            "绝不饶恕！"
+        ]
+    },
+    {
+        "type": "snippet",
+        "category": "<snip_lost_blood_Junko>",
+        "text": [
+            "好痛...",
+            "呜呜呜！好不甘心！"
+        ]
+    },
+    {
+        "type": "npc_class",
+        "id": "NC_Junko",
+        "name": "淳子",
+        "job_description": "淳子",
+        "common": false,
+        "bonus_str": 2,
+        "bonus_dex": 5,
+        "bonus_int": 5,
+        "bonus_per": 12,
+        "skills": [
+            { "skill": "computer", "bonus": 0 },
+            { "skill": "driving", "bonus": 3 },
+            { "skill": "fabrication", "bonus": 4 },
+            { "skill": "firstaid", "bonus": 2 },
+            { "skill": "survival", "bonus": 4 },
+            { "skill": "swimming", "bonus": 2 },
+            { "skill": "archery", "bonus": 0 },
+            { "skill": "bashing", "bonus": 2 },
+            { "skill": "cutting", "bonus": 2 },
+            { "skill": "dodge", "bonus": 5 },
+            { "skill": "melee", "bonus": 1 },
+            { "skill": "stabbing", "bonus": 8 },
+            { "skill": "throw", "bonus": 1 },
+            { "skill": "rifle", "bonus": 8 },
+            { "skill": "pistol", "bonus": 0 },
+            { "skill": "gun", "bonus": 8 },
+            { "skill": "launcher", "bonus": 0 },
+            { "skill": "shotgun", "bonus": 0 },
+            { "skill": "smg", "bonus": 0 },
+            { "skill": "unarmed", "bonus": 0 }
+        ],
+        "worn_override": "NC_Junko_worn",
+        "carry_override": "NC_Junko_carry",
+        "weapon_override": "NC_Junko_weapon",
+        "traits": [
+            [ "Mutation_Junko", 100 ],
+            [ "Mutation_Kivotos_Halo", 100 ],
+            [ "NIGHTVISION", 100 ],
+            [ "GOODHEARING", 100 ],
+            [ "SKIN_LIGHT", 100 ]
+        ]
+    },
+    {
+        "id": "NC_Junko_worn",
+        "type": "item_group",
+        "subtype": "collection",
+        "entries": [
+            { "item": "panties" },
+            { "item": "bra" },
+            { "item": "Armor_Junko" },
+            { "item": "mbag" }
+        ]
+    },
+    {
+        "id": "NC_Junko_weapon",
+        "type": "item_group",
+        "subtype": "collection",
+        "entries": [ { "item": "stg44" } ]
+    },
+    {
+        "id": "NC_Junko_carry",
+        "type": "item_group",
+        "subtype": "collection",
+        "entries": [
+            { "item": "bandages", "count": 5 },
+            { "item": "onigiri", "count":1 }
+        ]
+    }
+]
+  

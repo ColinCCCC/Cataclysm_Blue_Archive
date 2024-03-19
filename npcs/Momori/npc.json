@@ -23,7 +23,7 @@
     },
     {
         "type": "snippet",
-        "category": "<combat_noise_warning_Momori>",
+        "category": "<snip_lost_blood_Momori>",
         "text": [
             "血条快空了，队友呢？救一下啊？",
             "好痛！",
@@ -32,7 +32,7 @@
     },
     {
         "type": "snippet",
-        "category": "<snip_lost_blood_Momori>",
+        "category": "<combat_noise_warning_Momori>",
         "text": [
             "呀啊！等一下，这样就打不了游戏啦！",
             "快快搞完就回去吧！"

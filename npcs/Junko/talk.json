@@ -1,0 +1,49 @@
+[
+    {
+	    "type": "mutation",
+        "id": "standby_Junko",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "淳子待命中"},
+        "description": "淳子待命中"
+    },
+    {
+        "id": "TALK_Junko_recruit",
+        "type": "talk_topic",
+        "dynamic_line": "我不打算一起合作呢。…嗯？要给我吃的吗？什么？什么东西？(別に協力するつもりはないんだけど。…うん？食べ物くれるの？どんなの？どんなやつ？)",
+        "responses": [
+            {
+                "text": "ᕕ(◠ڼ◠)ᕗ",
+                "effect": [
+                    "follow",
+                    { "npc_learn_martial_art": "style_niten" },
+                    { "npc_set_talker": { "global_val": "Junko_id" } },
+                    { "set_string_var": "游戏开发部", "target_var": { "npc_val": "student_organization" } },
+                    { "set_string_var": "★★", "target_var": { "npc_val": "student_stars" } },
+                    { "set_string_var": "2", "target_var": { "npc_val": "cnt_student_stars" } },
+                    { "set_string_var": "Junko", "target_var": { "npc_val": "student_ename" } },
+                    { "set_string_var": "spell_Junko_line_aoe", "target_var": { "npc_val": "student_spell_id" } },
+                    { "set_string_var": "5", "target_var": { "npc_val": "student_spell_cost" } },
+                    { "set_string_var": "饥饿之怒(向一条线上的敌人造成伤害)", "target_var": { "npc_val": "student_spell_name" } },
+                    { "set_string_var": "有什么需要帮忙吗？", "target_var": { "npc_val": "student_topic" } }
+                ],
+                "topic": "TALK_DONE"
+            }
+        ]
+    },
+    {
+        "type": "talk_topic",
+        "id": [ "TALK_Arona_Recall" ],
+        "responses": [
+            {
+                "text": "召回淳子",
+                "condition": { "u_has_trait": "standby_Junko"},
+                "effect": [
+                    { "math": [ "Student_id", "=", "Junko_id" ] },
+                    { "u_lose_trait": "standby_Junko" },
+                    { "run_eocs": [  "EOC_Recall_Student" ] }
+                ],
+                "topic": "TALK_DONE"
+            }
+        ]
+    }
+]

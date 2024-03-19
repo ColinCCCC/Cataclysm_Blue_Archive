@@ -64,5 +64,12 @@
   "volume": "3112 ml",
   "longest_side": "851 mm",
   "barrel_length": "203 mm"
+},
+{
+  "id": "stg44",
+  "type":"GUN",
+  "name": { "str": "StG-44突击步枪" },
+  "copy-from": "rfb_308",
+  "description": "德军在第二次世界大战后期使用的StG-44突击步枪，受到了改装以使其能够兼容7.62x51mm子弹"
 }
 ]

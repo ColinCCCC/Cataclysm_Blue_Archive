@@ -1,0 +1,58 @@
+[
+    {
+	    "type": "mutation",
+        "id": "get_Junko",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "获得淳子"},
+        "description": "你已经获得了淳子"
+    },
+    {
+        "id": "Generator_Junko",
+        "type": "AMMO",
+        "copy-from": "Generator_Common",
+        "name": {"str": "学生档案-淳子"},
+        "description": "学生档案-淳子",
+        "drop_action": {
+           "type": "place_npc",
+           "npc_class_id": "npc_Junko",
+           "summon_msg": "淳子被招募了！",
+           "place_randomly": true,
+           "moves": 1
+        }
+    },
+    {
+        "id": "Fragments_Junko",
+        "type": "AMMO",
+        "copy-from": "Fragments_Common",
+        "name": {"str": "神名文字碎片-淳子"},
+        "description": "神名文字碎片-淳子"
+    },
+    {
+        "type": "SPELL",
+        "name": "招募学生",
+        "id": "spell_recruit_Junko",
+        "description": "招募淳子",
+        "valid_targets": ["self"],
+        "shape": "blast",
+        "effect": "effect_on_condition",
+        "effect_str": "filter_Junko",
+        "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"]
+    },
+    {
+        "id": "filter_Junko",
+        "type": "effect_on_condition",
+        "effect": [
+            {
+                "if": { "not": { "u_has_trait": "get_Junko" } },
+                "then": [
+                    {"u_spawn_item": "Generator_Junko", "count": 1, "suppress_message": true },
+                    {"u_add_trait": "get_Junko" }
+                ],
+                "else": [
+                    {"u_spawn_item": "Fragments_Junko", "count": 10, "suppress_message": true },
+                    {"u_message": "获得 神名文字碎片-淳子 x10", "popup": true }
+                ]
+            }
+        ]
+    }
+]
