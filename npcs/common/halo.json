@@ -7,9 +7,6 @@
         "points":0,
         "purifiable": false,
         "flags": [ "HEAT_IMMUNE" ],
-        "healing_awake": 100,
-        "healing_multiplier": 600,
-        "mending_modifier": 600,
         "armor": [ { "part_types": [ "ALL" ], "cut": 800, "bash": 800, "bullet":800 } ],
         "enchantments": [ "enchantment_kivotos" ]
     },
@@ -18,7 +15,10 @@
         "id": "enchantment_kivotos",
         "condition": "ALWAYS",
         "values": [
-            { "value": "MAX_HP", "multiply": 40 }
+            { "value": "MAX_HP", "multiply": 80 },
+            { "value": "MENDING_MODIFIER", "multiply": 15 },
+            { "value": "REGEN_HP", "multiply": 80 },
+            { "value": "REGEN_HP_AWAKE", "multiply": 0.8 }
         ],
         "hit_you_effect": [
             {
