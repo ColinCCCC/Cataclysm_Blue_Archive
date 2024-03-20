@@ -17,7 +17,7 @@
                     "follow",
                     { "npc_learn_martial_art": "style_niten" },
                     { "npc_set_talker": { "global_val": "Junko_id" } },
-                    { "set_string_var": "游戏开发部", "target_var": { "npc_val": "student_organization" } },
+                    { "set_string_var": "美食研究会", "target_var": { "npc_val": "student_organization" } },
                     { "set_string_var": "★★", "target_var": { "npc_val": "student_stars" } },
                     { "set_string_var": "2", "target_var": { "npc_val": "cnt_student_stars" } },
                     { "set_string_var": "Junko", "target_var": { "npc_val": "student_ename" } },
