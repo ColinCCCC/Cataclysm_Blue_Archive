@@ -1,0 +1,25 @@
+[
+    {
+        "type": "mutation",
+        "id": "Mutation_Shiroko",
+        "name": {"str": "变异-白子"},
+        "points": 0,
+        "description": "变异-白子",
+        "purifiable": false,
+        "starting_trait": false
+    },
+    {
+	    "type": "mutation",
+        "id": "get_Shiroko",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "获得白子"},
+        "description": "你已经获得了白子"
+    },
+    {
+	    "type": "mutation",
+        "id": "standby_Shiroko",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "白子待命中"},
+        "description": "白子待命中"
+    }
+]

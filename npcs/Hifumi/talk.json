@@ -1,12 +1,5 @@
 [
     {
-	    "type": "mutation",
-        "id": "standby_Hifumi",
-        "copy-from": "mutation_mark_Common",
-        "name": {"str": "日富美待命中"},
-        "description": "日富美待命中"
-    },
-    {
         "id": "TALK_Hifumi_recruit",
         "type": "talk_topic",
         "dynamic_line": "啊哈哈…我虽然还不成熟但请多多指教。(あはは…至らない私ですがよろしくお願いします。)",
@@ -47,16 +40,17 @@
     },
     {
     	"type": "talk_topic",
-	"id": [ "TALK_frag2ammo" ],
-	"responses": [
-	    {
-		"text": "使用日富美的神名文字",
-		"condition": { "u_has_item": "Fragment_Hifumi" },
-		"effect": [
-		    { "u_consume_item": "Fragment_Hifumi", "count": 10 },
-		    { "u_spawn_item": "223", "count": 20 }
-		]
-	    }
-	]
+	    "id": [ "TALK_frag2ammo" ],
+	    "responses": [
+            {
+                "text": "使用日富美的神名文字",
+                "condition": { "u_has_item": "Fragment_Hifumi" },
+                "effect": [
+                    { "u_consume_item": "Fragment_Hifumi", "count": 10 },
+                    { "u_spawn_item": "223", "count": 20 }
+                ],
+                "topic": "TALK_NONE"
+	        }
+	    ]
     }
 ]

@@ -1,0 +1,25 @@
+[
+    {
+        "type": "mutation",
+        "id": "Mutation_Izuna",
+        "name": {"str": "变异-伊树菜"},
+        "points": 0,
+        "description": "变异-伊树菜",
+        "purifiable": false,
+        "starting_trait": false
+    },
+    {
+	    "type": "mutation",
+        "id": "get_Izuna",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "获得伊树菜"},
+        "description": "你已经获得了伊树菜"
+    },
+    {
+	    "type": "mutation",
+        "id": "standby_Izuna",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "伊树菜待命中"},
+        "description": "伊树菜待命中"
+    }
+]

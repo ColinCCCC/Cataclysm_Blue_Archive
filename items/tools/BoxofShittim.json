@@ -82,11 +82,11 @@
     },
     {
     	"type": "talk_topic",
-	"id":"TALK_frag2ammo",
-	"dynamic_line":"<global_val:student_face_Arona>\n<color_light_cyan>老师要用谁的神名文字换取子弹呢？",
-	"responses": [
+        "id":"TALK_frag2ammo",
+        "dynamic_line":"<global_val:student_face_Arona>\n<color_light_cyan>老师要用谁的神名文字换取子弹呢？",
+        "responses": [
             { "text": "没有了，再见。ᕕ(◠ڼ◠)ᕗ", "topic": "TALK_NONE" }
-	]
+	    ]
     },
     {
         "type": "talk_topic",

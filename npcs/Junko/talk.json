@@ -1,12 +1,5 @@
 [
     {
-	    "type": "mutation",
-        "id": "standby_Junko",
-        "copy-from": "mutation_mark_Common",
-        "name": {"str": "淳子待命中"},
-        "description": "淳子待命中"
-    },
-    {
         "id": "TALK_Junko_recruit",
         "type": "talk_topic",
         "dynamic_line": "我不打算一起合作呢。…嗯？要给我吃的吗？什么？什么东西？(別に協力するつもりはないんだけど。…うん？食べ物くれるの？どんなの？どんなやつ？)",

@@ -1,12 +1,5 @@
 [
     {
-	    "type": "mutation",
-        "id": "get_Momori",
-        "copy-from": "mutation_mark_Common",
-        "name": {"str": "获得桃井"},
-        "description": "你已经获得了桃井"
-    },
-    {
         "id": "Generator_Momori",
         "type": "AMMO",
         "copy-from": "Generator_Common",

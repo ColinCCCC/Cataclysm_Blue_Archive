@@ -1,0 +1,25 @@
+[
+    {
+        "type": "mutation",
+        "id": "Mutation_Junko",
+        "name": {"str": "变异-淳子"},
+        "points": 0,
+        "description": "变异-淳子",
+        "purifiable": false,
+        "starting_trait": false
+    },
+    {
+	    "type": "mutation",
+        "id": "get_Junko",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "获得淳子"},
+        "description": "你已经获得了淳子"
+    },
+    {
+	    "type": "mutation",
+        "id": "standby_Junko",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "淳子待命中"},
+        "description": "淳子待命中"
+    }
+]

@@ -1,0 +1,25 @@
+[
+    {
+        "type": "mutation",
+        "id": "Mutation_Momori",
+        "name": {"str": "变异-桃井"},
+        "points": 0,
+        "description": "变异-桃井",
+        "purifiable": false,
+        "starting_trait": false
+    },
+    {
+	    "type": "mutation",
+        "id": "get_Momori",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "获得桃井"},
+        "description": "你已经获得了桃井"
+    },
+    {
+	    "type": "mutation",
+        "id": "standby_Momori",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "桃井待命中"},
+        "description": "桃井待命中"
+    }
+]

@@ -1,0 +1,25 @@
+[
+    {
+        "type": "mutation",
+        "id": "Mutation_Yuuka",
+        "name": {"str": "变异-优香"},
+        "points": 0,
+        "description": "变异-优香",
+        "purifiable": false,
+        "starting_trait": false
+    },
+    {
+	    "type": "mutation",
+        "id": "get_Yuuka",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "获得优香"},
+        "description": "你已经获得了优香"
+    },
+    {
+	    "type": "mutation",
+        "id": "standby_Yuuka",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "优香待命中"},
+        "description": "优香待命中"
+    }
+]

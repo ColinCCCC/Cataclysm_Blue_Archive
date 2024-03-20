@@ -1,12 +1,5 @@
 [
     {
-	    "type": "mutation",
-        "id": "standby_Momori",
-        "copy-from": "mutation_mark_Common",
-        "name": {"str": "桃井待命中"},
-        "description": "桃井待命中"
-    },
-    {
         "id": "TALK_Momori_recruit",
         "type": "talk_topic",
         "dynamic_line": "有趣的事现在开始！(これから、すっごく面白い物語が始まるよ！)",

@@ -10,46 +10,10 @@
     },
     {
         "type": "mutation",
-        "id": "日富美",
-        "name": {"str": "变异-伊树莱"},
-        "points": 0,
-        "description": "变异-伊树莱",
-        "purifiable": false,
-        "starting_trait": false
-    },
-    {
-        "type": "mutation",
-        "id": "Mutation_Izuna",
-        "name": {"str": "变异-伊树莱"},
-        "points": 0,
-        "description": "变异-伊树莱",
-        "purifiable": false,
-        "starting_trait": false
-    },
-    {
-        "type": "mutation",
-        "id": "Mutation_Momori",
-        "name": {"str": "变异-桃井"},
-        "points": 0,
-        "description": "变异-桃井",
-        "purifiable": false,
-        "starting_trait": false
-    },
-    {
-        "type": "mutation",
         "id": "Mutation_Sora",
         "name": {"str": "变异-空"},
         "points": 0,
         "description": "变异-空",
-        "purifiable": false,
-        "starting_trait": false
-    },
-    {
-        "type": "mutation",
-        "id": "Mutation_Hifumi",
-        "name": {"str": "变异-日富美"},
-        "points": 0,
-        "description": "变异-日富美",
         "purifiable": false,
         "starting_trait": false
     },
@@ -68,42 +32,6 @@
         "name": {"str": "变异-日奈"},
         "points": 0,
         "description": "变异-日奈",
-        "purifiable": false,
-        "starting_trait": false
-    },
-    {
-        "type": "mutation",
-        "id": "Mutation_Shiroko",
-        "name": {"str": "变异-白子"},
-        "points": 0,
-        "description": "变异-白子",
-        "purifiable": false,
-        "starting_trait": false
-    },
-    {
-        "type": "mutation",
-        "id": "Mutation_Junko",
-        "name": {"str": "变异-淳子"},
-        "points": 0,
-        "description": "变异-淳子",
-        "purifiable": false,
-        "starting_trait": false
-    },
-    {
-        "type": "mutation",
-        "id": "Mutation_Yuuka",
-        "name": {"str": "变异-优香"},
-        "points": 0,
-        "description": "变异-优香",
-        "purifiable": false,
-        "starting_trait": false
-    },
-    {
-        "type": "mutation",
-        "id": "Mutation_Mika",
-        "name": {"str": "变异-未花"},
-        "points": 0,
-        "description": "变异-未花",
         "purifiable": false,
         "starting_trait": false
     }

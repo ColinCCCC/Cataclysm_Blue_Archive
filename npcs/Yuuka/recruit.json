@@ -1,12 +1,5 @@
 [
     {
-	    "type": "mutation",
-        "id": "get_Yuuka",
-        "copy-from": "mutation_mark_Common",
-        "name": {"str": "获得优香"},
-        "description": "你已经获得了优香"
-    },
-    {
         "id": "Generator_Yuuka",
         "type": "AMMO",
         "copy-from": "Generator_Common",

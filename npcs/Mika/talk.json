@@ -1,12 +1,5 @@
 [
     {
-	    "type": "mutation",
-        "id": "standby_Mika",
-        "copy-from": "mutation_mark_Common",
-        "name": {"str": "未花待命中"},
-        "description": "未花待命中"
-    },
-    {
         "id": "TALK_Mika_recruit",
         "type": "talk_topic",
         "dynamic_line": "圣园弥香，闪亮登场☆~这样的感觉么？啊，老师我们关系很好，就不需要见外了，对吧？今后请多多指教~(聖園ミカ、ついに登場～☆ って感じかな？あっ、私と先生の仲だしアイスブレイクとかはいらないよね？これからよろしくね、先生。)。",

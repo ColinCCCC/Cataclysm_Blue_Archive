@@ -1,12 +1,5 @@
 [
     {
-	    "type": "mutation",
-        "id": "get_Hifumi",
-        "copy-from": "mutation_mark_Common",
-        "name": {"str": "获得日富美"},
-        "description": "你已经获得了日富美"
-    },
-    {
         "id": "Generator_Hifumi",
         "type": "AMMO",
         "copy-from": "Generator_Common",

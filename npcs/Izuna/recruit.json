@@ -1,12 +1,5 @@
 [
     {
-	    "type": "mutation",
-        "id": "get_Izuna",
-        "copy-from": "mutation_mark_Common",
-        "name": {"str": "获得伊树菜"},
-        "description": "你已经获得了伊树菜"
-    },
-    {
         "id": "Generator_Izuna",
         "type": "AMMO",
         "copy-from": "Generator_Common",

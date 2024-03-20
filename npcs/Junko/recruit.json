@@ -1,12 +1,5 @@
 [
     {
-	    "type": "mutation",
-        "id": "get_Junko",
-        "copy-from": "mutation_mark_Common",
-        "name": {"str": "获得淳子"},
-        "description": "你已经获得了淳子"
-    },
-    {
         "id": "Generator_Junko",
         "type": "AMMO",
         "copy-from": "Generator_Common",

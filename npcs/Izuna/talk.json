@@ -1,12 +1,5 @@
 [
     {
-	    "type": "mutation",
-        "id": "standby_Izuna",
-        "copy-from": "mutation_mark_Common",
-        "name": {"str": "伊树菜待命中"},
-        "description": "伊树菜待命中"
-    },
-    {
         "id": "TALK_Izuna_recruit",
         "type": "talk_topic",
         "dynamic_line": "伊树菜参上！老师…不， 为了回应主公的呼唤，飞奔前来！忍忍！(イズナ、参上です！先生の……、いえ、主殿のお呼びを受けて、走って参りました～！にんにん！)",

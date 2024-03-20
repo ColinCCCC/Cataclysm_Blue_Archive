@@ -1,0 +1,25 @@
+[
+    {
+        "type": "mutation",
+        "id": "Mutation_Hifumi",
+        "name": {"str": "变异-日富美"},
+        "points": 0,
+        "description": "变异-日富美",
+        "purifiable": false,
+        "starting_trait": false
+    },
+    {
+	    "type": "mutation",
+        "id": "get_Hifumi",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "获得日富美"},
+        "description": "你已经获得了日富美"
+    },
+    {
+	    "type": "mutation",
+        "id": "standby_Hifumi",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "日富美待命中"},
+        "description": "日富美待命中"
+    }
+]

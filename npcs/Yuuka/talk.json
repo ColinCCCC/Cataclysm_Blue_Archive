@@ -1,12 +1,5 @@
 [
     {
-	    "type": "mutation",
-        "id": "standby_Yuuka",
-        "copy-from": "mutation_mark_Common",
-        "name": {"str": "优香待命中"},
-        "description": "优香待命中"
-    },
-    {
         "id": "TALK_Yuuka_recruit",
         "type": "talk_topic",
         "dynamic_line": "条件已经达成了。我们今天将会把这瞬间定义为缘分，并且去证明它。(条件はクリアされました。私たちは今日この瞬間を絆と定義し、証明することになるでしょう。)",
