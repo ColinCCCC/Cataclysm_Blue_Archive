@@ -1,0 +1,16 @@
+[
+    {
+        "id": "Armor_Hifumi",
+        "type": "ARMOR",
+        "name": {"str": "日富美的装束"},
+        "description": "日富美的装束",
+        "copy-from": "Armor_Common"
+    },
+    {
+        "id": "Armor_Hifumi_Swimwear",
+        "type": "ARMOR",
+        "name": {"str": "日富美的泳装"},
+        "description": "日富美的泳装",
+        "copy-from": "Armor_Common"
+    }
+]

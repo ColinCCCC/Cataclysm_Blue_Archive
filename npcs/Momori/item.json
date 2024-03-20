@@ -1,0 +1,9 @@
+[
+    {
+        "id": "Armor_Momori",
+        "type": "ARMOR",
+        "name": {"str": "桃井的装束"},
+        "description": "桃井的装束",
+        "copy-from": "Armor_Common"
+    }
+]

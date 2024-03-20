@@ -2,9 +2,9 @@
     {
         "type": "mutation",
         "id": "Mutation_Shiroko",
-        "name": {"str": "变异-白子"},
+        "name": {"str": "白子"},
         "points": 0,
-        "description": "变异-白子",
+        "description": "白子",
         "purifiable": false,
         "starting_trait": false
     },

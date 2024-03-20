@@ -2,9 +2,9 @@
     {
         "type": "mutation",
         "id": "Mutation_Junko",
-        "name": {"str": "变异-淳子"},
+        "name": {"str": "淳子"},
         "points": 0,
-        "description": "变异-淳子",
+        "description": "淳子",
         "purifiable": false,
         "starting_trait": false
     },

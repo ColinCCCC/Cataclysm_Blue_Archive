@@ -2,9 +2,9 @@
     {
         "type": "mutation",
         "id": "Mutation_Mika",
-        "name": {"str": "变异-未花"},
+        "name": {"str": "未花"},
         "points": 0,
-        "description": "变异-未花",
+        "description": "未花",
         "purifiable": false,
         "starting_trait": false
     },

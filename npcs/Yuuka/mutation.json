@@ -2,9 +2,9 @@
     {
         "type": "mutation",
         "id": "Mutation_Yuuka",
-        "name": {"str": "变异-优香"},
+        "name": {"str": "优香"},
         "points": 0,
-        "description": "变异-优香",
+        "description": "优香",
         "purifiable": false,
         "starting_trait": false
     },

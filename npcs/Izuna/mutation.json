@@ -2,9 +2,9 @@
     {
         "type": "mutation",
         "id": "Mutation_Izuna",
-        "name": {"str": "变异-伊树菜"},
+        "name": {"str": "伊树菜"},
         "points": 0,
-        "description": "变异-伊树菜",
+        "description": "伊树菜",
         "purifiable": false,
         "starting_trait": false
     },

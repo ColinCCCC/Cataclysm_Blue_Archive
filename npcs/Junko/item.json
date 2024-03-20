@@ -1,0 +1,9 @@
+[
+    {
+        "id": "Armor_Junko",
+        "type": "ARMOR",
+        "name": {"str": "淳子的装束"},
+        "description": "淳子的装束",
+        "copy-from": "Armor_Common"
+    }
+]

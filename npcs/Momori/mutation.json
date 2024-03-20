@@ -2,9 +2,9 @@
     {
         "type": "mutation",
         "id": "Mutation_Momori",
-        "name": {"str": "变异-桃井"},
+        "name": {"str": "桃井"},
         "points": 0,
-        "description": "变异-桃井",
+        "description": "桃井",
         "purifiable": false,
         "starting_trait": false
     },

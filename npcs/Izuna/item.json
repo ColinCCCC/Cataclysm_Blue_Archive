@@ -1,0 +1,35 @@
+[
+    {
+        "id": "Armor_Izuna",
+        "type": "ARMOR",
+        "name": {"str": "伊树菜的装束"},
+        "description": "伊树菜的装束",
+        "copy-from": "Armor_Common",
+        "pocket_data": [
+            {
+                "pocket_type": "CONTAINER",
+                "max_contains_volume": "25 L",
+                "max_contains_weight": "30 kg",
+                "max_item_length": "40 cm",
+                "moves": 300
+            },
+            {
+                "ammo_restriction": {
+                    "40x46mm": 6,
+                    "40x53mm": 6
+                },
+                "moves": 20,
+                "volume_encumber_modifier": 0.3
+            },
+            {
+                "magazine_well": "200 ml",
+                "holster": true,
+                "flag_restriction": ["SHEATH_KNIFE"],
+                "moves": 1,
+                "max_contains_volume": "800 ml",
+                "max_contains_weight": "2 kg",
+                "max_item_length": "50 cm"
+            }
+        ]
+    }
+]

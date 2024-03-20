@@ -11,27 +11,27 @@
     {
         "type": "mutation",
         "id": "Mutation_Sora",
-        "name": {"str": "变异-空"},
+        "name": {"str": "空"},
         "points": 0,
-        "description": "变异-空",
+        "description": "空",
         "purifiable": false,
         "starting_trait": false
     },
     {
         "type": "mutation",
         "id": "Mutation_Midori",
-        "name": {"str": "变异-绿"},
+        "name": {"str": "绿"},
         "points": 0,
-        "description": "变异-绿",
+        "description": "绿",
         "purifiable": false,
         "starting_trait": false
     },
     {
         "type": "mutation",
         "id": "Mutation_Hina",
-        "name": {"str": "变异-日奈"},
+        "name": {"str": "日奈"},
         "points": 0,
-        "description": "变异-日奈",
+        "description": "日奈",
         "purifiable": false,
         "starting_trait": false
     }

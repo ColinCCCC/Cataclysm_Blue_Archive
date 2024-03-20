@@ -1,0 +1,9 @@
+[
+    {
+        "id": "Armor_Yuuka",
+        "type": "ARMOR",
+        "name": {"str": "优香的装束"},
+        "description": "优香的装束",
+        "copy-from": "Armor_Common"
+    }
+]

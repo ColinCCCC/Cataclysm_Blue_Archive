@@ -1,0 +1,9 @@
+[
+    {
+        "id": "Armor_Mika",
+        "type": "ARMOR",
+        "name": {"str": "未花的装束"},
+        "description": "未花的装束",
+        "copy-from": "Armor_Common"
+    }
+]

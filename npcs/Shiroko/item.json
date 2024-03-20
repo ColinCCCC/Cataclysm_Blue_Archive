@@ -1,0 +1,9 @@
+[
+    {
+        "id": "Armor_Shiroko",
+        "type": "ARMOR",
+        "name": {"str": "白子的装束"},
+        "description": "白子的装束",
+        "copy-from": "Armor_Common"
+    }
+]
