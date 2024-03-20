@@ -44,5 +44,19 @@
                 "topic": "TALK_DONE"
             }
         ]
+    },
+    {
+    	"type": "talk_topic",
+	"id": [ "TALK_frag2ammo" ],
+	"responses": [
+	    {
+		"text": "使用日富美的神名文字",
+		"condition": { "u_has_item": "Fragment_Hifumi" },
+		"effect": [
+		    { "u_consume_item": "Fragment_Hifumi", "count": 10 },
+		    { "u_spawn_item": "223", "count": 20 }
+		]
+	    }
+	]
     }
 ]
