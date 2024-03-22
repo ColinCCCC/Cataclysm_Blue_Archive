@@ -1,6 +1,7 @@
 请不要对我们进行版权打击，求求了😭  
 
 [下载链接](https://github.com/ColinCCCC/Cataclysm_Blue_Archive/releases/tag/v0.3.27-Alpha)
+
 推荐使用MSXotto++或UndeadPeople贴图包，以获得最佳游玩体验
 
 ## Cataclysm: Blue Archive是什么？  
