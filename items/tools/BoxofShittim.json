@@ -77,7 +77,22 @@
                 "failure": { "topic": "TALK_NoEnoughAnthochroite" }
             },
             { "text": "召回待命学生", "effect": [ { "u_location_variable": { "context_val": "your_loc" }, "passable_only": true, "min_radius": 1, "max_radius": 8 } ], "topic": "TALK_Arona_Recall" },
-            { "text": "在此处建立总部", "topic": "TALK_ConstructHQ" },
+            {
+                "text": "<color_pink>[1封未读邮件]</color>",
+                "condition": { "u_has_trait": "Mutation_Sensei_Mail1" },
+                "effect": [ { "u_lose_trait": "Mutation_Sensei_Mail1" } ],
+                "topic": "TALK_Sensei_Mail1_1"
+            },
+            {
+                "text": "<color_pink>就在这附近建立临时总部吧</color>",
+                "condition": {
+                    "and": [
+                        { "not": { "u_has_trait": "Mutation_Sensei_Mail1"} },
+                        { "not": { "u_has_trait": "Mutation_Sensei_Built_HQ"} }
+                    ]
+                },
+                "topic": "TALK_ConstructHQ"
+            },
             { "text": "没有了，再见。ᕕ(◠ڼ◠)ᕗ", "topic": "TALK_DONE" }
         ]
     },
@@ -102,16 +117,18 @@
     {
         "id": "TALK_ConstructHQ",
         "type": "talk_topic",
-        "dynamic_line": "<global_val:student_face_Arona>\n确认在此处附件建立临时指挥部吗？",
+        "dynamic_line": "<global_val:student_face_Arona>\n坐标将被发送到联邦学生会。老师确认在此处附件建立临时指挥部吗？",
         "responses": [
             {
                 "text": "确认",
                 "effect": [
+                    { "u_add_trait": "Mutation_Sensei_Built_HQ" },
+                    { "u_message": "一栋简易的指挥部建筑被传输过来了", "popup": true },
                     { "mapgen_update": "update_mapgen_HQ_field", "om_terrain": "forest", "om_terrain_replace": "field", "search_range": 1, "z": 0 }
                 ],
                 "topic": "TALK_DONE"
             },
-            { "text": "算了", "topic": "TALK_NONE" }
+            { "text": "我再考虑一下", "topic": "TALK_NONE" }
         ]
     },
     {

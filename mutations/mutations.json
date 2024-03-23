@@ -17,9 +17,9 @@
     },
     {
         "type": "mutation",
-        "id": "Mutation_Sensei_Read_Mail1",
+        "id": "Mutation_Sensei_Mail1",
         "copy-from": "mutation_mark_Common",
-        "name": {"str": "老师-已阅读邮件1"},
+        "name": {"str": "老师-需阅读邮件1"},
         "description": "Sensei开局eoc用变异"
     },
     {
