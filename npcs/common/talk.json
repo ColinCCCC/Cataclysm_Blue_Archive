@@ -33,7 +33,7 @@
                         { "queue_eocs": "EOC_return_to_player", "time_in_future": 5 }
                     ]
                 },
-                "failure": { "topic": "TALK_NOEnoughCost" }
+                "failure": { "topic": "TALK_NoEnoughCost" }
             },
             {
                 "text": "<npc_name>，先暂时离队到临时指挥部待命吧",
@@ -59,19 +59,19 @@
                         { "u_message": "<npc_name>升至<npc_val:student_stars>" }
                     ]
                 },
-                "failure": { "topic": "TALK_NOEnoughFragments" }
+                "failure": { "topic": "TALK_NoEnoughFragments" }
             },
             { "text": "暂时没有了", "topic": "TALK_DONE" }
         ]
     },
     {
-        "id": "TALK_NOEnoughCost",
+        "id": "TALK_NoEnoughCost",
         "type": "talk_topic",
         "dynamic_line": "(Cost不足，无法释放)",
         "responses": [ { "text": "……", "topic": "TALK_DONE" } ]
     },
     {
-        "id": "TALK_NOEnoughFragments",
+        "id": "TALK_NoEnoughFragments",
         "type": "talk_topic",
         "dynamic_line": "(神名文字碎片不足，无法升星)",
         "responses": [ { "text": "……", "topic": "TALK_DONE" } ]

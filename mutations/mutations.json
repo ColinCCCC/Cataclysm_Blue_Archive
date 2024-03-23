@@ -10,6 +10,27 @@
     },
     {
         "type": "mutation",
+        "id": "Mutation_Sensei_Start",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "老师-开局"},
+        "description": "Sensei开局eoc用变异"
+    },
+    {
+        "type": "mutation",
+        "id": "Mutation_Sensei_Read_Mail1",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "老师-已阅读邮件1"},
+        "description": "Sensei开局eoc用变异"
+    },
+    {
+        "type": "mutation",
+        "id": "Mutation_Sensei_Built_HQ",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "老师-已建立总部"},
+        "description": "Sensei开局eoc用变异"
+    },
+    {
+        "type": "mutation",
         "id": "Mutation_Sora",
         "name": {"str": "空"},
         "points": 0,

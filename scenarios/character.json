@@ -1,15 +1,5 @@
 [
     {
-        "type": "mutation",
-        "id": "Mutation_Sensei_Start",
-        "name": {"str": "老师-开局"},
-        "points": 0,
-        "description": "Sensei开局eoc用变异",
-        "purifiable": false,
-	    "player_display": false,
-        "starting_trait": false
-    },
-    {
         "type": "profession",
         "id": "prof_kivotos_sensei",
         "name": "『夏莱』的老师",
