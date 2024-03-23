@@ -121,15 +121,32 @@
         "responses": [
             {
                 "text": "确认",
-                "effect": [
-                    { "u_add_trait": "Mutation_Sensei_Built_HQ" },
-                    { "u_message": "一栋简易的指挥部建筑被传输过来了", "popup": true },
-                    { "mapgen_update": "update_mapgen_HQ_field", "om_terrain": "forest", "om_terrain_replace": "field", "search_range": 1, "z": 0 }
-                ],
-                "topic": "TALK_DONE"
+                "trial": { "type": "CONDITION", "condition": { "math": [ "u_charge_count('AdultsCard')", ">=", "120"] } },
+                "success": {
+                    "topic": "TALK_DONE",
+                    "effect": [
+                        { "u_add_trait": "Mutation_Sensei_Built_HQ" },
+                        { "u_message": "一栋简易的指挥部建筑被传输过来了", "popup": true },
+                        { "mapgen_update": "update_mapgen_HQ_field", "om_terrain": "TempHQ_west", "om_terrain_replace": "field", "search_range": 1, "z": 0 }
+                    ]
+                },
+                "failure": { "topic": "TALK_ConstructHQ_Fail" }
             },
             { "text": "我再考虑一下", "topic": "TALK_NONE" }
         ]
+    },
+    {
+        "id": "TALK_ConstructHQ_Fail",
+        "type": "talk_topic",
+        "dynamic_line": "<global_val:student_face_Arona>\n位置不可用，请老师处于<color_pink>旷野</color>再发送坐标",
+        "responses": [ { "text": "……", "topic": "TALK_DONE" } ]
+    },
+    {
+        "type": "overmap_terrain",
+        "id": "TempHQ",
+        "name": "临时指挥部",
+        "sym": "H",
+        "color": "cyan"
     },
     {
         "type": "mapgen",
@@ -142,6 +159,42 @@
                 { "square": "furniture", "id": "f_null", "x": 0, "y": 0, "x2": 23, "y2": 23 }
             ],
             "flags": [ "NO_UNDERLYING_ROTATE" ]
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "TempHQ",
+        "object": {
+            "fill_ter": "t_floor",
+            "rows": [
+              ".............-..........",
+              "...........M.-..........",
+              "..fffffffffff-ffffffff..",
+              "..f..........-.......f..",
+              "..f..........-.......f..",
+              "..fC..CC..CC---CC...Cf..",
+              "..##oo##oo##o*o##ooo##..",
+              "..#887FOS77|,,,|,,,,,#^.",
+              "..#8,,,,,,,|,,,|,,,,,o..",
+              "..#8,,XX,,,|,,,|X,,,,o..",
+              "..#|+||||+||,,,+,,,,,#..",
+              "..#,,,,,,,,,,,,||||||#..",
+              "..o,,,,,,,XX,,,+,,,,,#..",
+              "..o,,,,,,,||||||,,,,,o..",
+              "..o,,,,,,,+~~~~|X,,,,o..",
+              "..#X,,,,,,|9s6t|,,,,,#..",
+              "..#||,,,||#######ooo##..",
+              "..#,,,,,,,#cccc.........",
+              "..o,,,,,,,+cccc.....{...",
+              "..o,,XX,,,#cccc.........",
+              ".^#,,,,,,,#cccc.........",
+              "..###ooo###cccc.........",
+              "........................",
+              "........................"
+            ],
+            "palettes": [ "construction_general_palette" ],
+            "terrain": { "M": "t_region_soil", "C": "t_region_soil", "{": "t_region_groundcover_urban" }
         }
     }
 ]

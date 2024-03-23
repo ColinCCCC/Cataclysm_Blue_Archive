@@ -83,13 +83,13 @@
     {
         "type": "talk_topic",
         "id": "TALK_Sensei_Mail1_2",
-        "dynamic_line": "<global_val:student_face_Rin>\n凛 <color_light_cyan>『联邦学生会』</color>\n经过与<color_light_cyan>『工程师部』</color>的信息交流，我们认为搭建一个<color_light_cyan>『临时总部』</color>，传输到老师所处的坐标附近是可行的。",
+        "dynamic_line": "<global_val:student_face_Rin>\n凛 <color_light_cyan>『联邦学生会』</color>\n经过与<color_light_cyan>『工程师部』</color>的信息交流，我们认为，搭建一个具有通讯和物资传输设施的<color_light_cyan>『临时总部』</color>，传输到老师所处的坐标附近是可行的。",
         "responses": [ { "text": "……", "topic": "TALK_Sensei_Mail1_3" } ]
     },
     {
         "type": "talk_topic",
         "id": "TALK_Sensei_Mail1_3",
-        "dynamic_line": "<global_val:student_face_Rin>\n凛 <color_light_cyan>『联邦学生会』</color>\n考虑到技术条件的限制以及老师的安全，<color_light_cyan>『临时总部』</color>的移动需要老师处于，并且周边存在至少一处平坦的<color_pink>旷野</color>。\n转移的位置并不精确，但我们保证老师能比较轻易地找到。",
+        "dynamic_line": "<global_val:student_face_Rin>\n凛 <color_light_cyan>『联邦学生会』</color>\n考虑到技术条件的限制以及老师的安全，<color_light_cyan>『临时总部』</color>的移动需要老师处于平坦的<color_pink>旷野</color>。\n转移的位置并不精确，但我们保证老师能比较轻易地找到。",
         "responses": [ { "text": "……", "topic": "TALK_Sensei_Mail1_4" } ]
     },
     {
