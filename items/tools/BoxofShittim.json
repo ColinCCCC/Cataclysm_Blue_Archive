@@ -103,9 +103,12 @@
                 },
                 "effect": [
                     { "finish_mission": "MISSION_FIND_TEMPHQ", "success": true },
-                    { "mapgen_update": "update_mapgen_HQ_field", "om_terrain": "TempHQ", "z": 0 }
+                    { "mapgen_update": "update_mapgen_TempHQ", "z": 0 },
+                    { "mapgen_update": "update_mapgen_TempHQ_2nd", "z": 1 },
+                    { "mapgen_update": "update_mapgen_TempHQ_roof", "z": 2 },
+                    { "u_message": "指挥部建筑已完全建造。", "popup": true }
                 ],
-                "topic": "TALK_ConstructHQ"
+                "topic": "TALK_DONE"
             },
             { "text": "没有了，再见。ᕕ(◠ڼ◠)ᕗ", "topic": "TALK_DONE" }
         ]
