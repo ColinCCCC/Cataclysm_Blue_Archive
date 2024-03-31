@@ -15,8 +15,8 @@
     {
         "id": "MISSION_FIND_TEMPHQ",
         "type": "mission_definition",
-        "name": { "str": "到达临时指挥部" },
-        "description": "到达临时指挥部。",
+        "name": { "str": "到达临时指挥部选址" },
+        "description": "到达临时指挥部选址。",
         "goal": "MGOAL_GO_TO_TYPE",
         "difficulty": 2,
         "value": 0,

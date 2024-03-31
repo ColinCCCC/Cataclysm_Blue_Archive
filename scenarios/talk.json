@@ -101,7 +101,7 @@
     {
         "type": "talk_topic",
         "id": "TALK_Sensei_Mail1_5",
-        "dynamic_line": "<global_val:student_face_Rin>\n凛 <color_light_cyan>『联邦学生会』</color>\n决定好位置以后，请将坐标发送给我们。我们将全力协助您。",
+        "dynamic_line": "<global_val:student_face_Rin>\n凛 <color_light_cyan>『联邦学生会』</color>\n决定好位置以后，请将所处坐标发送给我们。我们将全力协助您。",
         "responses": [ { "text": "……", "effect": [ { "u_lose_trait": "Mutation_Sensei_Mail1" } ], "topic": "TALK_DONE" } ]
     }
 ]

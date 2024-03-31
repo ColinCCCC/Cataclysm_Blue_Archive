@@ -140,7 +140,7 @@
                     "topic": "TALK_DONE",
                     "effect": [
                         { "u_add_trait": "Mutation_Sensei_Built_HQ" },
-                        { "u_message": "一栋简易的指挥部建筑正在被传输，已在地图显示坐标。", "popup": true },
+                        { "u_message": "指挥部建筑正在被传输，坐标已确认，请尽快到达后联系阿罗娜。", "popup": true },
                         { "assign_mission": "MISSION_FIND_TEMPHQ" }
                     ]
                 },
