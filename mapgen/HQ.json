@@ -1,0 +1,352 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "update_mapgen_id": "update_mapgen_HQ_field",
+        "object": {
+            "set": [
+                { "square": "item_remove", "x": 0, "y": 0, "x2": 23, "y2": 23 },
+                { "square": "terrain", "id": "t_dirt", "x": 0, "y": 0, "x2": 23, "y2": 23 },
+                { "square": "furniture", "id": "f_null", "x": 0, "y": 0, "x2": 23, "y2": 23 }
+            ],
+            "flags": [ "NO_UNDERLYING_ROTATE" ]
+        }
+    },
+    {
+        "id": "MISSION_FIND_TEMPHQ",
+        "type": "mission_definition",
+        "name": { "str": "到达临时指挥部" },
+        "description": "到达临时指挥部。",
+        "goal": "MGOAL_GO_TO_TYPE",
+        "difficulty": 2,
+        "value": 0,
+        "start": {
+            "assign_mission_target": { "om_terrain": "TempHQ_north", "om_terrain_replace": "field", "search_range": 2, "z": 0 }
+        },
+        "end": { 
+            "effect": [
+
+            ]
+        },
+        "origins": [ "ORIGIN_SECONDARY" ],
+        "dialogue": {
+            "describe": "Maybe that chef is still alive.",
+            "offer": "Maybe that chef is still alive.",
+            "accepted": "Good good.",
+            "rejected": "Sure, fine.",
+            "advice": "Maybe bring like a bat or something?",
+            "inquire": "How is the search going?",
+            "success": "Great.",
+            "success_lie": "Great.",
+            "failure": "Not that surprising."
+        }
+    },
+    {
+        "type": "overmap_terrain",
+        "id": "TempHQ",
+        "name": "临时指挥部",
+        "sym": "H",
+        "color": "cyan"
+    },
+    {
+        "type": "overmap_terrain",
+        "id": "TempHQ_2ndfloor",
+        "name": "临时指挥部（二层）",
+        "sym": "H",
+        "color": "cyan"
+    },
+    {
+        "type": "overmap_terrain",
+        "id": "TempHQ_roof",
+        "name": "临时指挥部（屋顶）",
+        "sym": "H",
+        "color": "cyan"
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": [ "TempHQ" ],
+        "object": {
+        "fill_ter": "t_thconc_floor",
+        "rows": [
+            ",###::##::##::###'''''/,",
+            ";#              #'''''',",
+            ",#              +'''''',",
+            ",#  ##  #  KKvv####::###",
+            ",#  LL  L  YYYY#N     N#",
+            ",#  LL  L      D       :",
+            ",#  LL  L      # n n n #",
+            ",#  LL  #  CC C#-W-W-W-#",
+            ",#  LL  L  d  |WRWRWRWDW",
+            ",#  LL  L  3a |W======.W",
+            ",#  LL  L  d  |W======.W",
+            ",#  ##  #  3a |W.......W",
+            ",#         dr XW.......W",
+            ",#IDIIDIIIIIIDIW.......W",
+            ",#r Il I<IEEO rW.......W",
+            ",#^ Il IDIEA  EWT.T.T..W",
+            ",#q&I    I?A AEWxxxxxxxW",
+            ",#III    IIIDIIWWWWWWWWW",
+            ",#ss          %#.''''ww'",
+            ",#ss           !.'''''''",
+            ",#s            !.'''''''",
+            ",#ss           !.'''''''",
+            ",#sss          !.'''''''",
+            ",###############.'''''''"
+        ],
+        "palettes": [ "TempHQ_palette" ],
+        "terrain": {
+            "%": "t_gates_mech_control",
+            "!": "t_door_metal_locked",
+            "w": "t_sidewalk",
+            "R": "t_thconc_y",
+            "-": "t_thconc_y",
+            "v": "t_thconc_y",
+            "K": "t_thconc_y",
+            "Y": "t_thconc_y",
+            "L": "t_thconc_r",
+            "=": "t_thconc_warning",
+            "T": "t_thconc_warning",
+            ".": "t_thconc_warning",
+            "x": "t_thconc_warning"
+        },
+        "place_nested": [ { "chunks": [ [ "null", 100 ], [ "npc_survivor_gunstore", 35 ] ], "x": 0, "y": 0 } ],
+        "items": {
+            "=": { "item": "casings", "chance": 50 },
+            "-": { "item": "casings", "chance": 50 },
+            "3": { "item": "cash_register_random" }
+        }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": [ "TempHQ_2ndfloor" ],
+        "object": {
+        "fill_ter": "t_floor",
+        "rows": [
+            "`###Ю#####Ю##Ю###```````",
+            "`#@@  y#D     @@#```````",
+            "^#@@  I#d     @@#```````",
+            "`Ю   hI#        #-------",
+            "`#    D#b   h  R#......-",
+            "`#db  y#y E II T#......-",
+            "`####+###+#######......-",
+            "`#T       |66__F#......-",
+            "`Юy HHAA  _____1#......-",
+            "`#x  Hff  _____5Ю......-",
+            "`Юx  H A  |____2#......-",
+            "`#        |Y74O3#......-",
+            "`#|+||E   ||||||#......-",
+            "`#__S|RRL + A   #......-",
+            "`ЮB_8||||(|NNq y#^.....-",
+            "`#B__+t|> #######......-",
+            "`########(#}g.{........-",
+            "`-.........{..}---------",
+            "`-.).......}}}}-````````",
+            "`-.............-````````",
+            "`-.............-````````",
+            "`-....u........-````````",
+            "`-.............-````````",
+            "`---------------````````"
+        ],
+        "palettes": [ "standard_domestic_palette" ],
+        "terrain": {
+            "Ю": "t_window_bars_alarm",
+            "(": "t_door_metal_pickable",
+            "#": "t_brick_wall",
+            "-": "t_gutter",
+            ".": "t_flat_roof",
+            ")": "t_flat_roof",
+            "u": "t_flat_roof",
+            ":": "t_flat_roof",
+            "g": "t_flat_roof",
+            "`": "t_open_air",
+            "_": "t_linoleum_white",
+            "Y": "t_linoleum_white",
+            "1": "t_linoleum_white",
+            "2": "t_linoleum_white",
+            "3": "t_linoleum_white",
+            "4": "t_linoleum_white",
+            "5": "t_linoleum_white",
+            "6": "t_linoleum_white",
+            "7": "t_linoleum_white",
+            "8": "t_linoleum_white",
+            "O": "t_linoleum_white",
+            "F": "t_linoleum_white",
+            "B": "t_linoleum_white",
+            "S": "t_linoleum_white",
+            "t": "t_linoleum_white",
+            "{": "t_chaingate_c",
+            "}": "t_chainfence"
+        },
+        "furniture": { ":": [ "f_indoor_plant", "f_indoor_plant_y" ], ";": "f_gunsafe_ml", ")": "f_TV_antenna" },
+        "place_loot": [ { "item": "television", "x": 2, "y": 9 }, { "item": "stereo", "x": 2, "y": 10, "chance": 100 } ]
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": [ "TempHQ_roof" ],
+        "object": {
+        "fill_ter": "t_flat_roof",
+        "rows": [
+            " ----------------       ",
+            " 5..............-       ",
+            " -..............-       ",
+            " -..............-       ",
+            " -...A..........-       ",
+            " -..............-       ",
+            " -..............-       ",
+            " -X..........A.&-       ",
+            " -..............-       ",
+            " -..............-       ",
+            " -..............-       ",
+            " -..............-       ",
+            " -..............-       ",
+            " -.=............-       ",
+            " -..............5       ",
+            " -........-------       ",
+            " ----------             ",
+            "                        ",
+            "                        ",
+            "                        ",
+            "                        ",
+            "                        ",
+            "                        ",
+            "                        "
+        ],
+        "palettes": [ "roof_palette" ]
+        }
+    },
+    {
+        "type": "palette",
+        "id": "TempHQ_palette",
+        "//": " P, U, S, h, F, e, |, o, k, z, c, and > are all still available for more terrain or furniture",
+        "parameters": {
+          "interior_wall_type": {
+            "type": "ter_str_id",
+            "default": {
+              "distribution": [
+                [ "t_wall_b", 1 ],
+                [ "t_wall_g", 1 ],
+                [ "t_wall_p", 1 ],
+                [ "t_wall_P", 1 ],
+                [ "t_wall_r", 1 ],
+                [ "t_wall_w", 6 ],
+                [ "t_wall_y", 1 ],
+                [ "t_wall_gray", 1 ],
+                [ "t_wall_brown", 1 ],
+                [ "t_wall_cyan", 1 ],
+                [ "t_wall_black", 1 ],
+                [ "t_wall_orange", 1 ]
+              ]
+            }
+          }
+        },
+        "toilets": { "&": {  } },
+        "terrain": {
+          "-": "t_wall_w",
+          "#": "t_brick_wall",
+          "q": "t_thconc_floor",
+          "&": "t_thconc_floor",
+          ":": "t_window_bars_alarm",
+          "+": [ [ "t_door_metal_pickable", 90 ], [ "t_door_metal_o", 5 ], [ "t_door_metal_c", 15 ] ],
+          "D": [ [ "t_door_o", 40 ], [ "t_door_c", 40 ], [ "t_door_locked_interior", 20 ] ],
+          ",": [ [ "t_region_groundcover_urban", 100 ], [ "t_region_shrub", 10 ] ],
+          "@": "t_region_shrub_decorative",
+          "u": "t_region_shrub",
+          "B": "t_region_groundcover_barren",
+          "'": "t_sidewalk",
+          "/": "t_sidewalk",
+          "C": "t_thconc_floor",
+          "`": "t_thconc_floor",
+          ".": "t_thconc_floor",
+          "a": "t_thconc_floor",
+          "?": "t_thconc_floor",
+          "l": "t_thconc_floor",
+          "E": "t_thconc_floor",
+          "d": "t_thconc_floor",
+          "^": "t_thconc_floor",
+          "Q": "t_thconc_floor",
+          "x": "t_thconc_floor",
+          "X": "t_thconc_floor",
+          "A": "t_thconc_floor",
+          "r": "t_thconc_floor",
+          "R": "t_thconc_floor",
+          "m": "t_thconc_floor",
+          "M": "t_thconc_floor",
+          "T": "t_thconc_floor",
+          "N": "t_thconc_floor",
+          "n": "t_thconc_floor",
+          "K": "t_thconc_floor",
+          "G": "t_thconc_floor",
+          "g": "t_thconc_floor",
+          "f": "t_thconc_floor",
+          "L": "t_thconc_floor",
+          "y": "t_thconc_floor",
+          "Y": "t_thconc_floor",
+          "v": "t_thconc_floor",
+          "=": "t_thconc_floor",
+          "_": "t_pavement",
+          "*": "t_pavement_y",
+          "<": "t_stairs_up",
+          ";": "t_gutter_downspout",
+          "W": "t_strconc_wall",
+          "$": "t_atm",
+          "Z": "t_bars",
+          "I": { "param": "interior_wall_type", "fallback": "t_brick_wall" }
+        },
+        "furniture": {
+          "C": "f_counter",
+          "R": "f_counter",
+          "3": "f_counter",
+          "a": "f_stool",
+          "?": "f_console_broken",
+          "d": [ [ "f_displaycase", 65 ], [ "f_displaycase_o", 35 ] ],
+          "p": "f_displaycase_b",
+          "n": "f_table",
+          "E": "f_desk",
+          "^": "f_indoor_plant",
+          "l": "f_locker",
+          "N": "f_locker",
+          "M": "f_locker",
+          "m": "f_rack",
+          "Y": "f_rack",
+          "y": "f_rack",
+          "|": "f_locker",
+          "Q": "f_rack",
+          "K": "f_rack",
+          "L": [ [ "f_rack_l", 65 ], [ "f_rack", 35 ] ],
+          "G": "f_rack",
+          "v": "f_rack",
+          "q": "f_sink",
+          "r": "f_trashcan",
+          "s": [ [ "f_crate_c", 55 ], [ "f_crate_o", 45 ] ],
+          "S": "f_crate_o",
+          "A": "f_chair",
+          "T": "f_target",
+          "w": "f_dumpster",
+          "X": [ [ "f_gunsafe_ml", 90 ], [ "f_gunsafe_o", 10 ] ],
+          "e": "f_gunsafe_o",
+          "O": [ [ "f_gunsafe_ml", 90 ], [ "f_gunsafe_o", 10 ] ],
+          "x": "f_sandbag_wall",
+          "g": "f_sofa",
+          "f": "f_fridge",
+          "/": "f_flagpole"
+        },
+        "item": { "/": { "item": "american_flag" } },
+        "items": {
+          "X": { "item": "SUS_gunstore_safe", "chance": 50, "repeat": [ 10, 20 ] },
+          "K": {
+            "item": {
+              "//": "gun books kept on racks in the FoH",
+              "subtype": "collection",
+              "entries": [ { "group": "book_gunref", "prob": 5 }, { "group": "book_gunmags", "prob": 80 } ]
+            },
+            "repeat": 3,
+            "chance": 75
+          }
+        }
+      }
+]

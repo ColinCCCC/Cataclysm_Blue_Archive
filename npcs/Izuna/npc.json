@@ -9,7 +9,7 @@
         "gender": "female",
         "class": "NC_Izuna",
         "attitude": 1,
-        "mission": 7,
+        "mission": 0,
         "chat": "TALK_Izuna_recruit",
         "faction": "kivotos_students",
         "<acknowledged>": "这也是主公的恩赐！",

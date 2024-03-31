@@ -9,7 +9,7 @@
         "gender": "female",
         "class": "NC_Junko",
         "attitude": 1,
-        "mission": 7,
+        "mission": 0,
         "chat": "TALK_Junko_recruit",
         "faction": "kivotos_students",
         "<acknowledged>": "thank you，下次我会报答你的。",

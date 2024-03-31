@@ -9,7 +9,7 @@
         "gender": "female",
         "class": "NC_Shiroko",
         "attitude": 1,
-        "mission": 7,
+        "mission": 0,
         "chat": "TALK_Shiroko_recruit",
         "faction": "kivotos_students"
     },

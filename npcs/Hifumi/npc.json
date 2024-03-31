@@ -9,7 +9,7 @@
         "height": 158,
         "class": "NC_Hifumi",
         "attitude": 1,
-        "mission": 7,
+        "mission": 0,
         "chat": "TALK_Hifumi_recruit",
         "faction": "kivotos_students",
         "<acknowledged>": "<acknowledged_Hifumi>",

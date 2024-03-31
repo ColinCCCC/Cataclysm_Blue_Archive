@@ -9,7 +9,7 @@
         "height": 157,
         "class": "NC_Mika",
         "attitude": 1,
-        "mission": 7,
+        "mission": 0,
         "chat": "TALK_Mika_recruit",
         "faction": "kivotos_students",
         "<acknowledged>": "OK～☆",

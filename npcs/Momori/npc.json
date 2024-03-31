@@ -9,7 +9,7 @@
         "gender": "female",
         "class": "NC_Momori",
         "attitude": 1,
-        "mission": 7,
+        "mission": 0,
         "chat": "TALK_Momori_recruit",
         "faction": "kivotos_students",
         "<acknowledged>": "升级什么的总是让人振奋不已呢！",

@@ -9,7 +9,7 @@
         "gender": "female",
         "class": "NC_Yuuka",
         "attitude": 1,
-        "mission": 7,
+        "mission": 0,
         "chat": "TALK_Yuuka_recruit",
         "faction": "kivotos_students",
         "<acknowledged>": "<acknowledged_Yuuka>",
