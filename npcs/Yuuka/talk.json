@@ -37,5 +37,20 @@
                 "topic": "TALK_DONE"
             }
         ]
+    },
+    {
+    	"type": "talk_topic",
+	    "id": [ "TALK_frag2ammo" ],
+	    "responses": [
+            {
+                "text": "使用日富美的神名文字",
+                "condition": { "u_has_item": "Fragment_Yuuka" },
+                "effect": [
+                    { "u_consume_item": "Fragment_Yuuka", "count": 10 },
+                    { "u_spawn_item": "9mm", "count": 20 }
+                ],
+                "topic": "TALK_NONE"
+	        }
+	    ]
     }
 ]

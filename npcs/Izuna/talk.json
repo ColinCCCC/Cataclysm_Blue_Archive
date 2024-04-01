@@ -38,5 +38,20 @@
                 "topic": "TALK_DONE"
             }
         ]
+    },
+    {
+    	"type": "talk_topic",
+	    "id": [ "TALK_frag2ammo" ],
+	    "responses": [
+            {
+                "text": "使用伊树菜的神名文字",
+                "condition": { "u_has_item": "Fragment_Izuna" },
+                "effect": [
+                    { "u_consume_item": "Fragment_Izuna", "count": 10 },
+                    { "u_spawn_item": "8x40mm", "count": 20 }
+                ],
+                "topic": "TALK_NONE"
+	        }
+	    ]
     }
 ]
