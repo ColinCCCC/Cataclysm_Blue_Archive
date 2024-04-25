@@ -1,0 +1,57 @@
+[
+    {
+        "id": "TALK_Hoshino_recruit",
+        "type": "talk_topic",
+        "dynamic_line": "有趣的事现在开始！(これから、すっごく面白い物語が始まるよ！)",
+        "responses": [
+            {
+                "text": "ᕕ(◠ڼ◠)ᕗ",
+                "effect": [
+                    "follow",
+                    { "npc_learn_martial_art": "style_niten" },
+                    { "npc_set_talker": { "global_val": "Hoshino_id" } },
+                    { "set_string_var": "对策委员会", "target_var": { "npc_val": "student_organization" } },
+                    { "set_string_var": "★★★", "target_var": { "npc_val": "student_stars" } },
+                    { "set_string_var": "3", "target_var": { "npc_val": "cnt_student_stars" } },
+                    { "set_string_var": "Hoshino", "target_var": { "npc_val": "student_ename" } },
+                    { "set_string_var": "spell_Hoshino_cone_aoe", "target_var": { "npc_val": "student_spell_id" } },
+                    { "set_string_var": "3", "target_var": { "npc_val": "student_spell_cost" } },
+                    { "set_string_var": "创作的痛苦(进行带有范围伤害的扫射)", "target_var": { "npc_val": "student_spell_name" } },
+                    { "set_string_var": "有什么需要帮忙吗？", "target_var": { "npc_val": "student_topic" } }
+                ],
+                "topic": "TALK_DONE"
+            }
+        ]
+    },
+    {
+        "type": "talk_topic",
+        "id": [ "TALK_Arona_Recall" ],
+        "responses": [
+            {
+                "text": "召回星野",
+                "condition": { "u_has_trait": "standby_Hoshino"},
+                "effect": [
+                    { "math": [ "Student_id", "=", "Hoshino_id" ] },
+                    { "u_lose_trait": "standby_Hoshino" },
+                    { "run_eocs": [  "EOC_Recall_Student" ] }
+                ],
+                "topic": "TALK_DONE"
+            }
+        ]
+    },
+    {
+    	"type": "talk_topic",
+	    "id": [ "TALK_frag2ammo" ],
+	    "responses": [
+            {
+                "text": "使用星野的神名文字",
+                "condition": { "u_has_item": "Fragment_Hoshino" },
+                "effect": [
+                    { "u_consume_item": "Fragment_Hoshino", "count": 10 },
+                    { "u_spawn_item": "223", "count": 20 }
+                ],
+                "topic": "TALK_NONE"
+	        }
+	    ]
+    }
+]

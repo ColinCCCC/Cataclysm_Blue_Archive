@@ -1,0 +1,51 @@
+[
+    {
+        "id": "Generator_Serika",
+        "type": "AMMO",
+        "copy-from": "Generator_Common",
+        "name": {"str": "学生档案-芹香"},
+        "description": "学生档案-芹香",
+        "drop_action": {
+           "type": "place_npc",
+           "npc_class_id": "npc_Serika",
+           "summon_msg": "芹香被招募了！",
+           "place_randomly": true,
+           "moves": 1
+        }
+    },
+    {
+        "id": "Fragments_Serika",
+        "type": "AMMO",
+        "copy-from": "Fragments_Common",
+        "name": {"str": "神名文字碎片-芹香"},
+        "description": "神名文字碎片-芹香"
+    },
+    {
+        "type": "SPELL",
+        "name": "招募学生",
+        "id": "spell_recruit_Serika",
+        "description": "招募芹香",
+        "valid_targets": ["self"],
+        "shape": "blast",
+        "effect": "effect_on_condition",
+        "effect_str": "filter_Serika",
+        "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"]
+    },
+    {
+        "id": "filter_Serika",
+        "type": "effect_on_condition",
+        "effect": [
+            {
+                "if": { "not": { "u_has_trait": "get_Serika" } },
+                "then": [
+                    {"u_spawn_item": "Generator_Serika", "count": 1, "suppress_message": true },
+                    {"u_add_trait": "get_Serika" }
+                ],
+                "else": [
+                    {"u_spawn_item": "Fragments_Serika", "count": 10, "suppress_message": true },
+                    {"u_message": "获得 神名文字碎片-芹香 x10", "popup": true }
+                ]
+            }
+        ]
+    }
+]

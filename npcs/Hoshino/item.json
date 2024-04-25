@@ -1,0 +1,9 @@
+[
+    {
+        "id": "Armor_Hoshino",
+        "type": "ARMOR",
+        "name": {"str": "星野的装束"},
+        "description": "星野的装束",
+        "copy-from": "Armor_Common"
+    }
+]

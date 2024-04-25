@@ -1,0 +1,25 @@
+[
+    {
+        "type": "mutation",
+        "id": "Mutation_Serika",
+        "name": {"str": "芹香"},
+        "points": 0,
+        "description": "芹香",
+        "purifiable": false,
+        "starting_trait": false
+    },
+    {
+	    "type": "mutation",
+        "id": "get_Serika",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "获得芹香"},
+        "description": "你已经获得了芹香"
+    },
+    {
+	    "type": "mutation",
+        "id": "standby_Serika",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "芹香待命中"},
+        "description": "芹香待命中"
+    }
+]

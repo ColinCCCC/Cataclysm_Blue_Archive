@@ -1,0 +1,25 @@
+[
+    {
+        "type": "mutation",
+        "id": "Mutation_Mutsuki",
+        "name": {"str": "睦月"},
+        "points": 0,
+        "description": "睦月",
+        "purifiable": false,
+        "starting_trait": false
+    },
+    {
+	    "type": "mutation",
+        "id": "get_Mutsuki",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "获得睦月"},
+        "description": "你已经获得了睦月"
+    },
+    {
+	    "type": "mutation",
+        "id": "standby_Mutsuki",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "睦月待命中"},
+        "description": "睦月待命中"
+    }
+]

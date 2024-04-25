@@ -1,0 +1,23 @@
+[
+    {
+        "type": "SPELL",
+        "name": "创作的痛苦",
+        "id": "spell_Momori_cone_aoe",
+        "description": "进行带有范围伤害的扫射",
+        "valid_targets": ["hostile", "self", "ground"],
+        "max_level": 5,
+        "min_aoe": 40,
+        "max_aoe": 40,
+        "min_range": 10,
+	    "max_range": 35,
+        "range_increment": 5,
+        "min_damage": 10,
+        "max_damage": 60,
+        "damage_increment": 10,
+        "shape": "cone",
+        "damage_type": "pure",
+        "effect": "attack",
+        "flags": [ "NO_LEGS", "IGNORE_WALLS", "LOUD"],
+        "extra_effects": [ { "id": "spell_return_to_player", "hit_self": true } ]
+    }
+]

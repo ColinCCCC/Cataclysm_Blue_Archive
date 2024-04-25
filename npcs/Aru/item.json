@@ -1,0 +1,9 @@
+[
+    {
+        "id": "Armor_Aru",
+        "type": "ARMOR",
+        "name": {"str": "阿露的装束"},
+        "description": "阿露的装束",
+        "copy-from": "Armor_Common"
+    }
+]

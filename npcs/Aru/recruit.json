@@ -1,0 +1,51 @@
+[
+    {
+        "id": "Generator_Aru",
+        "type": "AMMO",
+        "copy-from": "Generator_Common",
+        "name": {"str": "学生档案-阿露"},
+        "description": "学生档案-阿露",
+        "drop_action": {
+           "type": "place_npc",
+           "npc_class_id": "npc_Aru",
+           "summon_msg": "阿露被招募了！",
+           "place_randomly": true,
+           "moves": 1
+        }
+    },
+    {
+        "id": "Fragments_Aru",
+        "type": "AMMO",
+        "copy-from": "Fragments_Common",
+        "name": {"str": "神名文字碎片-阿露"},
+        "description": "神名文字碎片-阿露"
+    },
+    {
+        "type": "SPELL",
+        "name": "招募学生",
+        "id": "spell_recruit_Aru",
+        "description": "招募阿露",
+        "valid_targets": ["self"],
+        "shape": "blast",
+        "effect": "effect_on_condition",
+        "effect_str": "filter_Aru",
+        "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"]
+    },
+    {
+        "id": "filter_Aru",
+        "type": "effect_on_condition",
+        "effect": [
+            {
+                "if": { "not": { "u_has_trait": "get_Aru" } },
+                "then": [
+                    {"u_spawn_item": "Generator_Aru", "count": 1, "suppress_message": true },
+                    {"u_add_trait": "get_Aru" }
+                ],
+                "else": [
+                    {"u_spawn_item": "Fragments_Aru", "count": 10, "suppress_message": true },
+                    {"u_message": "获得 神名文字碎片-阿露 x10", "popup": true }
+                ]
+            }
+        ]
+    }
+]

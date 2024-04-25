@@ -1,0 +1,9 @@
+[
+    {
+        "id": "Armor_Serika",
+        "type": "ARMOR",
+        "name": {"str": "芹香的装束"},
+        "description": "芹香的装束",
+        "copy-from": "Armor_Common"
+    }
+]

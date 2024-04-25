@@ -1,0 +1,9 @@
+[
+    {
+        "id": "Armor_Mutsuki",
+        "type": "ARMOR",
+        "name": {"str": "睦月的装束"},
+        "description": "睦月的装束",
+        "copy-from": "Armor_Common"
+    }
+]

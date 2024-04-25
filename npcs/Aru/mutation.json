@@ -1,0 +1,25 @@
+[
+    {
+        "type": "mutation",
+        "id": "Mutation_Aru",
+        "name": {"str": "阿露"},
+        "points": 0,
+        "description": "阿露",
+        "purifiable": false,
+        "starting_trait": false
+    },
+    {
+	    "type": "mutation",
+        "id": "get_Aru",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "获得阿露"},
+        "description": "你已经获得了阿露"
+    },
+    {
+	    "type": "mutation",
+        "id": "standby_Aru",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "阿露待命中"},
+        "description": "阿露待命中"
+    }
+]

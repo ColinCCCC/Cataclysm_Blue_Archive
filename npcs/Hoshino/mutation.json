@@ -1,0 +1,25 @@
+[
+    {
+        "type": "mutation",
+        "id": "Mutation_Hoshino",
+        "name": {"str": "星野"},
+        "points": 0,
+        "description": "星野",
+        "purifiable": false,
+        "starting_trait": false
+    },
+    {
+	    "type": "mutation",
+        "id": "get_Hoshino",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "获得星野"},
+        "description": "你已经获得了星野"
+    },
+    {
+	    "type": "mutation",
+        "id": "standby_Hoshino",
+        "copy-from": "mutation_mark_Common",
+        "name": {"str": "星野待命中"},
+        "description": "星野待命中"
+    }
+]

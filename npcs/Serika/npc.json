@@ -1,0 +1,111 @@
+[
+    {
+        "type": "npc",
+        "id": "npc_Serika",
+        "name_unique": "芹香",
+        "name_suffix": "",
+        "age": 15,
+        "height": 143,
+        "gender": "female",
+        "class": "NC_Serika",
+        "attitude": 1,
+        "mission": 0,
+        "chat": "TALK_Serika_recruit",
+        "faction": "kivotos_students",
+        "<acknowledged>": "升级什么的总是让人振奋不已呢！",
+        "<danger_close_distance>": "就让你瞧瞧我的枪法！",
+        "<combat_noise_warning>": "<combat_noise_warning_Serika>",
+        "<monster_warning_h>": "唔……要是在平板上操作的话我倒是自信满满啦……",
+        "<let_me_pass>": "苦呀西……苦呀西(您塞住了芹香的路)",
+        "<run_away>": "啊，真是的！根本就是垃圾游戏啊！",
+        "snip_lost_blood": "<snip_lost_blood_Serika>",
+        "snip_bye": "通关！"
+    },
+    {
+        "type": "snippet",
+        "category": "<snip_lost_blood_Serika>",
+        "text": [
+            "血条快空了，队友呢？救一下啊？",
+            "好痛！",
+            "苦呀西"
+        ]
+    },
+    {
+        "type": "snippet",
+        "category": "<combat_noise_warning_Serika>",
+        "text": [
+            "呀啊！等一下，这样就打不了游戏啦！",
+            "快快搞完就回去吧！"
+        ]
+    },
+    {
+        "type": "npc_class",
+        "id": "NC_Serika",
+        "name": "芹香",
+        "job_description": "芹香",
+        "common": false,
+        "bonus_str": 2,
+        "bonus_dex": 5,
+        "bonus_int": 5,
+        "bonus_per": 12,
+        "skills": [
+            { "skill": "computer", "bonus": 5 },
+            { "skill": "driving", "bonus": 0 },
+            { "skill": "fabrication", "bonus": 4 },
+            { "skill": "firstaid", "bonus": 2 },
+            { "skill": "survival", "bonus": 3 },
+            { "skill": "swimming", "bonus": 2 },
+            { "skill": "archery", "bonus": 0 },
+            { "skill": "bashing", "bonus": 2 },
+            { "skill": "cutting", "bonus": 5 },
+            { "skill": "dodge", "bonus": 3 },
+            { "skill": "melee", "bonus": 5 },
+            { "skill": "stabbing", "bonus": 8 },
+            { "skill": "throw", "bonus": 1 },
+            { "skill": "rifle", "bonus": 8 },
+            { "skill": "pistol", "bonus": 0 },
+            { "skill": "gun", "bonus": 8 },
+            { "skill": "launcher", "bonus": 0 },
+            { "skill": "shotgun", "bonus": 0 },
+            { "skill": "smg", "bonus": 0 },
+            { "skill": "unarmed", "bonus": 0 }
+        ],
+        "worn_override": "NC_Serika_worn",
+        "carry_override": "NC_Serika_carry",
+        "weapon_override": "NC_Serika_weapon",
+        "traits": [
+            [ "Mutation_Serika", 100 ],
+            [ "Mutation_Kivotos_Halo", 100 ],
+            [ "NIGHTVISION", 100 ],
+            [ "GOODHEARING", 100 ],
+            [ "SKIN_LIGHT", 100 ]
+        ]
+    },
+    {
+        "id": "NC_Serika_worn",
+        "type": "item_group",
+        "subtype": "collection",
+        "entries": [
+            { "item": "panties" },
+            { "item": "bra" },
+            { "item": "Armor_Serika" },
+            { "item": "mbag" }
+        ]
+    },
+    {
+        "id": "NC_Serika_weapon",
+        "type": "item_group",
+        "subtype": "collection",
+        "entries": [ { "item": "hk_g3a3" } ]
+    },
+    {
+        "id": "NC_Serika_carry",
+        "type": "item_group",
+        "subtype": "collection",
+        "entries": [
+            { "item": "bandages", "count": 5 },
+            { "item": "portable_game", "count":1 }
+        ]
+    }
+]
+  

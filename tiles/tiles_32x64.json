@@ -29,7 +29,15 @@
           { "id": "overlay_mutation_Mutation_Yuuka", "fg": 33 },
           { "id": "overlay_worn_Armor_Yuuka", "fg": 34 },
           { "id": "overlay_mutation_Mutation_Mika", "fg": 37 },
-          { "id": "overlay_worn_Armor_Mika", "fg": 38 }
+          { "id": "overlay_worn_Armor_Mika", "fg": 38 },
+          { "id": "overlay_mutation_Mutation_Serika", "fg": 41 },
+          { "id": "overlay_worn_Armor_Serika", "fg": 42 },
+          { "id": "overlay_mutation_Mutation_Hoshino", "fg": 45 },
+          { "id": "overlay_worn_Armor_Hoshino", "fg": 46 },
+          { "id": "overlay_mutation_Mutation_Aru", "fg": 49 },
+          { "id": "overlay_worn_Armor_Aru", "fg": 50 },
+          { "id": "overlay_mutation_Mutation_Mutsuki", "fg": 53 },
+          { "id": "overlay_worn_Armor_Mutsuki", "fg": 54 }
         ]
       }
     ]
