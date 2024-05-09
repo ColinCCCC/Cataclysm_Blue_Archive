@@ -24,5 +24,16 @@
                 "targeted": true
             }
         ]
+    },
+    {
+        "type": "SPELL",
+        "name": "返回控制",
+        "id": "spell_return_to_player",
+        "description": "返回控制",
+        "valid_targets": ["self"],
+        "shape": "blast",
+        "effect": "effect_on_condition",
+        "effect_str": "EOC_return_to_player",
+        "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"]
     }
 ]

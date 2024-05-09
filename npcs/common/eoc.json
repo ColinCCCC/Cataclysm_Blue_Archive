@@ -1,17 +1,5 @@
 [
     {
-        "type": "faction",
-        "id": "kivotos_students",
-        "name": "",
-        "likes_u": 10,
-        "respects_u": 10,
-        "known_by_u": false,
-        "size": 10,
-        "power": 100,
-        "wealth": 1000,
-        "description":""
-    },
-    {
         "type": "effect_on_condition",
         "id": "EOC_Recall_Student",
         "effect": [
@@ -19,6 +7,7 @@
                 "run_eoc_with": {
                     "id": "EOC_Recall_Student_do",
                     "effect": [
+                        "follow",
                         { "npc_teleport": { "context_val": "your_loc" }, "force": true },
                         { "u_message": "<npc_name>已召回", "popup": true }
                     ]
@@ -28,16 +17,5 @@
                 "false_eocs": "_EOC_return_to_player_fail_msg"
             }
         ]
-    },
-    {
-        "type": "SPELL",
-        "name": "返回控制",
-        "id": "spell_return_to_player",
-        "description": "返回控制",
-        "valid_targets": ["self"],
-        "shape": "blast",
-        "effect": "effect_on_condition",
-        "effect_str": "EOC_return_to_player",
-        "flags": [ "NO_LEGS", "NO_PROJECTILE", "IGNORE_WALLS", "SILENT"]
     }
 ]

@@ -1,0 +1,14 @@
+[
+    {
+        "type": "faction",
+        "id": "kivotos_students",
+        "name": "",
+        "likes_u": 10,
+        "respects_u": 10,
+        "known_by_u": false,
+        "size": 10,
+        "power": 100,
+        "wealth": 1000,
+        "description":""
+    }
+]
