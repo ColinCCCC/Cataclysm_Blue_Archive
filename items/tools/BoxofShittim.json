@@ -106,6 +106,7 @@
                     { "mapgen_update": "update_mapgen_TempHQ", "z": 0 },
                     { "mapgen_update": "update_mapgen_TempHQ_2nd", "z": 1 },
                     { "mapgen_update": "update_mapgen_TempHQ_roof", "z": 2 },
+                    { "u_location_variable": { "context_val": "HQ_loc" } },
                     { "u_message": "指挥部建筑已完全建造。", "popup": true }
                 ],
                 "topic": "TALK_DONE"
