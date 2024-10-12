@@ -14,7 +14,7 @@
 推荐使用MSXotto++或UndeadPeople贴图包，以获得最佳游玩体验
 
 ## Cataclysm: Blue Archive是什么？  
-这个模组还原了部分Blue Archive的游戏内容，并对CDDA的玩法进行了适配，目前仍在持续更新中。  
+这个模组还原了部分Blue Archive的游戏内容，并对CDDA的玩法进行了适配，目前不再持续更新中。  
 
 ## 遇到了bug怎么办？  
 您可以联系Colin C.C.C.C(281460579@qq.com)或者~~RU-biso~~，提供bug的具体信息(如出现了什么错误，何时发生的)并且真诚地期待他们会看邮箱。  
