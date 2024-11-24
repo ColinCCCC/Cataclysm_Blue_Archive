@@ -2,7 +2,7 @@
   {
     "type":"MOD_INFO",
     "category":"content",
-    "ident":"blue_archive",
+    "id":"blue_archive",
     "name":"<color_light_cyan>Cataclysm: Blue archive</color>",
     "authors":["Colin.C.C.C.C", "Facとrial" ],
     "description":"为cdda的世界中增加了一些BA。本模组仍在更新和平衡中，如有Bug和建议请联系Colin C.C.C.C: 2814670579@qq.com。您应该注意，当前模组会极大破坏游戏平衡，可能会消减游戏乐趣。",
