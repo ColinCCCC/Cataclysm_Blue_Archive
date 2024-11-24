@@ -29,8 +29,8 @@
                         { "set_string_var": "<npc_val:student_spell_id>", "target_var": { "context_val": "spell_id" }, "parse_tags": true },
                         { "set_string_var": "<npc_val:cnt_student_stars>", "target_var": { "context_val": "spell_level" }, "parse_tags": true },
                         "take_control",
-                        { "queue_eocs": "EOC_student_cast_spell", "time_in_future": 1 },
-                        { "queue_eocs": "EOC_return_to_player", "time_in_future": 5 }
+                        { "run_eocs": "EOC_student_cast_spell", "time_in_future": 1 },
+                        { "run_eocs": "EOC_return_to_player", "time_in_future": 5 }
                     ]
                 },
                 "failure": { "topic": "TALK_NoEnoughCost" }

@@ -31,6 +31,7 @@
     {
         "type": "overmap_terrain",
         "id": "TempHQ",
+        "see_cost": "none",
         "name": "临时指挥部",
         "sym": "H",
         "color": "cyan"
@@ -319,7 +320,6 @@
           ">": "t_stairs_down",
           ";": "t_gutter_downspout",
           "W": "t_strconc_wall",
-          "$": "t_atm",
           "Z": "t_bars",
           "I": { "param": "interior_wall_type", "fallback": "t_brick_wall" }
         },

@@ -1,75 +1,74 @@
 [
-{
-  "type": "GUN",
-  "name": {
-    "str": "L85A2自动步枪"
-  },
-  "copy-from":"hk_g36",
-  "id": "l85a2",
-  "description": "由德国H&K公司改装的英国主力轻武器，使用5.56x45mm北约制式子弹。其改装前的版本以故障率奇高而闻名于世。",
-  "weight": "3820 g",
-  "volume": "4640 ml",
-  "longest_side": "785 mm",
-  "barrel_length": "518 mm"
-},
-{
-  "type": "GUN",
-  "name": {
-    "str": "H&K G3A3自动步枪"
-  },
-  "copy-from": "hk_g36",
-  "id": "hk_g3a3",
-  "description": "由H&K公司开发的，使用7.62x51mm口径子弹的自动步枪，是半个世纪以来最受欢迎的战斗步枪之一",
-  "weight": "4380 g",
-  "volume": "4640 ml",
-  "longest_side": "1025 mm",
-  "barrel_length": "450 mm"
-},
-{
-  "id": "type_100",
-  "type": "GUN",
-  "name": { "str": "百式冲锋枪" },
-  "copy-from": "hk_mp5",
-  "description": "日本陆军在第二次世界大战中唯一量产的冲锋枪，日军中的制式名称是「机关短铳」，有時被误写成「短机关铳」。使用特制的8mm口径子弹。",
-  "weight": "3380 g",
-  "volume": "3932 ml",
-  "longest_side": "903 mm",
-  "barrel_length": "285 mm",
-  "ammo": [ "8x40mm" ],
-  "pocket_data": [
     {
-      "pocket_type": "MAGAZINE_WELL",
-      "item_restriction": [ "8x40_25_mag", "8x40_10_mag" ]
+        "type": "GUN",
+        "name": { "str": "L85A2自动步枪" },
+        "copy-from": "sig_assault_rifle",
+        "id": "l85a2",
+        "description": "由德国H&K公司改装的英国主力轻武器，使用5.56x45mm北约制式子弹。其改装前的版本以故障率奇高而闻名于世。",
+        "weight": "3820 g",
+        "volume": "4640 ml",
+        "longest_side": "785 mm",
+        "barrel_length": "518 mm"
+    },
+    {
+        "type": "GUN",
+        "name": { "str": "H&K G3A3自动步枪" },
+        "copy-from": "sig_assault_rifle",
+        "id": "hk_g3a3",
+        "description": "由H&K公司开发的，使用7.62x51mm口径子弹的自动步枪，是半个世纪以来最受欢迎的战斗步枪之一",
+        "weight": "4380 g",
+        "volume": "4640 ml",
+        "longest_side": "1025 mm",
+        "barrel_length": "450 mm"
+    },
+    {
+        "id": "type_100",
+        "type": "GUN",
+        "name": { "str": "百式冲锋枪" },
+        "copy-from": "hk_mp5",
+        "description": "日本陆军在第二次世界大战中唯一量产的冲锋枪，日军中的制式名称是「机关短铳」，有時被误写成「短机关铳」。使用特制的8mm口径子弹。",
+        "weight": "3380 g",
+        "volume": "3932 ml",
+        "longest_side": "903 mm",
+        "barrel_length": "285 mm",
+        "ammo": [ "8x40mm" ],
+        "pocket_data": [
+            {
+                "pocket_type": "MAGAZINE_WELL",
+                "item_restriction": [
+                    "8x40_25_mag",
+                    "8x40_10_mag"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "sig_mpx",
+        "type": "GUN",
+        "name": { "str": "SIG-MPX冲锋枪" },
+        "copy-from": "hk_mp5",
+        "description": "SIG-MPX是西格&绍尔美国分公司的新款产品，具有多个可提供军队和执法机构使用的选射式配置，是MP5的有力竞争对手，使用9mm子弹。",
+        "weight": "2000 g",
+        "volume": "3112 ml",
+        "longest_side": "409 mm",
+        "barrel_length": "114 mm"
+    },
+    {
+        "id": "lanchester_mki",
+        "type": "GUN",
+        "name": { "str": "兰开斯特MK-I冲锋枪" },
+        "copy-from": "p08",
+        "description": "兰开斯特MK-I冲锋枪是罕见的第一次世界大战后出现的侧面装弹、卡宾枪式的冲锋枪，几乎是mp-18的翻版，可以配备刺刀。由于价格昂贵，所以未能大规模装备于部队。",
+        "weight": "4340 g",
+        "volume": "3112 ml",
+        "longest_side": "851 mm",
+        "barrel_length": "203 mm"
+    },
+    {
+        "id": "stg44",
+        "type": "GUN",
+        "name": { "str": "StG-44突击步枪" },
+        "copy-from": "rfb_308",
+        "description": "德军在第二次世界大战后期使用的StG-44突击步枪，受到了改装以使其能够兼容7.62x51mm子弹"
     }
-  ]
-},
-{
-  "id": "sig_mpx",
-  "type": "GUN",
-  "name": { "str": "SIG-MPX冲锋枪" },
-  "copy-from": "hk_mp5",
-  "description": "SIG-MPX是西格&绍尔美国分公司的新款产品，具有多个可提供军队和执法机构使用的选射式配置，是MP5的有力竞争对手，使用9mm子弹。",
-  "weight": "2000 g",
-  "volume": "3112 ml",
-  "longest_side": "409 mm",
-  "barrel_length": "114 mm"
-},
-{
-  "id": "lanchester_mki",
-  "type": "GUN",
-  "name": { "str": "兰开斯特MK-I冲锋枪" },
-  "copy-from": "mp18",
-  "description": "兰开斯特MK-I冲锋枪是罕见的第一次世界大战后出现的侧面装弹、卡宾枪式的冲锋枪，几乎是mp-18的翻版，可以配备刺刀。由于价格昂贵，所以未能大规模装备于部队。",
-  "weight": "4340 g",
-  "volume": "3112 ml",
-  "longest_side": "851 mm",
-  "barrel_length": "203 mm"
-},
-{
-  "id": "stg44",
-  "type":"GUN",
-  "name": { "str": "StG-44突击步枪" },
-  "copy-from": "rfb_308",
-  "description": "德军在第二次世界大战后期使用的StG-44突击步枪，受到了改装以使其能够兼容7.62x51mm子弹"
-}
 ]

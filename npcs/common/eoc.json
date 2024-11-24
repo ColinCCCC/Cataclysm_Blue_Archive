@@ -4,7 +4,7 @@
         "id": "EOC_Recall_Student",
         "effect": [
             {
-                "run_eoc_with": {
+                "run_eocs": {
                     "id": "EOC_Recall_Student_do",
                     "effect": [
                         "follow",
