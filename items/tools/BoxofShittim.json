@@ -8,18 +8,21 @@
         "weight": "250 g",
         "volume": "250 ml",
         "longest_side": "28 cm",
-        "price": 2000000,
-        "price_postapoc": 2000000,
+        "price": "2000000 USD",
+        "price_postapoc": "2000000 USD",
         "looks_like": "eink_tablet_pc",
         "to_hit": -1,
         "material": ["plastic"],
         "symbol": ";",
         "color": "blue",
         "use_action": [
-            "EINKTABLETPC",
-            "ELECTRICSTORAGE",
+            "E_FILE_DEVICE",
             "EBOOKSAVE",
-            "EBOOKREAD",
+            {
+                "type": "link_up",
+                "cable_length": 4,
+                "charge_rate": "10 W"
+            },
             {
                 "type": "effect_on_conditions",
                 "menu_text": "<color_light_cyan>与阿罗娜对话</color>",

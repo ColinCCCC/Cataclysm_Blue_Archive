@@ -8,7 +8,7 @@
         "difficulty": 2,
         "value": 0,
         "start": {
-            "assign_mission_target": { "om_terrain": "TempHQ_north", "om_terrain_replace": "field", "search_range": 2, "z": 0 }
+            "assign_mission_target": { "om_terrain": "TempHQ_north", "om_terrain_replace": "field", "random": true, "search_range": 2, "z": 0 }
         },
         "end": { 
             "effect": [

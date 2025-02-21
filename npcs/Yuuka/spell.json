@@ -53,17 +53,7 @@
         "color": "blue",
         "material": [ "stone" ],
         "environmental_protection": 15,
-        "flags": [
-            "AURA",
-            "SEMITANGIBLE",
-            "OVERSIZE",
-            "ONLY_ONE",
-            "TRADER_AVOID",
-            "NO_TAKEOFF",
-            "NONCONDUCTIVE",
-            "UNBREAKABLE",
-            "ALLOWS_NATURAL_ATTACKS"
-        ],
+        "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "TRADER_AVOID", "NO_TAKEOFF", "NONCONDUCTIVE" ],
         "armor": [
             {
                 "encumbrance": 0,
@@ -77,10 +67,13 @@
         "type": "enchantment",
         "id": "enchantment_Yuuka_shield",
         "condition": "ALWAYS",
+        "incoming_damage_mod": [
+            { "type": "bash", "add": -80 },
+            { "type": "stab", "add": -80 },
+            { "type": "cut", "add": -80 },
+            { "type": "bullet", "add": -80 }
+        ],
         "values": [
-            { "value": "ARMOR_BASH", "add": -40 },
-            { "value": "ARMOR_BULLET", "add": -40 },
-            { "value": "ARMOR_CUT", "add": -40 },
             { "value": "ATTACK_SPEED", "multiply": -0.3 },
             { "value": "BONUS_DODGE", "add": 2 },
             { "value": "BONUS_BLOCK", "add": 5 }
